@@ -1,0 +1,48 @@
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 24pt;
+    margin: 3em 25% 0 25%;
+    color: #999;
+}
+
+b {
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #4A90E2;
+}
+
+a:hover {
+    color: #3B73B4;
+}
+
+.icon {
+    float: left;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;   
+    background-size: 100%;  
+    background-position: 0 0;
+}
+
+.icon:hover {
+    background-position: 0 -100%;
+}
+
+#twitter {
+    background-image: url(../images/tw-combined@2x.png);
+}
+
+#facebook {
+    background-image: url(../images/fb-combined@2x.png);
+}
+
+#github {
+    background-image: url(../images/gh-combined@2x.png);
+}
+
+#email {
+    background-image: url(../images/email-combined@2x.png);
+}
