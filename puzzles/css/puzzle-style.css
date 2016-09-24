@@ -1,0 +1,15 @@
+body {
+    font-size: 14pt;
+    margin: 3em 25% 0 25%;
+    color: #999;
+}
+
+.back-button {
+    float: left;
+    vertical-align: middle;
+}
+
+.answerlink {
+    color: #aaa;
+    font-weight: lighter;
+}

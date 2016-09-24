@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>David Klionsky's Puzzles</title>
+</head>
+<body>
+
+<div class="pageTitle">Random Walk (Solution)</div>
+
+This one starts out as a simple substitution cipher. You can solve it by hand, or just plug it into an online solver. I used <a href="http://www.blisstonia.com/software/WebDecrypto/index.php">this one</a> and it figured it out without any problems. 
+
+<pre>
+fkisk. dvjo fojol fkobf kv kmo oifk. dvjo fvakmgofk vlo fkob. dvjo gofk i fkob, fvakmgofk i fkob, ilp gofk vlo fkob
+iuiql. uv gofk nqjo fkobf, ilp kmol lvskmgofk vlo fkob. dvjo oifk kgv fkobf ilp lvskmoifk i fkob. nqlieez, dvjo oifk
+vlo fkob.
+</pre>
+
+becomes
+
+<pre>
+Start. Move seven steps to the east. Move southwest one step. Move west a step, southwest a step, and west one step
+again. Go west five steps, and then northwest one step. Move east two steps and northeast a step. Finally, move east
+one step.
+</pre>
+
+Here's the full list of substitutions:
+
+<pre>
+a -> i
+b -> x
+c -> r
+d -> p
+e -> o
+f -> n
+g -> u
+h -> m
+i -> q
+j -> t
+k -> w
+l -> e
+m -> d
+n -> l
+o -> v
+p -> b
+q -> c
+r -> s
+s -> f
+t -> k
+u -> a
+v -> j
+w -> g
+x -> h
+y -> z
+z -> y
+</pre>
+
+The decrypted text is a set of directions for moving around on a keyboard, starting at some unknown key. Given these directions, there is only one possible starting key, E. If you follow the path on a qwerty keyboard, each sentence stops at a single key, giving the following string: EPLNART. Now you have to replace the letters on the keyboard with their encrypted letters. Doing this gives you the answer, OBELISK.
+
+<br/>
+
+</body>
+</html>

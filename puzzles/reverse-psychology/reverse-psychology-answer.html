@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>David Klionsky's Puzzles</title>
+</head>
+<body>
+
+<div class="pageTitle">Reverse Psychology (Solution)</div>
+Here you have to figure out what strategy is used by each mobster, beat each 10 times in a row, and then figure out how to beat the last "unbeatable" mob boss. Each mobster has a nickname related to either rock, paper, or scissors. <br/>
+
+Here's how each mobster works:
+<ul>
+<li>Bones "Band" Goodwin: (rock band) Tit for tat - Always throws the last thing you threw. </li>
+<li>Sal "Sisters" Mandrake: (scissor sisters) Throws what would have beaten your last throw.</li>
+<li>Nate "News" Kowalski: (newspaper) Throws the fixed sequence RRPRPSS.</li>
+<li>Paulie "Pet" Tenpin: (pet rock) Throws what you threw three moves ago.</li>
+<li>Alonzo "Airplane" Pucino: (paper airplane) Throws what would have beaten you three moves ago. </li>
+<li>Crescenzo "Candy" Abernathy: (rock candy) Throws what you threw four moves ago.</li>
+<li>Larry "Lobster" Robinson: (rock lobster) Throws what you threw two moves ago unless it was rock, in which case he throws paper.</li>
+<li>Max "Mache" Longacre: (paper mache) For each move type you make, he rotates between rock, paper, and scissors. Each of your throw types has its own rotation index. That is, if you throw RRRR he throws RPSR.</li>
+</ul>
+Once you beat his underlings you play '''Frankie "RPS" Unbeatable'''. Frankie cheats and always plays the move that beats you, you'll never win 10 turns in a row. If you look at the previous mobsters, their names form a sequence of moves: RSPPRRRP. Play this sequence against Frankie and he'll give up, saying this: 
+
+<pre>
+Frankie: You beat me! I don't believe it, it just doesn't make sense... It's 
+like I was programmed to lose... Well, good work. I'm an honest man so here's 
+your answer: 
+
+WQOEIVUBAWCMXLFIPOSKFSYDDSV
+
+You didn't think it would be that easy, did you? Play Goodwin against 
+Kowalski. Goodwin likes to start with Scissors, and Kowalski likes to start 
+with... that move he always starts with. Whenever they tie, use that letter.
+Now beat it.
+</pre>
+
+Follow his instructions to get the final answer. You can either play them against each other on paper, if you know what strategies they used, or open two instances of the program and play them against each other that way.
+
+<pre>
+Goodwin:   SRRPRPSSRRPRPSSRRPRPSSRRPRPS
+Kowalski:  RRPRPSSRRPRPSSRRPRPSSRRPRPSS
+            +    + +    + +    + +
+            Q    U A    L I    F Y
+           WQOEIVUBAWCMXLFIPOSKFSYDDSV
+</pre>
+
+The answer is QUALIFY.
+
+<br/>
+
+</body>
+</html>
