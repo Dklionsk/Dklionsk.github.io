@@ -1,6 +1,6 @@
 "use strict";
 
-const defaultTaxBill = 20000;
+const defaultTaxBill = 10000;
 var taxBill = 0;
 
 var dollarFormatter = new Intl.NumberFormat('en-US', {
