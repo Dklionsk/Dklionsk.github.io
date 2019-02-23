@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Where Do Your Tax Dollars Actually Go?</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="data/data.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Where Do Your Tax Dollars Actually Go?</h1>
+    <p id="wib-caption">See how your tax dollars might have been spent, based on the 2018 federal budget.<br><a href="#references-section">You can also see where the numbers came from.</a></p>
+    <div id="what-you-paid">
+      <h2>Your tax bill</h2>
+      <p id="wib-caption">Enter how much money you paid in federal taxes for 2017.<br>This number doesn't get stored or sent anywhere.</p>
+      <form id="form">
+        <div class="flex">
+          <span class="currency">$</span>
+          <input id="what-you-paid-input" type="text" maxlength="15">
+        </div>
+      </form>
+    </div>
+    <div id="where-it-went">
+      <h2>Where it went <sup><a class="reference-link" href="#ref1">[1]</a></sup></h2>
+      <div id="where-it-went-table">
+      </div>
+    </div>
+    <div id="what-it-bought">
+      <h2>What it bought</h2>
+      <p id="wib-caption">Your <span id="paid-value">$20000</span> would buy <b>one line item</b> from the list below.</p>
+      <div id="what-it-bought-table">
+      </div>
+    </div>
+    <div id="references-section">
+      <h4>References</h4>
+      <div id="references">
+      </div>
+    </div>
+  </body>
+</html>
