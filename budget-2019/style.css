@@ -32,6 +32,26 @@ a {
     padding: 0px 0px 0px 5px;
 }
 
+.plus {
+    display: inline-block;
+    background-image: url('plus.svg');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    padding: 0px 5px 0px 0px;
+}
+
+.minus {
+    display: inline-block;
+    background-image: url('minus.svg');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    padding: 0px 5px 0px 0px;
+}
+
 .description {
     font-size: 12px;
     width: 70%;

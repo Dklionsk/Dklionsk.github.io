@@ -18,6 +18,11 @@ function buildTree(container, node, depth) {
     var nameCol = $("<div>", {"class": "left-col"});
     row.append(nameCol);
 
+    if (node.children) {
+        var plusButton = $("<div>", {"class": "plus"});
+        nameCol.append(plusButton);
+    }
+
     var nameContainer = $("<span>", {"class": "item-name"});
     nameContainer.html(node.name);
     nameCol.append(nameContainer);
@@ -100,14 +105,11 @@ $(function() {
 
     $(".expandable-item").click(function () {
         var nameSpan = $(this);
+        var plusButton = nameSpan.prev();
+        plusButton.toggleClass('plus');
+        plusButton.toggleClass('minus');
         var content = nameSpan.parent().parent().next();
-        content.slideToggle(500, function () {
-            //execute this after slideToggle is done
-            //change text of header based on visibility of content div
-            //header.text(function () {
-                //return content.is(":visible") ? "Collapse" : "Expand";
-            //});
-        });    
+        content.slideToggle(500);    
     });
 
     $(".info").click(function () {
