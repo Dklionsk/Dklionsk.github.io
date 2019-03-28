@@ -23,8 +23,7 @@ function buildTree(container, node, depth) {
     nameCol.append(nameContainer);
 
     if (node.description) {
-        var infoButton = $("<span>", {"class": "info"});
-        infoButton.html('+');
+        var infoButton = $("<div>", {"class": "info"});
         nameCol.append(infoButton);
     }
 
@@ -37,13 +36,13 @@ function buildTree(container, node, depth) {
     }
 
     if (node.description) {
-        var description = $("<div>", {"class": "description"});
+        var description = $("<div>", {"class": "description expandable"});
         description.html(node.description);
         row.append(description);
     }
     
     if (node.children) {
-        var content = $("<div>", {"class": "content"});
+        var content = $("<div>", {"class": "content expandable"});
         container.append(content);
         for (var child of node.children) {
             buildTree(content, child, depth + 1);
