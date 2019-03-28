@@ -59,7 +59,42 @@ function buildTree(container, node, depth) {
     }
 }
 
+function addSumsToInnerNodes(node) {
+    var sumOfChildren = 0;
+    for (var child of node.children || []) {
+        sumOfChildren += addSumsToInnerNodes(child);
+    }
+    var total = (node.amount || 0) + sumOfChildren;
+    node.amount = total;
+    return total;
+}
+
+function addPercentsToNodes(node, total) {
+    if (node.amount != null) {
+        node.percent = node.amount / total;   
+    }
+    for (var child of node.children || []) {
+        addPercentsToNodes(child, total)
+    }
+}
+
+function sortChildrenByAmount(node) {
+    if (node.children == null) {
+        return;
+    }
+    node.children.sort(function(a, b) {
+        return b.amount - a.amount;
+    });
+    for (var child of node.children) {
+        sortChildrenByAmount(child);
+    }
+}
+
 $(function() {
+
+    var total = addSumsToInnerNodes(budget);
+    addPercentsToNodes(budget, total);
+    sortChildrenByAmount(budget);
 
     function updateAllValues() {
         for (const [divID, tuple] of Object.entries(divsToTotalsAndPercents)) {
