@@ -70,8 +70,8 @@ var budget = {
       "children": [
         {
           "id": "corps-of-engineers%E2%80%94civil",
-          "name": "Corps Of Engineers\u2014Civil",
-          "description": "The following appropriations shall be expended under the direction of the Secretary of the Army and the supervision of the Chief of Engineers for authorized civil functions of the Department of the Army pertaining to river and harbor, flood and storm damage reduction, shore protection, aquatic ecosystem restoration, and related efforts.",
+          "name": "Corps Of Engineers",
+          "description": "The Army Corps of Engineers is an agency under the Department of Defense. Its mission is to deliver vital public and military engineering services, most notably dams, canals, and flood control systems. They also design and construct the nation's military facilities.",
           "children": [
             {
               "id": "investigations",
@@ -132,6 +132,7 @@ var budget = {
         {
           "id": "department-of-the-interior",
           "name": "Department Of The Interior",
+          "description": "The Department of the Interior is responsible for the management and conservation of federal lands and natural resources, as well as programs relating to Native Americans. It also runs the National Park Service and wildlife refuges.",
           "children": [
             {
               "id": "central-utah-project",
@@ -142,7 +143,6 @@ var budget = {
             {
               "id": "bureau-of-reclamation",
               "name": "Bureau Of Reclamation",
-              "description": "The following appropriations shall be expended to execute authorized functions of the Bureau of Reclamation:",
               "children": [
                 {
                   "id": "water-and-related-resources",
