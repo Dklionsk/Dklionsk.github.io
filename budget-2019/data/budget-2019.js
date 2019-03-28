@@ -6790,15 +6790,8 @@ var budget = {
     {
       "id": "interest-on-the-national-debt",
       "name": "Interest on the National Debt",
-      "description": "Explain what debt interest is here.",
-      "children": [
-        {
-          "id": "interest-on-the-national-debt-2",
-          "name": "Interest on the national debt",
-          "description": "Sometimes the federal government wants to spend more money than it takes in through taxes. Some of the extra money comes from people, companies, or other governments lending money to the federal government (e.g. through treasury bonds). The government has to pay back interest on that debt. As of December 31, 2018, the total national debt was $21.97 trillion.",
-          "amount": 363000000000.0
-        }
-      ]
+      "description": "Sometimes the federal government wants to spend more money than it takes in through taxes. Some of the extra money comes from people, companies, or other governments lending money to the federal government (e.g. through treasury bonds). The government has to pay back interest on that debt. As of December 31, 2018, the total national debt was $21.97 trillion.",
+      "amount": 363000000000.0,
     }
   ]
 };
