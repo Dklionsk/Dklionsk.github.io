@@ -42,6 +42,7 @@ function buildTree(container, node, depth) {
     }
     
     if (node.children) {
+        nameContainer.addClass('expandable-item')
         var content = $("<div>", {"class": "content expandable"});
         container.append(content);
         for (var child of node.children) {
@@ -97,7 +98,7 @@ $(function() {
 
     updateTaxBillAndValues();
 
-    $(".item-name").click(function () {
+    $(".expandable-item").click(function () {
         var nameSpan = $(this);
         var content = nameSpan.parent().parent().next();
         content.slideToggle(500, function () {
