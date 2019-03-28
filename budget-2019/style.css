@@ -25,6 +25,8 @@ a {
 .description {
     display: none;
     font-size: 12px;
+    width: 70%;
+    background: red;
 }
 
 .content {
@@ -34,14 +36,15 @@ a {
 
 .left-col {
     display: inline-block;
-    width: 50%;
+    background: green;
+    width: 70%;
 }
 
 .right-col {
     display: inline-block;
     text-align: right;
     vertical-align: top;
-    width: 50%;
+    width: 30%;
 }
 
 .reference-link {

@@ -1,7 +1,7 @@
 var budget = {
   "id": "federal-budget-2019",
-  "name": "Federal Budget 2019",
-  "description": "Something about the budget",
+  "name": "United States Federal Budget, 2019",
+  "description": null,
   "amount": 4499311320514.0,
   "percent": 1.0,
   "children": [
