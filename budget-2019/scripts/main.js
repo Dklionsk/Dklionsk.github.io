@@ -18,14 +18,17 @@ function buildTree(container, node, depth) {
     var nameCol = $("<div>", {"class": "left-col"});
     row.append(nameCol);
 
+    var nameContainer = $("<span>", {"class": "item-name"});
+    nameCol.append(nameContainer);
+
     if (node.children) {
         var plusButton = $("<div>", {"class": "plus"});
-        nameCol.append(plusButton);
+        nameContainer.append(plusButton);
     }
 
-    var nameContainer = $("<span>", {"class": "item-name"});
-    nameContainer.html(node.name);
-    nameCol.append(nameContainer);
+    var nameSpan = $("<span>");
+    nameSpan.html(node.name);
+    nameContainer.append(nameSpan);
 
     if (node.description) {
         var infoButton = $("<div>", {"class": "info"});
@@ -104,12 +107,13 @@ $(function() {
     updateTaxBillAndValues();
 
     $(".expandable-item").click(function () {
-        var nameSpan = $(this);
-        var plusButton = nameSpan.prev();
+        var nameContainer = $(this);
+        var content = nameContainer.parent().parent().next();
+        content.slideToggle(500);
+
+        var plusButton = nameContainer.children().first();
         plusButton.toggleClass('plus');
         plusButton.toggleClass('minus');
-        var content = nameSpan.parent().parent().next();
-        content.slideToggle(500);    
     });
 
     $(".info").click(function () {
