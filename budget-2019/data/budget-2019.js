@@ -167,9 +167,15 @@ var budget = {
                   "name": "Policy And Administration",
                   "description": "For expenses necessary for policy, administration, and related functions in the Office of the Commissioner, the Denver office, and offices in the five regions of the Bureau of Reclamation, to remain available until September 30, 2020.",
                   "amount": 61000000.0
-                }
+                },
+                {
+                  "id": "general-provisions",
+                  "name": "General Provisions",
+                  "description": "For transfer to Reclamation's Upper Colorado River Basin Fund to carry out environmental stewardship and endangered species recovery efforts pursuant to the Grand Canyon Protection Act of 1992 (Public Law 102–575), Public Law 106–392, the Colorado River Basin Project Act (43 U.S.C. 1551(b)), and the Act of April 11, 1956 (commonly known as the “Colorado River Storage Project Act”) (43 U.S.C. 620n).",
+                  "amount": 21400000.0
+                },
               ]
-            }
+            },
           ]
         },
         {
@@ -447,12 +453,6 @@ var budget = {
               "amount": 3600000.0
             }
           ]
-        },
-        {
-          "id": "general-provisions",
-          "name": "General Provisions",
-          "description": "For an additional amount for Department of the Interior\u2014Bureau of Reclamation\u2014Water and Related Resources.",
-          "amount": 21400000.0
         },
         {
           "id": "senate",
