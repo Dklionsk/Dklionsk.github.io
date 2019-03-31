@@ -2795,6 +2795,168 @@ var budget = {
 							]
 						}
 					]
+				},
+				{
+					"id": "department-of-education",
+					"name": "Department Of Education",
+					"children": [
+						{
+							"id": "education-for-the-disadvantaged",
+							"name": "Education For The Disadvantaged",
+							"description": "For carrying out title I and subpart 2 of part B of title II of the Elementary and Secondary Education Act of 1965 (referred to in this Act as ESEA) and section 418A of the Higher Education Act of 1965 (referred to in this Act as HEA).",
+							"amount": 16543790000.0
+						},
+						{
+							"id": "impact-aid",
+							"name": "Impact Aid",
+							"description": "For carrying out programs of financial assistance to federally affected schools authorized by title VII of the ESEA.",
+							"amount": 1446112000.0
+						},
+						{
+							"id": "school-improvement-programs",
+							"name": "School Improvement Programs",
+							"description": "For carrying out school improvement activities authorized by part B of title I, part A of title II, subpart 1 of part A of title IV, part B of title IV, part B of title V, and parts B and C of title VI of the ESEA; the McKinney-Vento Homeless Assistance Act; section 203 of the Educational Technical Assistance Act of 2002; the Compact of Free Association Amendments Act of 2003; and the Civil Rights Act of 1964.",
+							"amount": 5246967000.0
+						},
+						{
+							"id": "indian-education",
+							"name": "Indian Education",
+							"description": "For expenses necessary to carry out, to the extent not otherwise provided, title VI, part A of the ESEA.",
+							"amount": 180239000.0
+						},
+						{
+							"id": "innovation-and-improvement",
+							"name": "Innovation And Improvement",
+							"description": "For carrying out activities authorized by subparts 1, 3 and 4 of part B of title II, and parts C, D, and E and subparts 1 and 4 of part F of title IV of the ESEA.",
+							"amount": 1035556000.0
+						},
+						{
+							"id": "safe-schools-and-citizenship-education",
+							"name": "Safe Schools And Citizenship Education",
+							"description": "For carrying out activities authorized by subparts 2 and 3 of part F of title IV of the ESEA.",
+							"amount": 190754000.0
+						},
+						{
+							"id": "english-language-acquisition",
+							"name": "English Language Acquisition",
+							"description": "For carrying out part A of title III of the ESEA.",
+							"amount": 737400000.0
+						},
+						{
+							"id": "special-education",
+							"name": "Special Education",
+							"description": "For carrying out the Individuals with Disabilities Education Act (IDEA) and the Special Olympics Sport and Empowerment Act of 2004.",
+							"amount": 13468728000.0
+						},
+						{
+							"id": "rehabilitation-services",
+							"name": "Rehabilitation Services",
+							"description": "For carrying out, to the extent not otherwise provided, the Rehabilitation Act of 1973 and the Helen Keller National Center Act.",
+							"amount": 3657189000.0
+						},
+						{
+							"id": "special-institutions-for-persons-with-disabilities",
+							"name": "Special Institutions For Persons With Disabilities",
+							"children": [
+								{
+									"id": "american-printing-house-for-the-blind",
+									"name": "American Printing House For The Blind",
+									"description": "For carrying out the Act to promote the Education of the Blind of March 3, 1879.",
+									"amount": 30431000.0
+								},
+								{
+									"id": "national-technical-institute-for-the-deaf",
+									"name": "National Technical Institute For The Deaf",
+									"description": "For the National Technical Institute for the Deaf under titles I and II of the Education of the Deaf Act of 1986.",
+									"amount": 77500000.0
+								},
+								{
+									"id": "gallaudet-university",
+									"name": "Gallaudet University",
+									"description": "For the Kendall Demonstration Elementary School, the Model Secondary School for the Deaf, and the partial support of Gallaudet University under titles I and II of the Education of the Deaf Act of 1986.",
+									"amount": 134361000.0
+								}
+							]
+						},
+						{
+							"id": "career%2C-technical%2C-and-adult-education",
+							"name": "Career, Technical, And Adult Education",
+							"description": "For carrying out, to the extent not otherwise provided, the Carl D. Perkins Career and Technical Education Act of 2006 and the Adult Education and Family Literacy Act (AEFLA).",
+							"amount": 1925686000.0
+						},
+						{
+							"id": "student-financial-assistance",
+							"name": "Student Financial Assistance",
+							"description": "For carrying out subparts 1, 3, and 10 of part A, and part C of title IV of the HEA.",
+							"amount": 24445352000.0
+						},
+						{
+							"id": "student-aid-administration",
+							"name": "Student Aid Administration",
+							"description": "For Federal administrative expenses to carry out part D of title I, and subparts 1, 3, 9, and 10 of part A, and parts B, C, D, and E of title IV of the HEA, and subpart 1 of part A of title VII of the Public Health Service Act.",
+							"amount": 1678943000.0
+						},
+						{
+							"id": "higher-education",
+							"name": "Higher Education",
+							"description": "For carrying out, to the extent not otherwise provided, titles II, III, IV, V, VI, and VII of the HEA, the Mutual Educational and Cultural Exchange Act of 1961, and section 117 of the Carl D. Perkins Career and Technical Education Act of 2006.",
+							"amount": 2312356000.0
+						},
+						{
+							"id": "howard-university",
+							"name": "Howard University",
+							"description": "For partial support of Howard University.",
+							"amount": 236518000.0
+						},
+						{
+							"id": "college-housing-and-academic-facilities-loans-program",
+							"name": "College Housing And Academic Facilities Loans Program",
+							"description": "For Federal administrative expenses to carry out activities related to existing facility loans pursuant to section 121 of the HEA.",
+							"amount": 435000.0
+						},
+						{
+							"id": "historically-black-college-financing-program-account",
+							"name": "Historically Black College And University Capital Financing Program Account",
+							"description": "For the cost of guaranteed loans as authorized pursuant to part D of title III of the HEA",
+							"amount": 20150000.0
+						},
+						{
+							"id": "institute-of-education-sciences",
+							"name": "Institute Of Education Sciences",
+							"description": "For carrying out activities authorized by the Education Sciences Reform Act of 2002, the National Assessment of Educational Progress Authorization Act, section 208 of the Educational Technical Assistance Act of 2002, and section 664 of the Individuals with Disabilities Education Act.",
+							"amount": 615462000.0
+						},
+						{
+							"id": "federal-direct-student-load-program-doe",
+							"name": "Federal Direct Student Loan Program Account",
+							"description": "For the cost, as defined under section 502 of the Congressional Budget Act of 1974, of the Secretary of Education providing loan cancellation in the same manner as under section 455(m) of the Higher Education Act of 1965 (20 U.S.C. 1087e(m)).",
+							"amount": 350000000.0
+						},
+						{
+							"id": "departmental-management-2",
+							"name": "Departmental Management",
+							"children": [
+								{
+									"id": "program-administration-2",
+									"name": "Program Administration",
+									"description": "For carrying out, to the extent not otherwise provided, the Department of Education Organization Act, including rental of conference rooms in the District of Columbia and hire of three passenger motor vehicles.",
+									"amount": 430000000.0
+								},
+								{
+									"id": "office-for-civil-rights-2",
+									"name": "Office For Civil Rights",
+									"description": "For expenses necessary for the Office for Civil Rights, as authorized by section 203 of the Department of Education Organization Act.",
+									"amount": 125000000.0
+								},
+								{
+									"id": "office-of-inspector-general-5",
+									"name": "Office Of Inspector General",
+									"description": "For expenses necessary for the Office of Inspector General, as authorized by section 212 of the Department of Education Organization Act.",
+									"amount": 61143000.0
+								}
+							]
+						}
+					]
 				}
 			],
 		},
