@@ -2339,6 +2339,462 @@ var budget = {
 							]
 						}
 					]
+				},
+				{
+					"id": "department-of-health-and-human-services",
+					"name": "Department Of Health And Human Services",
+					"children": [
+						{
+							"id": "health-resources-and-services-administration",
+							"name": "Health Resources And Services Administration",
+							"children": [
+								{
+									"id": "primary-health-care",
+									"name": "Primary Health Care",
+									"description": "For carrying out titles II and III of the Public Health Service Act (referred to in this Act as the PHS Act) with respect to primary health care and the Native Hawaiian Health Care Act of 1988.",
+									"amount": 1626522000.0
+								},
+								{
+									"id": "health-workforce",
+									"name": "Health Workforce",
+									"description": "For carrying out titles III, VII, and VIII of the PHS Act with respect to the health workforce, sections 1128E and 1921 of the Social Security Act, and the Health Care Quality Improvement Act of 1986.",
+									"amount": 1096695000.0
+								},
+								{
+									"id": "maternal-and-child-health",
+									"name": "Maternal And Child Health",
+									"description": "For carrying out titles III, XI, XII, and XIX of the PHS Act with respect to maternal and child health, title V of the Social Security Act, and section 712 of the American Jobs Creation Act of 2004.",
+									"amount": 926789000.0
+								},
+								{
+									"id": "ryan-white-hiv%2Faids-program",
+									"name": "Ryan White HIV/AIDS Program",
+									"description": "For carrying out title XXVI of the PHS Act with respect to the Ryan White HIV/AIDS program.",
+									"amount": 2318781000.0
+								},
+								{
+									"id": "health-care-systems",
+									"name": "Health Care Systems",
+									"description": "For carrying out titles III and XII of the PHS Act with respect to health care systems, and the Stem Cell Therapeutic and Research Act of 2005.",
+									"amount": 115193000.0
+								},
+								{
+									"id": "rural-health",
+									"name": "Rural Health",
+									"description": "For carrying out titles III and IV of the PHS Act with respect to rural health, section 427(a) of the Federal Coal Mine Health and Safety Act of 1969, and sections 711 and 1820 of the Social Security Act.",
+									"amount": 317794000.0
+								},
+								{
+									"id": "family-planning",
+									"name": "Family Planning",
+									"description": "For carrying out the program under title X of the PHS Act to provide for voluntary family planning projects.",
+									"amount": 286479000.0
+								},
+								{
+									"id": "program-management",
+									"name": "Program Management",
+									"description": "For program support in the Health Resources and Services Administration.",
+									"amount": 155250000.0
+								}
+							]
+						},
+						{
+							"id": "centers-for-disease-control-and-prevention",
+							"name": "Centers For Disease Control And Prevention",
+							"children": [
+								{
+									"id": "immunization-and-respiratory-diseases",
+									"name": "Immunization And Respiratory Diseases",
+									"description": "For carrying out titles II, III, XVII, and XXI, and section 2821 of the PHS Act, titles II and IV of the Immigration and Nationality Act, and section 501 of the Refugee Education Assistance Act, with respect to immunization and respiratory diseases.",
+									"amount": 477855000.0
+								},
+								{
+									"id": "hiv%2Faids%2C-viral-hepatitis%2C-sexually-transmitted-diseases%2C-and-tuberculosis-prevention",
+									"name": "Hiv/Aids, Viral Hepatitis, Sexually Transmitted Diseases, And Tuberculosis Prevention",
+									"description": "For carrying out titles II, III, XVII, and XXIII of the PHS Act with respect to HIV/AIDS, viral hepatitis, sexually transmitted diseases, and tuberculosis prevention.",
+									"amount": 1132278000.0
+								},
+								{
+									"id": "emerging-and-zoonotic-infectious-diseases",
+									"name": "Emerging And Zoonotic Infectious Diseases",
+									"description": "For carrying out titles II, III, and XVII, and section 2821 of the PHS Act, titles II and IV of the Immigration and Nationality Act, and section 501 of the Refugee Education Assistance Act, with respect to emerging and zoonotic infectious diseases.",
+									"amount": 568372000.0
+								},
+								{
+									"id": "chronic-disease-prevention-and-health-promotion",
+									"name": "Chronic Disease Prevention And Health Promotion",
+									"description": "For carrying out titles II, III, XI, XV, XVII, and XIX of the PHS Act with respect to chronic disease prevention and health promotion.",
+									"amount": 932821000.0
+								},
+								{
+									"id": "birth-defects%2C-developmental-disabilities%2C-disabilities-and-health",
+									"name": "Birth Defects, Developmental Disabilities, Disabilities And Health",
+									"description": "For carrying out titles II, III, XI, and XVII of the PHS Act with respect to birth defects, developmental disabilities, disabilities and health.",
+									"amount": 155560000.0
+								},
+								{
+									"id": "public-health-scientific-services",
+									"name": "Public Health Scientific Services",
+									"description": "For carrying out titles II, III, and XVII of the PHS Act with respect to health statistics, surveillance, health informatics, and workforce development.",
+									"amount": 496397000.0
+								},
+								{
+									"id": "environmental-health",
+									"name": "Environmental Health",
+									"description": "For carrying out titles II, III, and XVII of the PHS Act with respect to environmental health.",
+									"amount": 192350000.0
+								},
+								{
+									"id": "injury-prevention-and-control",
+									"name": "Injury Prevention And Control",
+									"description": "For carrying out titles II, III, and XVII of the PHS Act with respect to injury prevention and control.",
+									"amount": 648559000.0
+								},
+								{
+									"id": "national-institute-for-occupational-safety-and-health",
+									"name": "National Institute For Occupational Safety And Health",
+									"description": "For carrying out titles II, III, and XVII of the PHS Act, sections 101, 102, 103, 201, 202, 203, 301, and 501 of the Federal Mine Safety and Health Act, section 13 of the Mine Improvement and New Emergency Response Act, and sections 20, 21, and 22 of the Occupational Safety and Health Act, with respect to occupational safety and health.",
+									"amount": 336300000.0
+								},
+								{
+									"id": "energy-employees-occupational-illness-compensation-program",
+									"name": "Energy Employees Occupational Illness Compensation Program ",
+									"description": "For necessary expenses to administer the Energy Employees Occupational Illness Compensation Program Act.",
+									"amount": 55358000.0
+								},
+								{
+									"id": "global-health",
+									"name": "Global Health",
+									"description": "For carrying out titles II, III, and XVII of the PHS Act with respect to global health.",
+									"amount": 488621000.0
+								},
+								{
+									"id": "public-health-preparedness-and-response",
+									"name": "Public Health Preparedness And Response",
+									"description": "For carrying out titles II, III, and XVII of the PHS Act with respect to public health preparedness and response, and for expenses necessary to support activities related to countering potential biological, nuclear, radiological, and chemical threats to civilian populations.",
+									"amount": 1465200000.0
+								},
+								{
+									"id": "buildings-and-facilities",
+									"name": "Buildings And Facilities",
+									"description": "For acquisition of real property, equipment, construction, demolition, and renovation of facilities.",
+									"amount": 30000000.0
+								},
+								{
+									"id": "cdc-wide-activities-and-program-support",
+									"name": "Cdc-Wide Activities And Program Support",
+									"description": "For carrying out titles II, III, XVII and XIX, and section 2821 of the PHS Act and for cross-cutting activities and program support for activities funded in other appropriations included in this Act for the Centers for Disease Control and Prevention.",
+									"amount": 163570000.0
+								}
+							]
+						},
+						{
+							"id": "national-institutes-of-health",
+							"name": "National Institutes Of Health",
+							"children": [
+								{
+									"id": "national-cancer-institute",
+									"name": "National Cancer Institute",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to cancer.",
+									"amount": 5743892000.0
+								},
+								{
+									"id": "national-heart%2C-lung%2C-and-blood-institute",
+									"name": "National Heart, Lung, And Blood Institute",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to cardiovascular, lung, and blood diseases, and blood and blood products.",
+									"amount": 3488335000.0
+								},
+								{
+									"id": "national-institute-of-dental-and-craniofacial-research",
+									"name": "National Institute Of Dental And Craniofacial Research",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to dental and craniofacial diseases.",
+									"amount": 461781000.0
+								},
+								{
+									"id": "national-institute-of-diabetes-and-digestive-and-kidney-diseases",
+									"name": "National Institute Of Diabetes And Digestive And Kidney Diseases",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to diabetes and digestive and kidney disease.",
+									"amount": 2029823000.0
+								},
+								{
+									"id": "national-institute-of-neurological-disorders-and-stroke",
+									"name": "National Institute Of Neurological Disorders And Stroke",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to neurological disorders and stroke.",
+									"amount": 2216913000.0
+								},
+								{
+									"id": "national-institute-of-allergy-and-infectious-diseases",
+									"name": "National Institute Of Allergy And Infectious Diseases",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to allergy and infectious diseases.",
+									"amount": 5523324000.0
+								},
+								{
+									"id": "national-institute-of-general-medical-sciences",
+									"name": "National Institute Of General Medical Sciences",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to general medical sciences.",
+									"amount": 2872780000.0
+								},
+								{
+									"id": "eunice-kennedy-shriver-national-institute-of-child-health-and-human-development",
+									"name": "Eunice Kennedy Shriver National Institute Of Child Health And Human Development",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to child health and human development.",
+									"amount": 1506458000.0
+								},
+								{
+									"id": "national-eye-institute",
+									"name": "National Eye Institute",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to eye diseases and visual disorders.",
+									"amount": 796536000.0
+								},
+								{
+									"id": "national-institute-of-environmental-health-sciences",
+									"name": "National Institute Of Environmental Health Sciences",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to environmental health sciences.",
+									"amount": 774707000.0
+								},
+								{
+									"id": "national-institute-on-aging",
+									"name": "National Institute On Aging",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to aging.",
+									"amount": 3083410000.0
+								},
+								{
+									"id": "national-institute-of-arthritis-and-musculoskeletal-and-skin-diseases",
+									"name": "National Institute Of Arthritis And Musculoskeletal And Skin Diseases",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to arthritis and musculoskeletal and skin diseases.",
+									"amount": 605065000.0
+								},
+								{
+									"id": "national-institute-on-deafness-and-other-communication-disorders",
+									"name": "National Institute On Deafness And Other Communication Disorders",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to deafness and other communication disorders.",
+									"amount": 474404000.0
+								},
+								{
+									"id": "national-institute-of-nursing-research",
+									"name": "National Institute Of Nursing Research",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to nursing research.",
+									"amount": 162992000.0
+								},
+								{
+									"id": "national-institute-on-alcohol-abuse-and-alcoholism",
+									"name": "National Institute On Alcohol Abuse And Alcoholism",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to alcohol abuse and alcoholism.",
+									"amount": 525591000.0
+								},
+								{
+									"id": "national-institute-on-drug-abuse",
+									"name": "National Institute On Drug Abuse",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to drug abuse.",
+									"amount": 1419844000.0
+								},
+								{
+									"id": "national-institute-of-mental-health",
+									"name": "National Institute Of Mental Health",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to mental health.",
+									"amount": 1812796000.0
+								},
+								{
+									"id": "national-human-genome-research-institute",
+									"name": "National Human Genome Research Institute",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to human genome research.",
+									"amount": 575579000.0
+								},
+								{
+									"id": "national-institute-of-biomedical-imaging-and-bioengineering",
+									"name": "National Institute Of Biomedical Imaging And Bioengineering",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to biomedical imaging and bioengineering research.",
+									"amount": 389464000.0
+								},
+								{
+									"id": "national-center-for-complementary-and-integrative-health",
+									"name": "National Center For Complementary And Integrative Health",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to complementary and integrative health.",
+									"amount": 146473000.0
+								},
+								{
+									"id": "national-institute-on-minority-health-and-health-disparities",
+									"name": "National Institute On Minority Health And Health Disparities",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to minority health and health disparities research.",
+									"amount": 314679000.0
+								},
+								{
+									"id": "john-e.-fogarty-international-center",
+									"name": "John E. Fogarty International Center",
+									"description": "For carrying out the activities of the John E. Fogarty International Center (described in subpart 2 of part E of title IV of the PHS Act).",
+									"amount": 78109000.0
+								},
+								{
+									"id": "national-library-of-medicine",
+									"name": "National Library Of Medicine",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to health information communications.",
+									"amount": 441997000.0
+								},
+								{
+									"id": "national-center-for-advancing-translational-sciences",
+									"name": "National Center For Advancing Translational Sciences",
+									"description": "For carrying out section 301 and title IV of the PHS Act with respect to translational sciences.",
+									"amount": 806373000.0
+								},
+								{
+									"id": "office-of-the-director",
+									"name": "Office Of The Director",
+									"description": "For carrying out the responsibilities of the Office of the Director, NIH.",
+									"amount": 1909075000.0
+								},
+								{
+									"id": "buildings-and-facilities-2",
+									"name": "Buildings And Facilities",
+									"description": "For the study of, construction of, demolition of, renovation of, and acquisition of equipment for, facilities of or used by NIH, including the acquisition of real property.",
+									"amount": 200000000.0
+								},
+								{
+									"id": "nih-innovation-account%2C-cures-act",
+									"name": "NIH Innovation Account, Cures Act",
+									"description": "For necessary expenses to carry out the purposes described in section 1001(b)(4) of the 21st Century Cures Act, in addition to amounts available for such purposes in the appropriations provided to the NIH in this Act.",
+									"amount": 711000000.0
+								}
+							]
+						},
+						{
+							"id": "substance-abuse-and-mental-health-services-administration",
+							"name": "Substance Abuse And Mental Health Services Administration",
+							"children": [
+								{
+									"id": "mental-health",
+									"name": "Mental Health ",
+									"description": "For carrying out titles III, V, and XIX of the PHS Act with respect to mental health, and the Protection and Advocacy for Individuals with Mental Illness Act.",
+									"amount": 1524974000.0
+								},
+								{
+									"id": "substance-abuse-treatment",
+									"name": " Substance Abuse Treatment",
+									"description": "For carrying out titles III and V of the PHS Act with respect to substance abuse treatment and title XIX of such Act with respect to substance abuse treatment and prevention.",
+									"amount": 3737556000.0
+								},
+								{
+									"id": "substance-abuse-prevention",
+									"name": " Substance Abuse Prevention",
+									"description": "For carrying out titles III and V of the PHS Act with respect to substance abuse prevention.",
+									"amount": 205469000.0
+								},
+								{
+									"id": "health-surveillance-and-program-support",
+									"name": "Health Surveillance And Program Support",
+									"description": "For program support and cross-cutting activities that supplement activities funded under the headings Mental Health, Substance Abuse Treatment, and Substance Abuse Prevention in carrying out titles III, V, and XIX of the PHS Act and the Protection and Advocacy for Individuals with Mental Illness Act in the Substance Abuse and Mental Health Services Administration.",
+									"amount": 128830000.0
+								}
+							]
+						},
+						{
+							"id": "agency-for-healthcare-research-and-quality",
+							"name": "Agency For Healthcare Research And Quality",
+							"description": "For carrying out titles III and IX of the PHS Act, part A of title XI of the Social Security Act, and section 1013 of the Medicare Prescription Drug, Improvement, and Modernization Act of 2003.",
+							"amount": 338000000.0
+						},
+						{
+							"id": "administration-for-children-and-families",
+							"name": "Administration For Children And Families",
+							"children": [
+								{
+									"id": "payments-to-states-for-child-support-enforcement-and-family-support-programs",
+									"name": "Payments To States For Child Support Enforcement And Family Support Programs",
+									"description": "For carrying out, except as otherwise provided, titles I, IV\u2013D, X, XI, XIV, and XVI of the Social Security Act and the Act of July 5, 1960.",
+									"amount": 2922247000.0
+								},
+								{
+									"id": "low-income-home-energy-assistance",
+									"name": "Low Income Home Energy Assistance",
+									"description": "For making payments under subsections (b) and (d) of section 2602 of the Low Income Home Energy Assistance Act of 1981.",
+									"amount": 3690304000.0
+								},
+								{
+									"id": "refugee-and-entrant-assistance",
+									"name": "Refugee And Entrant Assistance",
+									"description": "For necessary expenses for refugee and entrant assistance activities authorized by section 414 of the Immigration and Nationality Act and section 501 of the Refugee Education Assistance Act of 1980, and for carrying out section 462 of the Homeland Security Act of 2002, section 235 of the William Wilberforce Trafficking Victims Protection Reauthorization Act of 2008, the Trafficking Victims Protection Act of 2000 (TVPA), and the Torture Victims Relief Act of 1998.",
+									"amount": 1905201000.0
+								},
+								{
+									"id": "payments-to-states-for-the-child-care-and-development-block-grant",
+									"name": "Payments To States For The Child Care And Development Block Grant",
+									"description": "For carrying out the Child Care and Development Block Grant Act of 1990 (CCDBG Act).",
+									"amount": 5276000000.0
+								},
+								{
+									"id": "social-services-block-grant",
+									"name": "Social Services Block Grant",
+									"description": "For making grants to States pursuant to section 2002 of the Social Security Act.",
+									"amount": 1700000000.0
+								},
+								{
+									"id": "children-and-families-services-programs",
+									"name": "Children And Families Services Programs",
+									"description": "For carrying out, except as otherwise provided, the Runaway and Homeless Youth Act, the Head Start Act, the Every Student Succeeds Act, the Child Abuse Prevention and Treatment Act, sections 303 and 313 of the Family Violence Prevention and Services Act, the Native American Programs Act of 1974, title II of the Child Abuse Prevention and Treatment and Adoption Reform Act of 1978 (adoption opportunities), part B\u20131 of title IV and sections 429, 473A, 477(i), 1110, 1114A, and 1115 of the Social Security Act, and the Community Services Block Grant Act (CSBG Act); and for necessary administrative expenses to carry out titles I, IV, V, X, XI, XIV, XVI, and XX\u2013A of the Social Security Act, the Act of July 5, 1960, the Low-Income Home Energy Assistance Act of 1981, the Child Care and Development Block Grant Act of 1990, the Assets for Independence Act, title IV of the Immigration and Nationality Act, and section 501 of the Refugee Education Assistance Act of 1980.",
+									"amount": 12239225000.0
+								},
+								{
+									"id": "promoting-safe-and-stable-families",
+									"name": "Promoting Safe And Stable Families",
+									"description": "For carrying out, except as otherwise provided, section 436 of the Social Security Act.",
+									"amount": 345000000.0
+								},
+								{
+									"id": "payments-for-foster-care-and-permanency",
+									"name": "Payments For Foster Care And Permanency",
+									"description": "For carrying out, except as otherwise provided, title IV\u2013E of the Social Security Act.",
+									"amount": 6035000000.0
+								}
+							]
+						},
+						{
+							"id": "administration-for-community-living",
+							"name": "Administration For Community Living",
+							"description": "For carrying out, to the extent not otherwise provided, the Older Americans Act of 1965 (OAA), the RAISE Family Caregivers Act, the Supporting Grandparents Raising Grandchildren Act, titles III and XXIX of the PHS Act, sections 1252 and 1253 of the PHS Act, section 119 of the Medicare Improvements for Patients and Providers Act of 2008, title XX\u2013B of the Social Security Act, the Developmental Disabilities Assistance and Bill of Rights Act, parts 2 and 5 of subtitle D of title II of the Help America Vote Act of 2002, the Assistive Technology Act of 1998, titles II and VII (and section 14 with respect to such titles) of the Rehabilitation Act of 1973, and for Department-wide coordination of policy and program activities that assist individuals with disabilities.",
+							"amount": 2120200000.0
+						},
+						{
+							"id": "office-of-the-secretary-2",
+							"name": "Office Of The Secretary",
+							"children": [
+								{
+									"id": "general-departmental-management",
+									"name": "General Departmental Management",
+									"description": "For necessary expenses, not otherwise provided, for general departmental management, including hire of six passenger motor vehicles, and for carrying out titles III, XVII, XXI, and section 229 of the PHS Act, the United States-Mexico Border Health Commission Act, and research studies under section 1110 of the Social Security Act.",
+									"amount": 480629000.0
+								},
+								{
+									"id": "office-of-medicare-hearings-and-appeals",
+									"name": "Office Of Medicare Hearings And Appeals",
+									"description": "For expenses necessary for the Office of Medicare Hearings and Appeals.",
+									"amount": 182381000.0
+								},
+								{
+									"id": "office-of-the-national-coordinator-for-health-information-technology",
+									"name": "Office Of The National Coordinator For Health Information Technology",
+									"description": "For expenses necessary for the Office of the National Coordinator for Health Information Technology, including grants, contracts, and cooperative agreements for the development and advancement of interoperable health information technology.",
+									"amount": 60367000.0
+								},
+								{
+									"id": "office-of-inspector-general-4",
+									"name": "Office Of Inspector General",
+									"description": "For expenses necessary for the Office of Inspector General, including the hire of passenger motor vehicles for investigations, in carrying out the provisions of the Inspector General Act of 1978.",
+									"amount": 80000000.0
+								},
+								{
+									"id": "office-for-civil-rights",
+									"name": "Office For Civil Rights",
+									"description": "For expenses necessary for the Office for Civil Rights.",
+									"amount": 38798000.0
+								},
+								{
+									"id": "public-health-and-social-services-emergency-fund",
+									"name": "Public Health And Social Services Emergency Fund",
+									"description": "For an additional amount for expenses necessary to prepare for or respond to an influenza pandemic.",
+									"amount": 260000000.0
+								}
+							]
+						}
+					]
 				}
 			],
 		},
