@@ -2189,6 +2189,156 @@ var budget = {
 							"amount": 2000000000.0
 						}
 					]
+				},
+				{
+					"id": "department-of-labor",
+					"name": "Department Of Labor",
+					"children": [
+						{
+							"id": "employment-and-training-administration",
+							"name": "Employment And Training Administration",
+							"children": [
+								{
+									"id": "training-and-employment-services",
+									"name": "Training And Employment Services",
+									"description": "For necessary expenses of the Workforce Innovation and Opportunity Act (referred to in this Act as WIOA), the Second Chance Act of 2007, and the National Apprenticeship Act.",
+									"amount": 3502700000.0
+								},
+								{
+									"id": "dol-job-corps",
+									"name": "Job Corps",
+									"description": "To carry out subtitle C of title I of the WIOA, including Federal administrative expenses, the purchase and hire of passenger motor vehicles, the construction, alteration, and repairs of buildings and other facilities, and the purchase of real property for training centers as authorized by the WIOA.",
+									"amount": 1718655000.0
+								},
+								{
+									"id": "dol-community-service-older-americans",
+									"name": "Community Service Employment for Older Americans",
+									"description": "To carry out title V of the Older Americans Act of 1965 (referred to in this Act as \"OAA\").",
+									"amount": 400000000.0
+								},
+								{
+									"id": "federal-unemployment-benefits-and-allowances",
+									"name": "Federal Unemployment Benefits And Allowances",
+									"description": "For payments during fiscal year 2019 of trade adjustment benefit payments and allowances under part I of subchapter B of chapter 2 of title II of the Trade Act of 1974, and section 246 of that Act; and for training, employment and case management services, allowances for job search and relocation, and related State administrative expenses under part II of subchapter B of chapter 2 of title II of the Trade Act of 1974, and including benefit payments, allowances, training, employment and case management services, and related State administration provided pursuant to section 231(a) of the Trade Adjustment Assistance Extension Act of 2011 and section 405(a) of the Trade Preferences Extension Act of 2015.",
+									"amount": 790000000.0
+								},
+								{
+									"id": "state-unemployment-insurance-and-employment-service-operations",
+									"name": "State Unemployment Insurance And Employment Service Operations",
+									"description": "For authorized administrative expenses, together with not to exceed $3,251,583,000 which may be expended from the Employment Security Administration Account in the Unemployment Trust Fund.",
+									"amount": 84066000.0
+								},
+								{
+									"id": "program-administration",
+									"name": "Program Administration",
+									"description": "For expenses of administering employment and training programs.",
+									"amount": 108674000.0
+								}
+							]
+						},
+						{
+							"id": "employee-benefits-security-administration",
+							"name": "Employee Benefits Security Administration",
+							"description": "For necessary expenses for the Employee Benefits Security Administration.",
+							"amount": 181000000.0
+						},
+						{
+							"id": "wage-and-hour-division",
+							"name": "Wage And Hour Division",
+							"description": "For necessary expenses for the Wage and Hour Division, including reimbursement to State, Federal, and local agencies and their employees for inspection services rendered.",
+							"amount": 229000000.0
+						},
+						{
+							"id": "office-of-labor-management-standards",
+							"name": "Office Of Labor-Management Standards",
+							"description": "For necessary expenses for the Office of Labor-Management Standards.",
+							"amount": 41187000.0
+						},
+						{
+							"id": "office-of-federal-contract-compliance-programs",
+							"name": "Office Of Federal Contract Compliance Programs",
+							"description": "For necessary expenses for the Office of Federal Contract Compliance Programs.",
+							"amount": 103476000.0
+						},
+						{
+							"id": "office-of-workers%27-compensation-programs",
+							"name": "Office Of Workers' Compensation Programs",
+							"children": [
+								{
+									"id": "salaries-and-expenses-5",
+									"name": "Salaries And Expenses",
+									"description": "For necessary expenses for the Office of Workers' Compensation Programs.",
+									"amount": 115424000.0
+								},
+								{
+									"id": "special-benefits-dol",
+									"name": "Special Benefits",
+									"description": "For the payment of compensation, benefits, and expenses (except administrative expenses) accruing during the current or any prior fiscal year authorized by 5 U.S.C. 81; continuation of benefits as provided for under the heading “Civilian War Benefits” in the Federal Security Agency Appropriation Act, 1947; the Employees' Compensation Commission Appropriation Act, 1944; section 5(f) of the War Claims Act (50 U.S.C. App. 2012); obligations incurred under the War Hazards Compensation Act (42 U.S.C. 1701 et seq.); and 50 percent of the additional compensation and benefits required by section 10(h) of the Longshore and Harbor Workers' Compensation Act.",
+									"amount": 230000000.0
+								},
+								{
+									"id": "special-benefits-for-disabled-coal-miners",
+									"name": "Special Benefits For Disabled Coal Miners",
+									"description": "For carrying out title IV of the Federal Mine Safety and Health Act of 1977, as amended by Public Law 107\u2013275.",
+									"amount": 10319000.0
+								},
+								{
+									"id": "administrative-expenses%2C-energy-employees-occupational-illness-compensation-fund",
+									"name": "Administrative Expenses, Energy Employees Occupational Illness Compensation Fund",
+									"description": "For necessary expenses to administer the Energy Employees Occupational Illness Compensation Program Act.",
+									"amount": 59098000.0
+								}
+							]
+						},
+						{
+							"id": "occupational-safety-and-health-administration",
+							"name": "Occupational Safety And Health Administration",
+							"description": "For necessary expenses for the Occupational Safety and Health Administration.",
+							"amount": 557787000.0
+						},
+						{
+							"id": "mine-safety-and-health-administration",
+							"name": "Mine Safety And Health Administration",
+							"description": "For necessary expenses for the Mine Safety and Health Administration.",
+							"amount": 373816000.0
+						},
+						{
+							"id": "bureau-of-labor-statistics",
+							"name": "Bureau Of Labor Statistics",
+							"description": "For necessary expenses for the Bureau of Labor Statistics, including advances or reimbursements to State, Federal, and local agencies and their employees for services rendered.",
+							"amount": 550000000.0
+						},
+						{
+							"id": "office-of-disability-employment-policy",
+							"name": "Office Of Disability Employment Policy",
+							"description": "For necessary expenses for the Office of Disability Employment Policy to provide leadership, develop policy and initiatives, and award grants furthering the objective of eliminating barriers to the training and employment of people with disabilities.",
+							"amount": 38203000.0
+						},
+						{
+							"id": "departmental-management",
+							"name": "Departmental Management",
+							"children": [
+								{
+									"id": "salaries-and-expenses-6",
+									"name": "Salaries And Expenses",
+									"description": "For necessary expenses for Departmental Management, including the hire of three passenger motor vehicles.",
+									"amount": 337756000.0
+								},
+								{
+									"id": "it-modernization",
+									"name": "It Modernization",
+									"description": "For necessary expenses for Department of Labor centralized infrastructure technology investment activities related to support systems and modernization.",
+									"amount": 23269000.0
+								},
+								{
+									"id": "office-of-inspector-general-3",
+									"name": "Office Of Inspector General",
+									"description": "For salaries and expenses of the Office of Inspector General in carrying out the provisions of the Inspector General Act of 1978.",
+									"amount": 83487000.0
+								}
+							]
+						}
+					]
 				}
 			],
 		},
