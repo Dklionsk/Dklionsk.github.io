@@ -334,6 +334,12 @@ var budget = {
 					"description": "Independent agencies are smaller agencies whose heads are not appointed by the President.",
 					"children": [
 						{
+							"id": "committee-for-purchase-from-people-who-are-blind-or-severely-disabled",
+							"name": "Committee For Purchase From People Who Are Blind Or Severely Disabled",
+							"description": "For expenses necessary for the Committee for Purchase From People Who Are Blind or Severely Disabled (referred to in this title as the Committee) established under section 8502 of title 41, United States Code.",
+							"amount": 8250000.0
+						},
+						{
 							"id": "appalachian-regional-commission",
 							"name": "Appalachian Regional Commission",
 							"description": "For expenses necessary to carry out the programs authorized by the Appalachian Regional Development Act of 1965, and for expenses necessary for the Federal Co-Chairman and the Alternate on the Appalachian Regional Commission, for payment of the Federal share of the administrative expenses of the Commission, including services as authorized by 5 U.S.C. 3109, and hire of passenger motor vehicles.",
@@ -416,6 +422,138 @@ var budget = {
 							"name": "Intelligence Community Management Account",
 							"description": "For necessary expenses of the Intelligence Community Management Account.",
 							"amount": 522424000.0
+						},
+						{
+							"id": "corporation-for-national-and-community-service",
+							"name": "Corporation For National And Community Service",
+							"children": [
+								{
+									"id": "operating-expenses",
+									"name": "Operating Expenses",
+									"description": "For necessary expenses for the Corporation for National and Community Service (referred to in this title as CNCS) to carry out the Domestic Volunteer Service Act of 1973 (referred to in this title as 1973 Act) and the National and Community Service Act of 1990 (referred to in this title as 1990 Act).",
+									"amount": 786629000.0
+								},
+								{
+									"id": "payment-to-the-national-service-trust",
+									"name": "Payment To The National Service Trust",
+									"description": "For payment to the National Service Trust established under subtitle D of title I of the 1990 Act.",
+									"amount": 206842000.0
+								},
+								{
+									"id": "salaries-and-expenses-7",
+									"name": "Salaries And Expenses",
+									"description": "For necessary expenses of administration as provided under section 501(a)(5) of the 1990 Act and under section 504(a) of the 1973 Act, including payment of salaries, authorized travel, hire of passenger motor vehicles, the rental of conference rooms in the District of Columbia, the employment of experts and consultants authorized under 5 U.S.C. 3109, and not to exceed $2,500 for official reception and representation expenses.",
+									"amount": 83737000.0
+								},
+								{
+									"id": "office-of-inspector-general-6",
+									"name": "Office Of Inspector General",
+									"description": "For necessary expenses of the Office of Inspector General in carrying out the Inspector General Act of 1978.",
+									"amount": 5750000.0
+								}
+							]
+						},
+						{
+							"id": "corporation-for-public-broadcasting",
+							"name": "Corporation For Public Broadcasting",
+							"description": "For payment to the Corporation for Public Broadcasting (CPB), as authorized by the Communications Act of 1934, an amount which shall be available within limitations specified by that Act, for the fiscal year 2021.",
+							"amount": 445000000.0
+						},
+						{
+							"id": "federal-mediation-and-conciliation-service",
+							"name": "Federal Mediation And Conciliation Service",
+							"description": "For expenses necessary for the Federal Mediation and Conciliation Service (Service) to carry out the functions vested in it by the Labor-Management Relations Act, 1947, including hire of passenger motor vehicles; for expenses necessary for the Labor-Management Cooperation Act of 1978; and for expenses necessary for the Service to carry out the functions vested in it by the Civil Service Reform Act.",
+							"amount": 46650000.0
+						},
+						{
+							"id": "federal-mine-safety-and-health-review-commission",
+							"name": "Federal Mine Safety And Health Review Commission",
+							"description": "For expenses necessary for the Federal Mine Safety and Health Review Commission.",
+							"amount": 17184000.0
+						},
+						{
+							"id": "institute-of-museum-and-library-services",
+							"name": "Institute Of Museum And Library Services",
+							"description": "For carrying out the Museum and Library Services Act of 1996 and the National Museum of African American History and Culture Act.",
+							"amount": 242000000.0
+						},
+						{
+							"id": "medicaid-and-chip-payment-and-access-commission",
+							"name": "Medicaid And Chip Payment And Access Commission",
+							"description": "For expenses necessary to carry out section 1900 of the Social Security Act.",
+							"amount": 8480000.0
+						},
+						{
+							"id": "medicare-payment-advisory-commission",
+							"name": "Medicare Payment Advisory Commission",
+							"description": "For expenses necessary to carry out section 1805 of the Social Security Act.",
+							"amount": 12545000.0
+						},
+						{
+							"id": "national-council-on-disability",
+							"name": "National Council On Disability",
+							"description": "For expenses necessary for the National Council on Disability as authorized by title IV of the Rehabilitation Act of 1973.",
+							"amount": 3250000.0
+						},
+						{
+							"id": "national-labor-relations-board",
+							"name": "National Labor Relations Board",
+							"description": "For expenses necessary for the National Labor Relations Board to carry out the functions vested in it by the Labor-Management Relations Act, 1947, and other laws.",
+							"amount": 274224000.0
+						},
+						{
+							"id": "national-mediation-board",
+							"name": "National Mediation Board",
+							"description": "For expenses necessary to carry out the provisions of the Railway Labor Act, including emergency boards appointed by the President.",
+							"amount": 13800000.0
+						},
+						{
+							"id": "occupational-safety-and-health-review-commission",
+							"name": "Occupational Safety And Health Review Commission",
+							"description": "For expenses necessary for the Occupational Safety and Health Review Commission.",
+							"amount": 13225000.0
+						},
+						{
+							"id": "railroad-retirement-board",
+							"name": "Railroad Retirement Board",
+							"children": [
+								{
+									"id": "dual-benefits-payments-account",
+									"name": "Dual Benefits Payments Account",
+									"description": "For payment to the Dual Benefits Payments Account, authorized under section 15(d) of the Railroad Retirement Act of 1974.",
+									"amount": 19000000.0
+								},
+								{
+									"id": "federal-payments-to-the-railroad-retirement-accounts",
+									"name": "Federal Payments To The Railroad Retirement Accounts",
+									"description": "For payment to the accounts established in the Treasury for the payment of benefits under the Railroad Retirement Act for interest earned on unnegotiated checks.",
+									"amount": 150000.0
+								},
+								{
+									"id": "limitation-on-administration",
+									"name": "Limitation On Administration",
+									"description": "For necessary expenses for the Railroad Retirement Board (Board) for administration of the Railroad Retirement Act and the Railroad Unemployment Insurance Act.",
+									"amount": 123500000.0
+								}
+							]
+						},
+						{
+							"id": "social-security-administration",
+							"name": "Social Security Administration",
+							"children": [
+								{
+									"id": "payments-to-social-security-trust-funds",
+									"name": "Payments To Social Security Trust Funds",
+									"description": "For payment to the Federal Old-Age and Survivors Insurance Trust Fund and the Federal Disability Insurance Trust Fund, as provided under sections 201(m) and 1131(b)(2) of the Social Security Act.",
+									"amount": 11000000.0
+								},
+								{
+									"id": "office-of-inspector-general-7",
+									"name": "Office Of Inspector General",
+									"description": "For expenses necessary for the Office of Inspector General in carrying out the provisions of the Inspector General Act of 1978.",
+									"amount": 30000000.0
+								}
+							]
 						}
 					]
 				},
