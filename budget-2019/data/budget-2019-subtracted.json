@@ -1,29 +1,5 @@
 [
 	{
-		"id": "overseas-contingency-operations",
-		"name": "Overseas Contingency Operations",
-		"children": [
-			{
-				"id": "military-construction%2C-army-2",
-				"name": "Military Construction, Army",
-				"description": "For an additional amount for Military Construction, Army.",
-				"amount": 192250000.0
-			},
-			{
-				"id": "military-construction%2C-navy-and-marine-corps-2",
-				"name": "Military Construction, Navy And Marine Corps",
-				"description": "For an additional amount for Military Construction, Navy and Marine Corps.",
-				"amount": 227320000.0
-			},
-			{
-				"id": "military-construction%2C-defense-",
-				"name": "Military Construction, Defense-",
-				"description": "For an additional amount for Military Construction, Defense-Wide.",
-				"amount": 87050000.0
-			}
-		]
-	},
-	{
 		"id": "military-personnel",
 		"name": "Military Personnel",
 		"children": [

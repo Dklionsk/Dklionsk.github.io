@@ -1154,6 +1154,37 @@ var budget = {
 								}	
 							]
 						},
+						{
+							"id": "overseas-contingency-operations",
+							"name": "Overseas Contingency Operations",
+							"description": "Overseas Contingency Operations are those operations related to the War on Terror, which began after the September 11, 2001 attacks. They primarily include US military operations in Afghanistan, Iraq, and Syria. This part of the budget is managed by the Department of Defense, separately from its base budget.",
+							"children": [
+								{
+									"id": "military-construction%2C-army-2",
+									"name": "Military Construction, Army",
+									"description": "For an additional amount for Military Construction, Army, for projects outside of the United States.",
+									"amount": 192250000.0
+								},
+								{
+									"id": "military-construction%2C-navy-and-marine-corps-2",
+									"name": "Military Construction, Navy And Marine Corps",
+									"description": "For an additional amount for Military Construction, Navy and Marine Corps, for projects outside of the United States.",
+									"amount": 227320000.0
+								},
+								{
+									"id": "military-construction%2C-air-force-2",
+									"name": "Military Construction, Air Force",
+									"description": "For an additional amount for Military Construction, Air Force, for projects outside of the United States.",
+									"amount": 414800000.0
+								},
+								{
+									"id": "military-construction%2C-defense-wide-oco",
+									"name": "Military Construction, Defense-Wide",
+									"description": "For an additional amount for Military Construction, Defense-Wide, for projects outside of the United States.",
+									"amount": 87050000.0
+								}
+							]
+						},
 					]
 				},
 				{
