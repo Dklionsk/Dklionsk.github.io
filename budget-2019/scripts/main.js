@@ -94,7 +94,9 @@ $(function() {
 
     var total = addSumsToInnerNodes(budget);
     addPercentsToNodes(budget, total);
-    sortChildrenByAmount(budget);
+
+    // TODO: Re-enable this once we're done editing.
+    //sortChildrenByAmount(budget);
 
     function updateAllValues() {
         for (const [divID, tuple] of Object.entries(divsToTotalsAndPercents)) {
