@@ -62,8 +62,7 @@ a {
 }
 
 .expandable {
-    /* TODO: Re-enable this when done editing. */
-    /* display: none; */
+    display: none;
 }
 
 .left-col {

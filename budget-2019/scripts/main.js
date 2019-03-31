@@ -44,14 +44,22 @@ function buildTree(container, node, depth) {
     }
 
     if (node.description) {
-        var description = $("<div>", {"class": "description expandable"});
+        // TODO: Hide descriptions again once we're done editing.
+        // var description = $("<div>", {"class": "description expandable"});
+        var description = $("<div>", {"class": "description"});
         description.html(node.description);
         row.append(description);
     }
     
     if (node.children) {
         nameContainer.addClass('expandable-item')
-        var content = $("<div>", {"class": "content expandable"});
+
+        // TODO: Decide how much we want to show by default. It's probably depth 2.
+        // var content = $("<div>", {"class": "content expandable"});
+        var content = $("<div>", {"class": "content"});
+        if (depth >= 2) {
+            content.addClass("expandable");
+        }
         container.append(content);
         for (var child of node.children) {
             buildTree(content, child, depth + 1);
