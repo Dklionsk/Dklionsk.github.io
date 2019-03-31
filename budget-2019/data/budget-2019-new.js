@@ -106,7 +106,13 @@ var budget = {
 									"name": "Policy And Administration",
 									"description": "For expenses necessary for policy, administration, and related functions in the Office of the Commissioner, the Denver office, and offices in the five regions of the Bureau of Reclamation, to remain available until September 30, 2020.",
 									"amount": 61000000.0
-								}
+								},
+								{
+									"id": "bureau-of-reclamation-general-provisions",
+									"name": "General Provisions",
+									"description": "For transfer to Reclamation's Upper Colorado River Basin Fund to carry out environmental stewardship and endangered species recovery efforts pursuant to the Grand Canyon Protection Act of 1992 (Public Law 102-575), Public Law 106-392, the Colorado River Basin Project Act (43 U.S.C. 1551(b)), and the Act of April 11, 1956 (commonly known as the \"Colorado River Storage Project Act\") (43 U.S.C. 620n).",
+									"amount": 21400000.0
+								},
 							]
 						}
 					]
@@ -319,6 +325,73 @@ var budget = {
 									"amount": 369900000.0
 								}
 							]
+						}
+					]
+				},
+				{
+					"id": "independent-agencies",
+					"name": "Independent Agencies",
+					"description": "Independent agencies are smaller agencies whose heads are not appointed by the President.",
+					"children": [
+						{
+							"id": "appalachian-regional-commission",
+							"name": "Appalachian Regional Commission",
+							"description": "For expenses necessary to carry out the programs authorized by the Appalachian Regional Development Act of 1965, and for expenses necessary for the Federal Co-Chairman and the Alternate on the Appalachian Regional Commission, for payment of the Federal share of the administrative expenses of the Commission, including services as authorized by 5 U.S.C. 3109, and hire of passenger motor vehicles.",
+							"amount": 165000000.0
+						},
+						{
+							"id": "defense-nuclear-facilities-safety-board",
+							"name": "Defense Nuclear Facilities Safety Board",
+							"description": "For expenses necessary for the Defense Nuclear Facilities Safety Board in carrying out activities authorized by the Atomic Energy Act of 1954, as amended by Public Law 100\u2013456, section 1441.",
+							"amount": 31000000.0
+						},
+						{
+							"id": "delta-regional-authority",
+							"name": "Delta Regional Authority",
+							"description": "For expenses necessary for the Delta Regional Authority and to carry out its activities, as authorized by the Delta Regional Authority Act of 2000, notwithstanding sections 382F(d), 382M, and 382N of said Act.",
+							"amount": 25000000.0
+						},
+						{
+							"id": "denali-commission",
+							"name": "Denali Commission",
+							"description": "For expenses necessary for the Denali Commission including the purchase, construction, and acquisition of plant and capital equipment as necessary and other expenses.",
+							"amount": 15000000.0
+						},
+						{
+							"id": "northern-border-regional-commission",
+							"name": "Northern Border Regional Commission",
+							"description": "For expenses necessary for the Northern Border Regional Commission in carrying out activities authorized by subtitle V of title 40, United States Code.",
+							"amount": 20000000.0
+						},
+						{
+							"id": "southeast-crescent-regional-commission",
+							"name": "Southeast Crescent Regional Commission",
+							"description": "For expenses necessary for the Southeast Crescent Regional Commission in carrying out activities authorized by subtitle V of title 40, United States Code.",
+							"amount": 250000.0
+						},
+						{
+							"id": "nuclear-regulatory-commission",
+							"name": "Nuclear Regulatory Commission",
+							"children": [
+								{
+									"id": "salaries-and-expenses",
+									"name": "Salaries And Expenses",
+									"description": "For expenses necessary for the Commission in carrying out the purposes of the Energy Reorganization Act of 1974 and the Atomic Energy Act of 1954.",
+									"amount": 898350000.0
+								},
+								{
+									"id": "office-of-inspector-general",
+									"name": "Office Of Inspector General",
+									"description": "For expenses necessary for the Office of Inspector General in carrying out the provisions of the Inspector General Act of 1978.",
+									"amount": 12609000.0
+								}
+							]
+						},
+						{
+							"id": "nuclear-waste-technical-review-board",
+							"name": "Nuclear Waste Technical Review Board",
+							"description": "For expenses necessary for the Nuclear Waste Technical Review Board, as authorized by Public Law 100\u2013203, section 5051.",
+							"amount": 3600000.0
 						}
 					]
 				},
