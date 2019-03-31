@@ -1,47 +1,5 @@
 [
 	{
-		"id": "related-agencies",
-		"name": "Related Agencies",
-		"children": [
-			{
-				"id": "american-battle-monuments-commission",
-				"name": "American Battle Monuments Commission",
-				"description": "For necessary expenses, not otherwise provided for, of the American Battle Monuments Commission, including the acquisition of land or interest in land in foreign countries; purchases and repair of uniforms for caretakers of national cemeteries and monuments outside of the United States and its territories and possessions; rent of office and garage space in foreign countries; purchase (one-for-one replacement basis only) and hire of passenger motor vehicles; not to exceed $42,000 for official reception and representation expenses; and insurance of official motor vehicles in foreign countries, when required by law of such countries.",
-				"amount": 104000000.0
-			},
-			{
-				"id": "united-states-court-of-appeals-for-veterans-claims",
-				"name": "United States Court Of Appeals For Veterans Claims",
-				"description": "For necessary expenses for the operation of the United States Court of Appeals for Veterans Claims as authorized by sections 7251 through 7298 of title 38, United States Code.",
-				"amount": 34955000.0
-			},
-			{
-				"id": "cemeterial-expenses%2C-army",
-				"name": "Cemeterial Expenses, Army",
-				"children": [
-					{
-						"id": "salaries-and-expenses-4",
-						"name": "Salaries And Expenses",
-						"description": "For necessary expenses for maintenance, operation, and improvement of Arlington National Cemetery and Soldiers\u2019 and Airmen\u2019s Home National Cemetery, including the purchase or lease of passenger motor vehicles for replacement on a one-for-one basis only, and not to exceed $2,000 for official reception and representation expenses.",
-						"amount": 80800000.0
-					},
-					{
-						"id": "construction-2",
-						"name": "Construction",
-						"description": "For necessary expenses for planning and design and construction at Arlington National Cemetery and Soldiers\u2019 and Airmen\u2019s Home National Cemetery.",
-						"amount": 33600000.0
-					}
-				]
-			},
-			{
-				"id": "armed-forces-retirement-home",
-				"name": "Armed Forces Retirement Home",
-				"description": "For expenses necessary for the Armed Forces Retirement Home to operate and maintain the Armed Forces Retirement Home\u2014Washington, District of Columbia, and the Armed Forces Retirement Home\u2014Gulfport, Mississippi, to be paid from funds available in the Armed Forces Retirement Home Trust Fund.",
-				"amount": 64300000.0
-			}
-		]
-	},
-	{
 		"id": "overseas-contingency-operations",
 		"name": "Overseas Contingency Operations",
 		"children": [
