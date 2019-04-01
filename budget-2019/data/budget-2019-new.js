@@ -3431,6 +3431,536 @@ var budget = {
 							]
 						}
 					]
+				},
+				{
+					"id": "department-of-agriculture-general",
+					"name": "Department of Agriculture",
+					"children": [
+						{
+							"id": "agricultural-programs",
+							"name": "Agricultural Programs",
+							"children": [
+								{
+									"id": "office-of-the-secretary-3",
+									"name": "Office Of The Secretary",
+									"description": "For necessary expenses of the Office of the Secretary.",
+									"amount": 46603000.0
+								},
+								{
+									"id": "executive-operations",
+									"name": "Executive Operations",
+									"children": [
+										{
+											"id": "office-of-the-chief-economist",
+											"name": "Office Of The Chief Economist",
+											"description": "For necessary expenses of the Office of the Chief Economist.",
+											"amount": 21286000.0
+										},
+										{
+											"id": "office-of-hearings-and-appeals",
+											"name": "Office Of Hearings And Appeals",
+											"description": "For necessary expenses of the Office of Hearings and Appeals.",
+											"amount": 15222000.0
+										},
+										{
+											"id": "office-of-budget-and-program-analysis",
+											"name": "Office Of Budget And Program Analysis",
+											"description": "For necessary expenses of the Office of Budget and Program Analysis.",
+											"amount": 9525000.0
+										}
+									]
+								},
+								{
+									"id": "office-of-the-chief-information-officer",
+									"name": "Office Of The Chief Information Officer",
+									"description": "For necessary expenses of the Office of the Chief Information Officer.",
+									"amount": 55630000.0
+								},
+								{
+									"id": "office-of-the-chief-financial-officer",
+									"name": "Office Of The Chief Financial Officer",
+									"description": "For necessary expenses of the Office of the Chief Financial Officer.",
+									"amount": 6028000.0
+								},
+								{
+									"id": "office-of-the-assistant-secretary-for-civil-rights",
+									"name": "Office Of The Assistant Secretary For Civil Rights",
+									"description": "For necessary expenses of the Office of the Assistant Secretary for Civil Rights.",
+									"amount": 901000.0
+								},
+								{
+									"id": "office-of-civil-rights",
+									"name": "Office Of Civil Rights",
+									"description": "For necessary expenses of the Office of Civil Rights.",
+									"amount": 24206000.0
+								},
+								{
+									"id": "agriculture-buildings-and-facilities",
+									"name": "Agriculture Buildings And Facilities",
+									"description": "For payment of space rental and related costs pursuant to Public Law 92\u2013313, including authorities pursuant to the 1984 delegation of authority from the Administrator of General Services to the Department of Agriculture under 40 U.S.C. 121, for programs and activities of the Department which are included in this Act, and for alterations and other actions needed for the Department and its agencies to consolidate unneeded space into configurations suitable for release to the Administrator of General Services, and for the operation, maintenance, improvement, and repair of Agriculture buildings and facilities, and for related costs.",
+									"amount": 59967000.0
+								},
+								{
+									"id": "hazardous-materials-management",
+									"name": "Hazardous Materials Management",
+									"description": "For necessary expenses of the Department of Agriculture, to comply with the Comprehensive Environmental Response, Compensation, and Liability Act (42 U.S.C. 9601 et seq.) and the Solid Waste Disposal Act (42 U.S.C. 6901 et seq.).",
+									"amount": 3503000.0
+								},
+								{
+									"id": "office-of-inspector-general-9",
+									"name": "Office Of Inspector General",
+									"description": "For necessary expenses of the Office of Inspector General, including employment pursuant to the Inspector General Act of 1978 (Public Law 95\u2013452; 5 U.S.C. App.).",
+									"amount": 98208000.0
+								},
+								{
+									"id": "office-of-the-general-counsel",
+									"name": "Office Of The General Counsel",
+									"description": "For necessary expenses of the Office of the General Counsel.",
+									"amount": 45146000.0
+								},
+								{
+									"id": "office-of-ethics",
+									"name": "Office Of Ethics",
+									"description": "For necessary expenses of the Office of Ethics.",
+									"amount": 4136000.0
+								},
+								{
+									"id": "office-of-the-under-secretary-for-research%2C-education%2C-and-economics",
+									"name": "Office Of The Under Secretary For Research, Education, And Economics",
+									"description": "For necessary expenses of the Office of the Under Secretary for Research, Education, and Economics.",
+									"amount": 800000.0
+								},
+								{
+									"id": "economic-research-service",
+									"name": "Economic Research Service",
+									"description": "For necessary expenses of the Economic Research Service.",
+									"amount": 86757000.0
+								},
+								{
+									"id": "national-agricultural-statistics-service",
+									"name": "National Agricultural Statistics Service",
+									"description": "For necessary expenses of the National Agricultural Statistics Service.",
+									"amount": 174517000.0
+								},
+								{
+									"id": "agricultural-research-service",
+									"name": "Agricultural Research Service",
+									"children": [
+										{
+											"id": "salaries-and-expenses-8",
+											"name": "Salaries And Expenses",
+											"description": "For necessary expenses of the Agricultural Research Service and for acquisition of lands by donation, exchange, or purchase at a nominal cost not to exceed $100, and for land exchanges where the lands exchanged shall be of equal value or shall be equalized by a payment of money to the grantor which shall not exceed 25 percent of the total value of the land or interests transferred out of Federal ownership.",
+											"amount": 1303266000.0
+										},
+										{
+											"id": "buildings-and-facilities-3",
+											"name": "Buildings And Facilities",
+											"description": "For the acquisition of land, construction, repair, improvement, extension, alteration, and purchase of fixed equipment or facilities as necessary to carry out the agricultural research programs of the Department of Agriculture, where not otherwise provided.",
+											"amount": 381200000.0
+										}
+									]
+								},
+								{
+									"id": "national-institute-of-food-and-agriculture",
+									"name": "National Institute Of Food And Agriculture",
+									"children": [
+										{
+											"id": "research-and-education-activities",
+											"name": "Research And Education Activities",
+											"description": "For payments to agricultural experiment stations, for cooperative forestry and other research, for facilities, and for other expenses.",
+											"amount": 927649000.0
+										},
+										{
+											"id": "native-american-institutions-endowment-fund",
+											"name": "Native American Institutions Endowment Fund",
+											"description": "For the Native American Institutions Endowment Fund authorized by Public Law 103\u2013382 (7 U.S.C. 301 note).",
+											"amount": 11880000.0
+										},
+										{
+											"id": "extension-activities",
+											"name": "Extension Activities",
+											"description": "For payments to States, the District of Columbia, Puerto Rico, Guam, the Virgin Islands, Micronesia, the Northern Marianas, and American Samoa.",
+											"amount": 505692000.0
+										},
+										{
+											"id": "integrated-activities",
+											"name": "Integrated Activities",
+											"description": "For the integrated research, education, and extension grants programs, including necessary administrative expenses.",
+											"amount": 38000000.0
+										}
+									]
+								},
+								{
+									"id": "office-of-the-under-secretary-for-marketing-and-regulatory-programs",
+									"name": "Office Of The Under Secretary For Marketing And Regulatory Programs",
+									"description": "For necessary expenses of the Office of the Under Secretary for Marketing and Regulatory Programs.",
+									"amount": 901000.0
+								},
+								{
+									"id": "animal-and-plant-health-inspection-service",
+									"name": "Animal And Plant Health Inspection Service",
+									"children": [
+										{
+											"id": "salaries-and-expenses-9",
+											"name": "Salaries And Expenses",
+											"description": "For necessary expenses of the Animal and Plant Health Inspection Service, including up to $30,000 for representation allowances and for expenses pursuant to the Foreign Service Act of 1980 (22 U.S.C. 4085).",
+											"amount": 1011136000.0
+										},
+										{
+											"id": "buildings-and-facilities-4",
+											"name": "Buildings And Facilities",
+											"description": "For plans, construction, repair, preventive maintenance, environmental support, improvement, extension, alteration, and purchase of fixed equipment or facilities, as authorized by 7 U.S.C. 2250, and acquisition of land as authorized by 7 U.S.C. 428a.",
+											"amount": 3175000.0
+										}
+									]
+								},
+								{
+									"id": "agricultural-marketing-service",
+									"name": "Agricultural Marketing Service",
+									"children": [
+										{
+											"id": "marketing-services",
+											"name": "Marketing Services",
+											"description": "For necessary expenses of the Agricultural Marketing Service.",
+											"amount": 159095000.0
+										},
+										{
+											"id": "payments-to-states-and-possessions",
+											"name": "Payments To States And Possessions",
+											"description": "For payments to departments of agriculture, bureaus and departments of markets, and similar agencies for marketing activities under section 204(b) of the Agricultural Marketing Act of 1946 (7 U.S.C. 1623(b)).",
+											"amount": 1235000.0
+										}
+									]
+								},
+								{
+									"id": "office-of-the-under-secretary-for-food-safety",
+									"name": "Office Of The Under Secretary For Food Safety",
+									"description": "For necessary expenses of the Office of the Under Secretary for Food Safety.",
+									"amount": 800000.0
+								},
+								{
+									"id": "food-safety-and-inspection-service",
+									"name": "Food Safety And Inspection Service",
+									"description": "For necessary expenses to carry out services authorized by the Federal Meat Inspection Act, the Poultry Products Inspection Act, and the Egg Products Inspection Act, including not to exceed $10,000 for representation allowances and for expenses pursuant to section 8 of the Act approved August 3, 1956 (7 U.S.C. 1766).",
+									"amount": 1049344000.0
+								}
+							]
+						},
+						{
+							"id": "farm-production-and-conservation-programs",
+							"name": "Farm Production And Conservation Programs",
+							"children": [
+								{
+									"id": "office-of-the-under-secretary-for-farm-production-and-conservation",
+									"name": "Office Of The Under Secretary For Farm Production And Conservation",
+									"description": "For necessary expenses of the Office of the Under Secretary for Farm Production and Conservation.",
+									"amount": 901000.0
+								},
+								{
+									"id": "farm-production-and-conservation-business-center",
+									"name": "Farm Production And Conservation Business Center",
+									"description": "For necessary expenses of the Farm Production and Conservation Business Center.",
+									"amount": 216350000.0
+								},
+								{
+									"id": "farm-service-agency",
+									"name": "Farm Service Agency",
+									"children": [
+										{
+											"id": "salaries-and-expenses-10",
+											"name": "Salaries And Expenses",
+											"description": "For necessary expenses of the Farm Service Agency.",
+											"amount": 1081655000.0
+										},
+										{
+											"id": "state-mediation-grants",
+											"name": "State Mediation Grants",
+											"description": "For grants pursuant to section 502(b) of the Agricultural Credit Act of 1987, as amended (7 U.S.C. 5101\u20135106).",
+											"amount": 3904000.0
+										},
+										{
+											"id": "grassroots-source-water-protection-program",
+											"name": "Grassroots Source Water Protection Program",
+											"description": "For necessary expenses to carry out wellhead or groundwater protection activities under section 1240O of the Food Security Act of 1985 (16 U.S.C. 3839bb\u20132).",
+											"amount": 6500000.0
+										},
+										{
+											"id": "agricultural-credit-insurance-fund-program-account",
+											"name": "Agricultural Credit Insurance Fund Program Account",
+											"description": "For gross obligations for the principal amount of direct and guaranteed farm ownership (7 U.S.C. 1922 et seq.) and operating (7 U.S.C. 1941 et seq.) loans, emergency loans (7 U.S.C. 1961 et seq.), Indian tribe land acquisition loans (25 U.S.C. 488), boll weevil loans (7 U.S.C. 1989), guaranteed conservation loans (7 U.S.C. 1924 et seq.), and Indian highly fractionated land loans (25 U.S.C. 488) to be available from funds in the Agricultural Credit Insurance Fund, as follows: $2,750,000,000 for guaranteed farm ownership loans and $1,500,000,000 for farm ownership direct loans.",
+											"amount": 1960000000.0
+										}
+									]
+								},
+								{
+									"id": "risk-management-agency",
+									"name": "Risk Management Agency",
+									"description": "For necessary expenses of the Risk Management Agency.",
+									"amount": 58361000.0
+								},
+								{
+									"id": "natural-resources-conservation-service",
+									"name": "Natural Resources Conservation Service",
+									"children": [
+										{
+											"id": "conservation-operations",
+											"name": "Conservation Operations",
+											"description": "For necessary expenses for carrying out the provisions of the Act of April 27, 1935 (16 U.S.C. 590a\u2013f), including preparation of conservation plans and establishment of measures to conserve soil and water (including farm irrigation and land drainage and such special measures for soil and water management as may be necessary to prevent floods and the siltation of reservoirs and to control agricultural related pollutants); operation of conservation plant materials centers; classification and mapping of soil; dissemination of information; acquisition of lands, water, and interests therein for use in the plant materials program by donation, exchange, or purchase at a nominal cost not to exceed $100 pursuant to the Act of August 3, 1956 (7 U.S.C. 428a); purchase and erection or alteration or improvement of permanent and temporary buildings; and operation and maintenance of aircraft.",
+											"amount": 819492000.0
+										},
+										{
+											"id": "watershed-and-flood-prevention-operations",
+											"name": "Watershed And Flood Prevention Operations",
+											"description": "For necessary expenses to carry out preventive measures, including but not limited to surveys and investigations, engineering operations, works of improvement, and changes in use of land, in accordance with the Watershed Protection and Flood Prevention Act (16 U.S.C. 1001\u20131005 and 1007\u20131009) and in accordance with the provisions of laws relating to the activities of the Department.",
+											"amount": 150000000.0
+										},
+										{
+											"id": "watershed-rehabilitation-program",
+											"name": "Watershed Rehabilitation Program",
+											"description": "Under the authorities of section 14 of the Watershed Protection and Flood Prevention Act.",
+											"amount": 10000000.0
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "rural-development-programs",
+							"name": "Rural Development Programs",
+							"children": [
+								{
+									"id": "rural-development",
+									"name": "Rural Development",
+									"description": "For necessary expenses for carrying out the administration and implementation of Rural Development programs, including activities with institutions concerning the development and operation of agricultural cooperatives; and for cooperative agreements.",
+									"amount": 236835000.0
+								},
+								{
+									"id": "rural-housing-service",
+									"name": "Rural Housing Service",
+									"children": [
+										{
+											"id": "rural-housing-insurance-fund-program-account",
+											"name": "Rural Housing Insurance Fund Program Account",
+											"description": "For gross obligations for the principal amount of direct and guaranteed loans as authorized by title V of the Housing Act of 1949, to be available from funds in the rural housing insurance fund, as follows: $1,000,000,000 shall be for direct loans and $24,000,000,000 shall be for unsubsidized guaranteed loans.",
+											"amount": 28000000.0
+										},
+										{
+											"id": "rental-assistance-program",
+											"name": "Rental Assistance Program",
+											"description": "For rental assistance agreements entered into or renewed pursuant to the authority under section 521(a)(2) of the Housing Act of 1949 or agreements entered into in lieu of debt forgiveness or payments for eligible households as authorized by section 502(c)(5)(D) of the Housing Act of 1949.",
+											"amount": 1331400000.0
+										},
+										{
+											"id": "multi-family-housing-revitalization-program-account",
+											"name": "Multi-Family Housing Revitalization Program Account",
+											"description": "For the rural housing voucher program as authorized under section 542 of the Housing Act of 1949, but notwithstanding subsection (b) of such section, and for additional costs to conduct a demonstration program for the preservation and revitalization of multi-family rental housing properties described in this paragraph.",
+											"amount": 51500000.0
+										},
+										{
+											"id": "mutual-and-self-help-housing-grants",
+											"name": "Mutual And Self-Help Housing Grants",
+											"description": "For grants and contracts pursuant to section 523(b)(1)(A) of the Housing Act of 1949 (42 U.S.C. 1490c).",
+											"amount": 30000000.0
+										},
+										{
+											"id": "rural-housing-assistance-grants",
+											"name": "Rural Housing Assistance Grants",
+											"description": "For grants for very low-income housing repair and rural housing preservation made by the Rural Housing Service, as authorized by 42 U.S.C. 1474, and 1490m.",
+											"amount": 45000000.0
+										},
+										{
+											"id": "rural-community-facilities-program-account",
+											"name": "Rural Community Facilities Program Account",
+											"description": "For the cost of grants for rural community facilities programs as authorized by section 306 and described in section 381E(d)(1) of the Consolidated Farm and Rural Development Act.",
+											"amount": 45778000.0
+										}
+									]
+								},
+								{
+									"id": "rural-business%E2%80%94cooperative-service",
+									"name": "Rural Business\u2014Cooperative Service",
+									"children": [
+										{
+											"id": "rural-business-program-account",
+											"name": "Rural Business Program Account",
+											"description": "For the cost of loan guarantees and grants, for the rural business development programs authorized by section 310B and described in subsections (a), (c), (f) and (g) of section 310B of the Consolidated Farm and Rural Development Act.",
+											"amount": 65040000.0
+										},
+										{
+											"id": "rural-economic-development-loans-program-account",
+											"name": "Rural Economic Development Loans Program Account",
+											"description": "For the principal amount of direct loans, as authorized under section 313B(a) of the Rural Electrification Act, for the purpose of promoting rural economic development and job creation projects.",
+											"amount": 50000000.0
+										},
+										{
+											"id": "rural-cooperative-development-grants",
+											"name": "Rural Cooperative Development Grants",
+											"description": "For rural cooperative development grants authorized under section 310B(e) of the Consolidated Farm and Rural Development Act (7 U.S.C. 1932).",
+											"amount": 29100000.0
+										},
+										{
+											"id": "rural-energy-for-america-program",
+											"name": "Rural Energy For America Program",
+											"description": "For the cost of a program of loan guarantees, under the same terms and conditions as authorized by section 9007 of the Farm Security and Rural Investment Act of 2002 (7 U.S.C. 8107).",
+											"amount": 334500.0
+										}
+									]
+								},
+								{
+									"id": "rural-utilities-service",
+									"name": "Rural Utilities Service",
+									"children": [
+										{
+											"id": "rural-water-and-waste-disposal-program-account",
+											"name": "Rural Water And Waste Disposal Program Account",
+											"description": "For gross obligations for the principal amount of direct loans as authorized by section 306 and described in section 381E(d)(2) of the Consolidated Farm and Rural Development Act.",
+											"amount": 1400000000.0
+										},
+										{
+											"id": "rural-electrification-and-telecommunications-loans-program-account",
+											"name": "Rural Electrification And Telecommunications Loans Program Account",
+											"description": "For the cost of direct loans as authorized by section 305 of the Rural Electrification Act of 1936 (7 U.S.C. 935), including the cost of modifying loans, as defined in section 502 of the Congressional Budget Act of 1974, cost of money rural telecommunications loans.",
+											"amount": 1725000.0
+										},
+										{
+											"id": "distance-learning%2C-telemedicine%2C-and-broadband-program",
+											"name": "Distance Learning, Telemedicine, And Broadband Program",
+											"description": "For the cost of broadband loans, as authorized by section 601 of the Rural Electrification Act.",
+											"amount": 5830000.0
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "domestic-food-programs",
+							"name": "Domestic Food Programs",
+							"children": [
+								{
+									"id": "office-of-the-under-secretary-for-food%2C-nutrition%2C-and-consumer-services",
+									"name": "Office Of The Under Secretary For Food, Nutrition, And Consumer Services",
+									"description": "For necessary expenses of the Office of the Under Secretary for Food, Nutrition, and Consumer Services.",
+									"amount": 800000.0
+								},
+								{
+									"id": "food-and-nutrition-service",
+									"name": "Food And Nutrition Service",
+									"children": [
+										{
+											"id": "child-nutrition-programs",
+											"name": "Child Nutrition Programs",
+											"description": "For necessary expenses to carry out the Richard B. Russell National School Lunch Act (42 U.S.C. 1751 et seq.), except section 21, and the Child Nutrition Act of 1966 (42 U.S.C. 1771 et seq.), except sections 17 and 21.",
+											"amount": 23140781000.0
+										},
+										{
+											"id": "special-supplemental-nutrition-program-for-women%2C-infants%2C-and-children-%28wic%29",
+											"name": "Special Supplemental Nutrition Program For Women, Infants, And Children (Wic)",
+											"description": "For necessary expenses to carry out the special supplemental nutrition program as authorized by section 17 of the Child Nutrition Act of 1966 (42 U.S.C. 1786).",
+											"amount": 6075000000.0
+										},
+										{
+											"id": "supplemental-nutrition-assistance-program",
+											"name": "Supplemental Nutrition Assistance Program",
+											"description": "For necessary expenses to carry out the Food and Nutrition Act of 2008 (7 U.S.C. 2011 et seq.).",
+											"amount": 73476921000.0
+										},
+										{
+											"id": "commodity-assistance-program",
+											"name": "Commodity Assistance Program",
+											"description": "For necessary expenses to carry out disaster assistance and the Commodity Supplemental Food Program as authorized by section 4(a) of the Agriculture and Consumer Protection Act of 1973 (7 U.S.C. 612c note); the Emergency Food Assistance Act of 1983; special assistance for the nuclear affected islands, as authorized by section 103(f)(2) of the Compact of Free Association Amendments Act of 2003 (Public Law 108\u2013188); and the Farmers' Market Nutrition Program, as authorized by section 17(m) of the Child Nutrition Act of 1966.",
+											"amount": 322139000.0
+										},
+										{
+											"id": "nutrition-programs-administration",
+											"name": "Nutrition Programs Administration",
+											"description": "For necessary administrative expenses of the Food and Nutrition Service for carrying out any domestic nutrition assistance program.",
+											"amount": 164688000.0
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "foreign-assistance-and-related-programs",
+							"name": "Foreign Assistance And Related Programs",
+							"children": [
+								{
+									"id": "office-of-the-under-secretary-for-trade-and-foreign-agricultural-affairs",
+									"name": "Office Of The Under Secretary For Trade And Foreign Agricultural Affairs ",
+									"description": "For necessary expenses of the Office of the Under Secretary for Trade and Foreign Agricultural Affairs.",
+									"amount": 875000.0,
+									"children": [
+										{
+											"id": "office-of-codex-alimentarius",
+											"name": "Office Of Codex Alimentarius",
+											"description": "For necessary expenses of the Office of Codex Alimentarius.",
+											"amount": 3976000.0
+										}
+									]
+								},
+								{
+									"id": "foreign-agricultural-service",
+									"name": "Foreign Agricultural Service",
+									"children": [
+										{
+											"id": "salaries-and-expenses-11",
+											"name": "Salaries And Expenses",
+											"description": "For necessary expenses of the Foreign Agricultural Service, including not to exceed $250,000 for representation allowances and for expenses pursuant to section 8 of the Act approved August 3, 1956 (7 U.S.C. 1766).",
+											"amount": 213890000.0
+										},
+										{
+											"id": "food-for-peace-title-i-direct-credit-and-food-for-progress-program-account",
+											"name": "Food For Peace Title I Direct Credit And Food For Progress Program Account",
+											"description": "For administrative expenses to carry out the credit program of title I, Food for Peace Act (Public Law 83\u2013480) and the Food for Progress Act of 1985.",
+											"amount": 142000.0
+										},
+										{
+											"id": "food-for-peace-title-ii-grants",
+											"name": "Food For Peace Title Ii Grants",
+											"description": "For expenses during the current fiscal year, not otherwise recoverable, and unrecovered prior years' costs, including interest thereon, under the Food for Peace Act (Public Law 83\u2013480), for commodities supplied in connection with dispositions abroad under title II of said Act.",
+											"amount": 1500000000.0
+										},
+										{
+											"id": "mcgovern-dole-international-food-for-education-and-child-nutrition-program-grants",
+											"name": "Mcgovern-Dole International Food For Education And Child Nutrition Program Grants",
+											"description": "For necessary expenses to carry out the provisions of section 3107 of the Farm Security and Rural Investment Act of 2002 (7 U.S.C. 1736o\u20131).",
+											"amount": 210255000.0
+										},
+										{
+											"id": "commodity-credit-corporation-export-%28loans%29-credit-guarantee-program-account",
+											"name": "Commodity Credit Corporation Export (Loans) Credit Guarantee Program Account",
+											"description": "For administrative expenses to carry out the Commodity Credit Corporation's Export Guarantee Program, GSM 102 and GSM 103.",
+											"amount": 8845000.0
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "related-agency-and-food-and-drug-administration",
+							"name": "Food And Drug Administration (FDA)",
+							"children": [
+								{
+									"id": "salaries-and-expenses-12",
+									"name": "Salaries And Expenses",
+									"description": "For necessary expenses of the Food and Drug Administration, including hire and purchase of passenger motor vehicles; for payment of space rental and related costs pursuant to Public Law 92\u2013313 for programs and activities of the Food and Drug Administration which are included in this Act; for rental of special purpose space in the District of Columbia or elsewhere; in addition to amounts appropriated to the FDA Innovation Account, for carrying out the activities described in section 1002(b)(4) of the 21st Century Cures Act (Public Law 114\u2013255); for miscellaneous and emergency expenses of enforcement activities, authorized and approved by the Secretary and to be accounted for solely on the Secretary's certificate, not to exceed $25,000; and notwithstanding section 521 of Public Law 107\u2013188.",
+									"amount": 5584965000.0
+								},
+								{
+									"id": "buildings-and-facilities-5",
+									"name": "Buildings And Facilities",
+									"description": "For plans, construction, repair, improvement, extension, alteration, demolition, and purchase of fixed equipment or facilities of or used by the Food and Drug Administration, where not otherwise provided.",
+									"amount": 11788000.0
+								},
+								{
+									"id": "fda-innovation-account%2C-cures-act",
+									"name": "Fda Innovation Account, Cures Act",
+									"description": "For necessary expenses to carry out the purposes described under section 1002(b)(4) of the 21st Century Cures Act, in addition to amounts available for such purposes under the heading Salaries and Expenses.",
+									"amount": 70000000.0
+								}
+							]
+						}
+					]
 				}
 			],
 		},
