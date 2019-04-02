@@ -1,6 +1,6 @@
 "use strict";
 
-const defaultTaxBill = 10000;
+const defaultTaxBill = 0;//10000;
 var taxBill = 0;
 
 var dollarFormatter = new Intl.NumberFormat('en-US', {
@@ -103,8 +103,7 @@ $(function() {
     var total = addSumsToInnerNodes(budget);
     addPercentsToNodes(budget, total);
 
-    // TODO: Re-enable this once we're done editing.
-    //sortChildrenByAmount(budget);
+    sortChildrenByAmount(budget);
 
     function updateAllValues() {
         for (const [divID, tuple] of Object.entries(divsToTotalsAndPercents)) {
