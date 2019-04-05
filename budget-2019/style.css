@@ -17,6 +17,7 @@ a {
 }
 
 .where-it-went-row {
+    font-size: 18px;
     padding: 4px 0px 4px 0px;
     cursor: pointer;
 }
