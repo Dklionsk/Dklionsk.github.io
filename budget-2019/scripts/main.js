@@ -57,7 +57,7 @@ function buildTree(container, node, depth) {
         // TODO: Decide how much we want to show by default. It's probably depth 2.
         // var content = $("<div>", {"class": "content expandable"});
         var content = $("<div>", {"class": "content"});
-        if (depth >= 2) {
+        if (depth >= 1) {
             content.addClass("expandable");
         }
         container.append(content);
