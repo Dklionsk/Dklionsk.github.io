@@ -3,8 +3,8 @@ var budget = {
     "name": "United States Federal Budget, 2019",
     "children": [
         {
-            "id": "department-of-agriculture",
-            "name": "Department of Agriculture",
+            "id": "agriculture",
+            "name": "Agriculture",
             "description": "The Department of Agriculture is responsible for farming, forestry, and food. It aims to meet the needs of farmers and ranchers, promote agricultural trade and production, assure food safety, and end hunger in the United States.",
             "children": [
                 {
@@ -285,7 +285,7 @@ var budget = {
                     "children": [
                         {
                             "id": "rhs-loan-authority",
-                            "name": "Rhs Loan Authority",
+                            "name": "RHS Loan Authority",
                             "amount": 28590100000.0
                         },
                         {
@@ -316,7 +316,7 @@ var budget = {
                     "children": [
                         {
                             "id": "rbcs-loan-authority",
-                            "name": "Rbcs Loan Authority",
+                            "name": "RBCS Loan Authority",
                             "amount": 1027500000.0
                         },
                         {
@@ -342,7 +342,7 @@ var budget = {
                     "children": [
                         {
                             "id": "rus-loan-authority",
-                            "name": "Rus Loan Authority",
+                            "name": "RUS Loan Authority",
                             "amount": 8419900000.0
                         },
                         {
@@ -564,8 +564,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-commerce",
-            "name": "Department of Commerce",
+            "id": "commerce",
+            "name": "Commerce",
             "description": "The Department of Commerce's main purpose is to create jobs, promote economic growth, encourage sustainable development, and improve standards of living for all Americans.",
             "children": [
                 {
@@ -770,8 +770,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-education",
-            "name": "Department of Education",
+            "id": "education",
+            "name": "Education",
             "description": "The Department of Education coordinates federal assistance to education, collects data on US schools, and enforces laws regarding privacy and civil rights in education. The department does not establish schools or define curricula, leaving this to the states.",
             "children": [
                 {
@@ -909,8 +909,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-energy",
-            "name": "Department of Energy",
+            "id": "energy",
+            "name": "Energy",
             "description": "The Department of the Interior is responsible for the management and conservation of federal lands and natural resources, as well as programs relating to Native Americans. It also runs the National Park Service and wildlife refuges.",
             "children": [
                 {
@@ -954,7 +954,7 @@ var budget = {
                         },
                         {
                             "id": "spr-petroleum-account",
-                            "name": "Spr Petroleum Account",
+                            "name": "SPR Petroleum Account",
                             "amount": 10000000.0
                         },
                         {
@@ -1090,8 +1090,8 @@ var budget = {
             ]
         },
         {
-            "id": "executive-office-of-the-president",
-            "name": "Executive Office of the President",
+            "id": "office-of-the-president",
+            "name": "Office of the President",
             "description": "Contains departments and programs managed by the President.",
             "children": [
                 {
@@ -1186,8 +1186,8 @@ var budget = {
                     "amount": 2994000.0
                 },
                 {
-                    "id": "united-states-agency-for-international-development",
-                    "name": "United States Agency for International Development",
+                    "id": "agency-for-international-development",
+                    "name": "Agency for International Development",
                     "children": [
                         {
                             "id": "operating-expenses",
@@ -1281,8 +1281,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-health-and-human-services",
-            "name": "Department of Health and Human Services",
+            "id": "health-and-human-services",
+            "name": "Health and Human Services",
             "description": "The Department of Health and Human Services aims to improve the health, safety, and well-being of Americans. It manages Medicare and Medicaid, the National Institutes of Health, the Centers for Disease Control and Prevention, and the Food and Drug Administration.",
             "children": [
                 {
@@ -1761,8 +1761,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-homeland-security",
-            "name": "Department of Homeland Security",
+            "id": "homeland-security",
+            "name": "Homeland Security",
             "description": "While the Department of Defense is charged with military actions abroad, the Department of Homeland Security works in the civilian sphere to protect the United States within, at, and outside its borders. Its stated goal is to prepare for, prevent, and respond to domestic emergencies, particularly terrorism. It is the youngest cabinet department, created in response to the September 11 attacks.",
             "children": [
                 {
@@ -1958,7 +1958,7 @@ var budget = {
                         },
                         {
                             "id": "cbp-services-at-user-fee-facilities",
-                            "name": "Cbp Services at User Fee Facilities",
+                            "name": "CBP Services at User Fee Facilities",
                             "amount": 8941000.0
                         },
                         {
@@ -1974,8 +1974,8 @@ var budget = {
                     ]
                 },
                 {
-                    "id": "u.s.-immigration-and-customs-enforcement",
-                    "name": "U.S. Immigration and Customs Enforcement",
+                    "id": "u.s.-immigration-and-customs-enforcement-%28ice%29",
+                    "name": "U.S. Immigration and Customs Enforcement (ICE)",
                     "children": [
                         {
                             "id": "operations-and-support-9",
@@ -1995,8 +1995,8 @@ var budget = {
                     ]
                 },
                 {
-                    "id": "transportation-security-administration",
-                    "name": "Transportation Security Administration",
+                    "id": "transportation-security-administration-%28tsa%29",
+                    "name": "Transportation Security Administration (TSA)",
                     "children": [
                         {
                             "id": "operations-and-support-10",
@@ -2075,8 +2075,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-housing-and-urban-development",
-            "name": "Department of Housing and Urban Development",
+            "id": "housing-and-urban-development",
+            "name": "Housing and Urban Development",
             "description": "The Department of Housing and Urban Development promotes home ownership by providing, insuring, and regulating home mortgages. It also helps provide housing assistance for the elderly, disabled, and underserved populations.",
             "children": [
                 {
@@ -2304,8 +2304,8 @@ var budget = {
                     "amount": 74600000.0
                 },
                 {
-                    "id": "national-aeronautics-and-space-administration",
-                    "name": "National Aeronautics and Space Administration",
+                    "id": "national-aeronautics-and-space-administration-%28nasa%29",
+                    "name": "National Aeronautics and Space Administration (NASA)",
                     "children": [
                         {
                             "id": "science-2",
@@ -3116,8 +3116,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-the-interior",
-            "name": "Department of the Interior",
+            "id": "interior",
+            "name": "Interior",
             "description": "The Department of the Interior is responsible for the management and conservation of federal lands and natural resources, as well as programs relating to Native Americans. It also runs the National Park Service and wildlife refuges.",
             "children": [
                 {
@@ -3402,8 +3402,8 @@ var budget = {
             ]
         },
         {
-            "id": "the-judiciary",
-            "name": "The Judiciary",
+            "id": "judiciary",
+            "name": "Judiciary",
             "description": "The Judiciary branch includes the Supreme Court and other Federal courts.",
             "children": [
                 {
@@ -3486,8 +3486,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-justice",
-            "name": "Department of Justice",
+            "id": "justice",
+            "name": "Justice",
             "description": "The Department of Justice is responsible for the enforcement of the law and administration of justice. It runs the Federal Bureau of Investigation (FBI), the Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF), and the Drug Enforcement Administration (DEA), and is headed by the Attorney General.",
             "children": [
                 {
@@ -3689,8 +3689,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-labor",
-            "name": "Department of Labor",
+            "id": "labor",
+            "name": "Labor",
             "description": "The Department of Labor is responsible for occupational safety, wage and hour standards, unemployment insurance benefits, reemployment services, and some economic statistics. It promotes the wellbeing of America's wage earners, job seekers, and retirees.",
             "children": [
                 {
@@ -3816,7 +3816,7 @@ var budget = {
                         },
                         {
                             "id": "it-modernization",
-                            "name": "It Modernization",
+                            "name": "IT Modernization",
                             "amount": 23269000.0
                         },
                         {
@@ -3829,8 +3829,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-state",
-            "name": "Department of State",
+            "id": "state",
+            "name": "State",
             "description": "The Department of State advises the President and conducts international relations. It was established in 1789 as the nation's first executive department. The State Department implements foreign policy, operates diplomatic missions abroad, negotiates treaties with foreign entities, and represents the United States at the United Nations.",
             "children": [
                 {
@@ -4053,8 +4053,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-transportation",
-            "name": "Department of Transportation",
+            "id": "transportation",
+            "name": "Transportation",
             "description": "The Department of Transportation manages transportation in the United States. This includes the the construction and operation of airports and air traffic control through the Federal Aviation Administration (FAA), construction and maintenance of interstate highways, and funds for transportation infrastructure, such as roads and rail.",
             "children": [
                 {
@@ -4374,8 +4374,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-the-treasury",
-            "name": "Department of the Treasury",
+            "id": "treasury",
+            "name": "Treasury",
             "description": "The Department of the Treasury manages the US Treasury. It prints paper currency, mints coins, and collect federal taxes through the Internal Revenue Service (IRS). It also licenses and supervises banks.",
             "children": [
                 {
@@ -4473,8 +4473,8 @@ var budget = {
             ]
         },
         {
-            "id": "department-of-veterans-affairs",
-            "name": "Department of Veterans Affairs",
+            "id": "veterans-affairs",
+            "name": "Veterans Affairs",
             "description": "The Department of Veterans Affairs provides benefits to military veterans, including healthcare services, disability compensation, education assistance, home loans, and life insurance. It also manages 135 national cemeteries.",
             "children": [
                 {
@@ -4658,8 +4658,8 @@ var budget = {
             "amount": 21818000000.0
         },
         {
-            "id": "department-of-defense",
-            "name": "Department of Defense",
+            "id": "defense",
+            "name": "Defense",
             "description": "The Department of Defense manages national security and the armed forces. The department is also the largest employer in the world, with nearly 1.3 million active duty servicemen and women, 826,000 National Guardsmen and Reservists, and over 732,000 civilians.",
             "children": [
                 {
@@ -4932,12 +4932,12 @@ var budget = {
                     "children": [
                         {
                             "id": "ohio-replacement-submarine-%28ap%29",
-                            "name": "Ohio Replacement Submarine (Ap)",
+                            "name": "Ohio Replacement Submarine (AP)",
                             "amount": 3173400000.0
                         },
                         {
                             "id": "carrier-replacement-program-%28cvn%E2%80%9380%29",
-                            "name": "Carrier Replacement Program (Cvn\u201380)",
+                            "name": "Carrier Replacement Program (CVN\u201380)",
                             "amount": 1573181000.0
                         },
                         {
@@ -4947,27 +4947,27 @@ var budget = {
                         },
                         {
                             "id": "virginia-class-submarine-%28ap%29",
-                            "name": "Virginia Class Submarine (Ap)",
+                            "name": "Virginia Class Submarine (AP)",
                             "amount": 2796401000.0
                         },
                         {
                             "id": "cvn-refueling-overhauls-%28ap%29",
-                            "name": "Cvn Refueling Overhauls (Ap)",
+                            "name": "CVN Refueling Overhauls (AP)",
                             "amount": 425873000.0
                         },
                         {
                             "id": "ddg%E2%80%931000-program",
-                            "name": "Ddg\u20131000 Program",
+                            "name": "DDG\u20131000 Program",
                             "amount": 270965000.0
                         },
                         {
                             "id": "ddg%E2%80%9351-destroyer",
-                            "name": "Ddg\u201351 Destroyer",
+                            "name": "DDG\u201351 Destroyer",
                             "amount": 5249837000.0
                         },
                         {
                             "id": "ddg%E2%80%9351-destroyer-%28ap%29",
-                            "name": "Ddg\u201351 Destroyer (Ap)",
+                            "name": "DDG\u201351 Destroyer (AP)",
                             "amount": 641928000.0
                         },
                         {
@@ -4977,7 +4977,7 @@ var budget = {
                         },
                         {
                             "id": "lpd%E2%80%9317",
-                            "name": "Lpd\u201317",
+                            "name": "LPD\u201317",
                             "amount": 350000000.0
                         },
                         {
@@ -4987,7 +4987,7 @@ var budget = {
                         },
                         {
                             "id": "lha-replacement-%28ap%29",
-                            "name": "Lha Replacement (Ap)",
+                            "name": "LHA Replacement (AP)",
                             "amount": 350000000.0
                         },
                         {
@@ -4997,12 +4997,12 @@ var budget = {
                         },
                         {
                             "id": "tao-fleet-oiler",
-                            "name": "Tao Fleet Oiler",
+                            "name": "TAO Fleet Oiler",
                             "amount": 977104000.0
                         },
                         {
                             "id": "tao-fleet-oiler-%28ap%29",
-                            "name": "Tao Fleet Oiler (Ap)",
+                            "name": "TAO Fleet Oiler (AP)",
                             "amount": 75046000.0
                         },
                         {
@@ -5012,7 +5012,7 @@ var budget = {
                         },
                         {
                             "id": "lcu-1700",
-                            "name": "Lcu 1700",
+                            "name": "LCU 1700",
                             "amount": 41520000.0
                         },
                         {
@@ -5027,7 +5027,7 @@ var budget = {
                         },
                         {
                             "id": "lcac-slep",
-                            "name": "Lcac Slep",
+                            "name": "LCAC SLEP",
                             "amount": 23321000.0
                         },
                         {
@@ -5200,7 +5200,7 @@ var budget = {
                         },
                         {
                             "id": "nato-security-investment-program",
-                            "name": "Nato Security Investment Program",
+                            "name": "NATO Security Investment Program",
                             "amount": 171064000.0
                         },
                         {
@@ -5545,8 +5545,8 @@ var budget = {
             ]
         },
         {
-            "id": "legislative-branch",
-            "name": "Legislative Branch",
+            "id": "legislative",
+            "name": "Legislative",
             "description": "The Legislative Branch of the Federal government includes the House of Representatives and the Senate.",
             "children": [
                 {
