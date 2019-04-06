@@ -13,13 +13,25 @@ var divsToTotalsAndPercents = {};
 
 var allExpandableItems = [];
 
+var allFilterableItems = [];
+
+var idsToFilterableItems = {};
+var idsToExpandableItems = {};
+
 var expanded = false;
 
 var showingPercents = false;
 
+var filterString = "";
+
 function buildTree(container, node, depth) {
     var row = $("<div>", {"id": node.id, "class": "where-it-went-row"});
     container.append(row);
+
+    if (depth > 0) {
+        allFilterableItems.push(row);
+        idsToFilterableItems[node.id] = row;
+    }
 
     var nameCol = $("<div>", {"class": "left-col"});
     row.append(nameCol);
@@ -60,6 +72,7 @@ function buildTree(container, node, depth) {
         if (depth > 0) {
             nameContainer.addClass('expandable-item')
             allExpandableItems.push(nameContainer);
+            idsToExpandableItems[node.id] = nameContainer;
         }
         var content = $("<div>", {"class": "content"});
         if (depth >= 1) {
@@ -158,7 +171,7 @@ $(function() {
 
     updateTaxBillAndValues();
 
-    function toggleExpandableItem(item, expand = null) {
+    function toggleExpandableItem(item, expand = null, animated = true) {
         var plusButton = item.children().first();
         if (expand != null) {
             if (expand && plusButton.hasClass('minus')) {
@@ -172,7 +185,7 @@ $(function() {
         plusButton.toggleClass('minus');
 
         var content = item.parent().parent().next();
-        content.slideToggle(500);
+        content.slideToggle(animated ? 500 : 0);
     }
 
     $(".expandable-item").click(function() {
@@ -198,5 +211,47 @@ $(function() {
         showingPercents = !showingPercents;
         $(this).html(showingPercents ? 'Show dollars' : 'Show percents');
         updateAllValues();
+    });
+
+    function filterWithText(node, text) {
+        var found = false;
+        var foundInChild = false;
+        if (node.name.toLowerCase().includes(text)) {
+            found = true;
+        }
+        if (node.children) {
+            for (var child of node.children) {
+                if (filterWithText(child, text)) {
+                    found = true;
+                    foundInChild = true;
+                }
+            }
+        }
+        var filterItem = idsToFilterableItems[node.id];
+        if (filterItem !== undefined) {
+            if (found) {
+                filterItem.removeClass('search-filtered');
+            } else {
+                filterItem.addClass('search-filtered');
+            }
+        }
+
+        var expandableItem = idsToExpandableItems[node.id];
+        if (expandableItem !== undefined) {
+            toggleExpandableItem(expandableItem, foundInChild, false);
+        }
+
+        return found;
+    }
+
+    $("#search-box").on("change paste keyup keypress", function() {
+        var filterString = $(this).val().trim().toLowerCase();
+        if (filterString.length == 0) {
+            for (var item of allFilterableItems) {
+                item.removeClass('search-filtered');
+            }
+        } else {
+            filterWithText(budget, filterString);
+        }
     });
 });

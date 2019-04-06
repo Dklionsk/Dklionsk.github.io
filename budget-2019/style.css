@@ -66,6 +66,10 @@ a {
     display: none;
 }
 
+.search-filtered {
+    display: none;
+}
+
 .left-col {
     display: inline-block;
     width: 70%;
