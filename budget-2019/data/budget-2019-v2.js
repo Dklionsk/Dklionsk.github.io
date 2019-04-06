@@ -1,6 +1,6 @@
 var budget = {
-    "id": "united-states-federal-budget%2C-2019",
-    "name": "United States Federal Budget, 2019",
+    "id": "federal-budget%2C-2019",
+    "name": "Federal Budget, 2019",
     "children": [
         {
             "id": "agriculture",

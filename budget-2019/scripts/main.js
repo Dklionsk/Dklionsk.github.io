@@ -134,7 +134,7 @@ $(function() {
 
     sortChildrenByAmount(budget);
 
-    var whatYouPaidInput = $("#what-you-paid-input")
+    var whatYouPaidInput = $("#tax-input")
     whatYouPaidInput.val(defaultTaxBill);
 
     function updateAllValues() {
@@ -178,7 +178,7 @@ $(function() {
         updateTaxBillAndValues();
     });
 
-    var budgetContainer = $("#where-it-went-table");
+    var budgetContainer = $("#budget-container");
     buildTree(budgetContainer, budget, 0);
 
     updateTaxBillAndValues();

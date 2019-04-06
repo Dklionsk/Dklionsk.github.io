@@ -11,28 +11,29 @@
   <body>
     <h1>Where Do Your Tax Dollars Actually Go?</h1>
     <p class="caption">See how your tax dollars might have been spent, based on the actual 2019 federal budget.</p>
-    <div id="what-you-paid">
-      <h2>Your tax bill</h2>
-      <p class="caption">Enter how much you paid in taxes for 2018, or leave it blank to see the actual budget. This number doesn't get stored or sent anywhere.</p>
-      <form id="form">
-        <div class="flex">
-          <span class="currency">$</span>
-          <input id="what-you-paid-input" type="text" maxlength="15">
-        </div>
-      </form>
-    </div>
-    <div id="where-it-went">
-      <h2>Where it went</h2>
+
+    <h2>Your tax bill</h2>
+    <p class="caption">Enter how much you paid in taxes for 2018, or leave it blank to see the actual budget. This number doesn't get stored or sent anywhere.</p>
+    <form id="form">
+      <div class="flex">
+        <span class="currency">$</span>
+        <input id="tax-input" type="text" maxlength="15">
+      </div>
+    </form>
+
+    <h2>Where it went</h2>
+    <p>
       <button id="expand-button">Expand all</button>
       <button id="percent-button">Show percents</button>
+    </p>
+    <p>
       <input id="search-box" type="text" placeholder="Search">
-      <div id="where-it-went-table">
-      </div>
+    </p>
+    <div id="budget-container">
     </div>
-    <div id="references-section">
-      <h4>References</h4>
-      <div id="references">
-      </div>
+
+    <h4>References</h4>
+    <div id="references">
     </div>
   </body>
 </html>
