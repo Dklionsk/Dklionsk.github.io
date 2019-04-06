@@ -11,6 +11,10 @@ var dollarFormatter = new Intl.NumberFormat('en-US', {
 
 var divsToTotalsAndPercents = {};
 
+var allExpandableItems = [];
+
+var expanded = false;
+
 function buildTree(container, node, depth) {
     var row = $("<div>", {"id": node.id, "class": "where-it-went-row"});
     container.append(row);
@@ -53,6 +57,7 @@ function buildTree(container, node, depth) {
     if (node.children) {
         if (depth > 0) {
             nameContainer.addClass('expandable-item')
+            allExpandableItems.push(nameContainer);
         }
         var content = $("<div>", {"class": "content"});
         if (depth >= 1) {
@@ -97,11 +102,13 @@ function sortChildrenByAmount(node) {
 }
 
 $(function() {
-
     var total = addSumsToInnerNodes(budget);
     addPercentsToNodes(budget, total);
 
     sortChildrenByAmount(budget);
+
+    var whatYouPaidInput = $("#what-you-paid-input")
+    whatYouPaidInput.val(defaultTaxBill);
 
     function updateAllValues() {
         for (const [divID, tuple] of Object.entries(divsToTotalsAndPercents)) {
@@ -111,9 +118,6 @@ $(function() {
             amountCol.html(formattedAmount);
         }
     }
-
-    var whatYouPaidInput = $("#what-you-paid-input")
-    whatYouPaidInput.val(defaultTaxBill);
 
     function updateTaxBillAndValues() {
         var rawInput = whatYouPaidInput.val();
@@ -148,19 +152,39 @@ $(function() {
 
     updateTaxBillAndValues();
 
-    $(".expandable-item").click(function () {
-        var nameContainer = $(this);
-        var content = nameContainer.parent().parent().next();
-        content.slideToggle(500);
+    function toggleExpandableItem(item, expand = null) {
+        var plusButton = item.children().first();
+        if (expand != null) {
+            if (expand && plusButton.hasClass('minus')) {
+                return;
+            } else if (!expand && plusButton.hasClass('plus')) {
+                return;
+            }
+        }
 
-        var plusButton = nameContainer.children().first();
         plusButton.toggleClass('plus');
         plusButton.toggleClass('minus');
+
+        var content = item.parent().parent().next();
+        content.slideToggle(500);
+    }
+
+    $(".expandable-item").click(function() {
+        var nameContainer = $(this);
+        toggleExpandableItem(nameContainer);
     });
 
-    $(".info").click(function () {
+    $(".info").click(function() {
         var infoButton = $(this);
         var description = infoButton.parent().next().next();
         description.slideToggle(500);
+    });
+
+    $("#expand-button").click(function() {
+        expanded = !expanded;
+        $(this).html(expanded ? 'Collapse all' : 'Expand all');
+        for (var item of allExpandableItems) {
+            toggleExpandableItem(item, expanded);
+        }
     });
 });
