@@ -3,9 +3,16 @@
 const defaultTaxBill = 0;
 var taxBill = 0;
 
+var bigDollarFormatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumSignificantDigits: 7,
+});
+
 var dollarFormatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
+    maximumFractionDigits: 2,
     minimumFractionDigits: 2,
 });
 
@@ -23,6 +30,11 @@ var expanded = false;
 var showingPercents = false;
 
 var filterString = "";
+
+function formatValue(value) {
+    var formatter = value >= 1000000 ? bigDollarFormatter : dollarFormatter;
+    return formatter.format(value);
+}
 
 function buildTree(container, node, depth) {
     var row = $("<div>", {"id": node.id, "class": "where-it-went-row"});
@@ -54,7 +66,7 @@ function buildTree(container, node, depth) {
     }
 
     if (node.amount) {
-        var formattedAmount = dollarFormatter.format(node.amount);
+        var formattedAmount = formatValue(node.amount);
         var amountCol = $("<div>", {"id": node.id + "-amount", "class": "right-col"});
         amountCol.html(formattedAmount);
         row.append(amountCol);
@@ -132,7 +144,7 @@ $(function() {
                 amountCol.html((percent * 100).toFixed(2) + "%");
             } else {
                 var valueToFormat = taxBill == 0 ? amount : taxBill * percent;
-                var formattedAmount = dollarFormatter.format(valueToFormat);
+                var formattedAmount = formatValue(valueToFormat);
                 amountCol.html(formattedAmount);
             }
         }
