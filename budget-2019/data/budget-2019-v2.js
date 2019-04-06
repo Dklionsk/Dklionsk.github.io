@@ -1,6 +1,6 @@
 var budget = {
-    "id": "federal-budget%2C-2019",
-    "name": "Federal Budget, 2019",
+    "id": "federal-budget",
+    "name": "Federal Budget",
     "children": [
         {
             "id": "agriculture",
@@ -708,64 +708,62 @@ var budget = {
                 {
                     "id": "federal-payment-for-resident-tuition-support",
                     "name": "Federal Payment for Resident Tuition Support",
-                    "amount": 40000000.0,
-                    "children": [
-                        {
-                            "id": "federal-payment-for-emergency-planning-and-security-costs-in-the-district-of-columbia",
-                            "name": "Federal Payment for Emergency Planning and Security Costs in the District of Columbia",
-                            "amount": 12000000.0
-                        },
-                        {
-                            "id": "federal-payment-to-the-district-of-columbia-courts",
-                            "name": "Federal Payment to the District of Columbia Courts",
-                            "amount": 258394000.0
-                        },
-                        {
-                            "id": "federal-payment-for-defender-services-in-district-of-columbia-courts",
-                            "name": "Federal Payment for Defender Services in District of Columbia Courts",
-                            "amount": 46005000.0
-                        },
-                        {
-                            "id": "federal-payment-to-the-court-services-and-offender-supervision-agency-for-the-district-of-columbia",
-                            "name": "Federal Payment to the Court Services and Offender Supervision Agency for the District of Columbia",
-                            "amount": 256724000.0
-                        },
-                        {
-                            "id": "federal-payment-to-the-district-of-columbia-public-defender-service",
-                            "name": "Federal Payment to the District of Columbia Public Defender Service",
-                            "amount": 45858000.0
-                        },
-                        {
-                            "id": "federal-payment-to-the-criminal-justice-coordinating-council",
-                            "name": "Federal Payment to the Criminal Justice Coordinating Council",
-                            "amount": 2150000.0
-                        },
-                        {
-                            "id": "federal-payment-for-judicial-commissions",
-                            "name": "Federal Payment for Judicial Commissions",
-                            "amount": 565000.0
-                        },
-                        {
-                            "id": "federal-payment-for-school-improvement",
-                            "name": "Federal Payment for School Improvement",
-                            "amount": 52500000.0
-                        },
-                        {
-                            "id": "federal-payment-for-the-district-of-columbia-national-guard",
-                            "name": "Federal Payment for the District of Columbia National Guard",
-                            "amount": 435000.0
-                        },
-                        {
-                            "id": "federal-payment-for-testing-and-treatment-of-hiv%2Faids",
-                            "name": "Federal Payment for Testing and Treatment of Hiv/Aids",
-                            "amount": 3000000.0
-                        },
-                        {
-                            "id": "federal-payment-to-the-district-of-columbia-water-and-sewer-authority",
-                            "name": "Federal Payment to the District of Columbia Water and Sewer Authority",
-                            "amount": 8000000.0
-                        }
-                    ]
+                    "amount": 40000000.0
+                },
+                {
+                    "id": "federal-payment-for-emergency-planning-and-security-costs-in-the-district-of-columbia",
+                    "name": "Federal Payment for Emergency Planning and Security Costs in the District of Columbia",
+                    "amount": 12000000.0
+                },
+                {
+                    "id": "federal-payment-to-the-district-of-columbia-courts",
+                    "name": "Federal Payment to the District of Columbia Courts",
+                    "amount": 258394000.0
+                },
+                {
+                    "id": "federal-payment-for-defender-services-in-district-of-columbia-courts",
+                    "name": "Federal Payment for Defender Services in District of Columbia Courts",
+                    "amount": 46005000.0
+                },
+                {
+                    "id": "federal-payment-to-the-court-services-and-offender-supervision-agency-for-the-district-of-columbia",
+                    "name": "Federal Payment to the Court Services and Offender Supervision Agency for the District of Columbia",
+                    "amount": 256724000.0
+                },
+                {
+                    "id": "federal-payment-to-the-district-of-columbia-public-defender-service",
+                    "name": "Federal Payment to the District of Columbia Public Defender Service",
+                    "amount": 45858000.0
+                },
+                {
+                    "id": "federal-payment-to-the-criminal-justice-coordinating-council",
+                    "name": "Federal Payment to the Criminal Justice Coordinating Council",
+                    "amount": 2150000.0
+                },
+                {
+                    "id": "federal-payment-for-judicial-commissions",
+                    "name": "Federal Payment for Judicial Commissions",
+                    "amount": 565000.0
+                },
+                {
+                    "id": "federal-payment-for-school-improvement",
+                    "name": "Federal Payment for School Improvement",
+                    "amount": 52500000.0
+                },
+                {
+                    "id": "federal-payment-for-the-district-of-columbia-national-guard",
+                    "name": "Federal Payment for the District of Columbia National Guard",
+                    "amount": 435000.0
+                },
+                {
+                    "id": "federal-payment-for-testing-and-treatment-of-hiv%2Faids",
+                    "name": "Federal Payment for Testing and Treatment of HIV/AIDS",
+                    "amount": 3000000.0
+                },
+                {
+                    "id": "federal-payment-to-the-district-of-columbia-water-and-sewer-authority",
+                    "name": "Federal Payment to the District of Columbia Water and Sewer Authority",
+                    "amount": 8000000.0
                 }
             ]
         },
@@ -1337,7 +1335,7 @@ var budget = {
                         },
                         {
                             "id": "ryan-white-hiv%2Faids-program",
-                            "name": "Ryan White Hiv/Aids Program",
+                            "name": "Ryan White HIV/AIDS Program",
                             "amount": 2318781000.0
                         },
                         {
@@ -1383,7 +1381,7 @@ var budget = {
                         },
                         {
                             "id": "hiv%2Faids%2C-viral-hepatitis%2C-sexually-transmitted-diseases%2C-and-tuberculosis-prevention",
-                            "name": "Hiv/Aids, Viral Hepatitis, Sexually Transmitted Diseases, and Tuberculosis Prevention",
+                            "name": "HIV/AIDS, Viral Hepatitis, Sexually Transmitted Diseases, and Tuberculosis Prevention",
                             "amount": 1132278000.0
                         },
                         {
@@ -2183,7 +2181,7 @@ var budget = {
                     "children": [
                         {
                             "id": "housing-opportunities-for-persons-with-aids",
-                            "name": "Housing Opportunities for Persons With Aids",
+                            "name": "Housing Opportunities for Persons With AIDS",
                             "amount": 393000000.0
                         },
                         {

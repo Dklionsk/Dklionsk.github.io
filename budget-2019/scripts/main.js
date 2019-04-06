@@ -36,38 +36,22 @@ function formatValue(value) {
     return formatter.format(value);
 }
 
-function buildTree(container, node, depth) {
-    var row = $("<div>", {"id": node.id, "class": "where-it-went-row"});
+function buildTree(container, node, depth, indexInLevel) {
+    var row = $("<div>", {"id": node.id, "class": "budget-row"});
     container.append(row);
-
     if (depth > 0) {
         allFilterableItems.push(row);
         idsToFilterableItems[node.id] = row;
     }
 
-    var nameCol = $("<div>", {"class": "left-col"});
+    row.addClass((indexInLevel + depth) % 2 == 0 ? "row-a" : "row-b");
+
+    var nameCol = $("<div>", {"class": "name-col"});
     row.append(nameCol);
-
-    var nameContainer = $("<span>", {"class": "item-name"});
-    nameCol.append(nameContainer);
-
-    if (node.children && depth > 0) {
-        var plusButton = $("<div>", {"class": "plus"});
-        nameContainer.append(plusButton);
-    }
-
-    var nameSpan = $("<span>");
-    nameSpan.html(node.name);
-    nameContainer.append(nameSpan);
-
-    if (node.description) {
-        var infoButton = $("<div>", {"class": "info"});
-        nameCol.append(infoButton);
-    }
 
     if (node.amount) {
         var formattedAmount = formatValue(node.amount);
-        var amountCol = $("<div>", {"id": node.id + "-amount", "class": "right-col"});
+        var amountCol = $("<div>", {"id": node.id + "-amount", "class": "amount-col"});
         amountCol.html(formattedAmount);
         row.append(amountCol);
         divsToTotalsAndPercents[node.id] = [amountCol, node.amount, node.percent];
@@ -75,24 +59,51 @@ function buildTree(container, node, depth) {
 
     if (node.description) {
         var description = $("<div>", {"class": "description expandable"});
-        // var description = $("<div>", {"class": "description"});
         description.html(node.description);
         row.append(description);
     }
-    
+
+    var nameColContents = $("<div>", {"class": "name-col-contents"});
+    nameCol.append(nameColContents);
+
+    var expandAndNameContainer = $("<div>", {"class": "expand-name-container"});
+    nameColContents.append(expandAndNameContainer);
+
+    var infoButtonContainer = $("<div>", {"class": "info-button-container"});
+    nameColContents.append(infoButtonContainer);
+
+    if (depth > 0) {
+        var expandButtonContainer = $("<div>", {"class": "expand-button-container"});
+        expandAndNameContainer.append(expandButtonContainer);
+
+        var expandButtonClasses = node.children && depth > 0 ? "icon expand" : "icon";
+        var expandButton = $("<div>", {"class": expandButtonClasses});
+        expandButtonContainer.append(expandButton);
+    }
+
+    var nameContainer = $("<div>", {"class": "name-container"});
+    expandAndNameContainer.append(nameContainer);
+    nameContainer.html(node.name);
+
+    var infoButtonClasses = node.description ? "icon info" : "icon";
+    var infoButton = $("<div>", {"class": infoButtonClasses});
+    infoButtonContainer.append(infoButton);
+
     if (node.children) {
         if (depth > 0) {
-            nameContainer.addClass('expandable-item')
-            allExpandableItems.push(nameContainer);
-            idsToExpandableItems[node.id] = nameContainer;
+            expandAndNameContainer.addClass('expandable-item')
+            allExpandableItems.push(expandAndNameContainer);
+            idsToExpandableItems[node.id] = expandAndNameContainer;
         }
         var content = $("<div>", {"class": "content"});
         if (depth >= 1) {
             content.addClass("expandable");
         }
         container.append(content);
-        for (var child of node.children) {
-            buildTree(content, child, depth + 1);
+
+        for (var i = 0; i < node.children.length; i++) {
+            var child = node.children[i];
+            buildTree(content, child, depth + 1, i);
         }
     }
 }
@@ -179,35 +190,35 @@ $(function() {
     });
 
     var budgetContainer = $("#budget-container");
-    buildTree(budgetContainer, budget, 0);
+    buildTree(budgetContainer, budget, 0, 0);
 
     updateTaxBillAndValues();
 
     function toggleExpandableItem(item, expand = null, animated = true) {
-        var plusButton = item.children().first();
+        var plusButton = item.children().first().children().first();
         if (expand != null) {
-            if (expand && plusButton.hasClass('minus')) {
+            if (expand && plusButton.hasClass("collapse")) {
                 return;
-            } else if (!expand && plusButton.hasClass('plus')) {
+            } else if (!expand && plusButton.hasClass("expand")) {
                 return;
             }
         }
 
-        plusButton.toggleClass('plus');
-        plusButton.toggleClass('minus');
+        plusButton.toggleClass("expand");
+        plusButton.toggleClass("collapse");
 
-        var content = item.parent().parent().next();
+        var content = item.parent().parent().parent().next();
         content.slideToggle(animated ? 500 : 0);
     }
 
     $(".expandable-item").click(function() {
-        var nameContainer = $(this);
-        toggleExpandableItem(nameContainer);
+        var expandAndNameContainer = $(this);
+        toggleExpandableItem(expandAndNameContainer);
     });
 
     $(".info").click(function() {
         var infoButton = $(this);
-        var description = infoButton.parent().next().next();
+        var description = infoButton.parent().parent().parent().next().next();
         description.slideToggle(500);
     });
 
