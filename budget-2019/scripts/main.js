@@ -15,6 +15,8 @@ var allExpandableItems = [];
 
 var expanded = false;
 
+var showingPercents = false;
+
 function buildTree(container, node, depth) {
     var row = $("<div>", {"id": node.id, "class": "where-it-went-row"});
     container.append(row);
@@ -113,9 +115,13 @@ $(function() {
     function updateAllValues() {
         for (const [divID, tuple] of Object.entries(divsToTotalsAndPercents)) {
             var [amountCol, amount, percent] = tuple;
-            var valueToFormat = taxBill == 0 ? amount : taxBill * percent;
-            var formattedAmount = dollarFormatter.format(valueToFormat);
-            amountCol.html(formattedAmount);
+            if (showingPercents) {
+                amountCol.html((percent * 100).toFixed(2) + "%");
+            } else {
+                var valueToFormat = taxBill == 0 ? amount : taxBill * percent;
+                var formattedAmount = dollarFormatter.format(valueToFormat);
+                amountCol.html(formattedAmount);
+            }
         }
     }
 
@@ -186,5 +192,11 @@ $(function() {
         for (var item of allExpandableItems) {
             toggleExpandableItem(item, expanded);
         }
+    });
+
+    $("#percent-button").click(function() {
+        showingPercents = !showingPercents;
+        $(this).html(showingPercents ? 'Show dollars' : 'Show percents');
+        updateAllValues();
     });
 });
