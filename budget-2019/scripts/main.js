@@ -44,9 +44,8 @@ function buildTree(container, node, depth) {
     }
 
     if (node.description) {
-        // TODO: Hide descriptions again once we're done editing.
-        // var description = $("<div>", {"class": "description expandable"});
-        var description = $("<div>", {"class": "description"});
+        var description = $("<div>", {"class": "description expandable"});
+        // var description = $("<div>", {"class": "description"});
         description.html(node.description);
         row.append(description);
     }

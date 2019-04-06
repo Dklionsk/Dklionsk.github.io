@@ -5,6 +5,7 @@ var budget = {
         {
             "id": "department-of-agriculture",
             "name": "Department of Agriculture",
+            "description": "The Department of Agriculture is responsible for farming, forestry, and food. It aims to meet the needs of farmers and ranchers, promote agricultural trade and production, assure food safety, and end hunger in the United States.",
             "children": [
                 {
                     "id": "office-of-the-secretary",
@@ -565,6 +566,7 @@ var budget = {
         {
             "id": "department-of-commerce",
             "name": "Department of Commerce",
+            "description": "The Department of Commerce's main purpose is to create jobs, promote economic growth, encourage sustainable development, and improve standards of living for all Americans.",
             "children": [
                 {
                     "id": "international-trade-administration",
@@ -701,6 +703,7 @@ var budget = {
         {
             "id": "district-of-columbia",
             "name": "District of Columbia",
+            "description": "Washington, D.C. is the US capital and the seat of the federal government. Parts of the city\u2019s budget are managed by Congress.",
             "children": [
                 {
                     "id": "federal-payment-for-resident-tuition-support",
@@ -769,6 +772,7 @@ var budget = {
         {
             "id": "department-of-education",
             "name": "Department of Education",
+            "description": "The Department of Education coordinates federal assistance to education, collects data on US schools, and enforces laws regarding privacy and civil rights in education. The department does not establish schools or define curricula, leaving this to the states.",
             "children": [
                 {
                     "id": "education-for-the-disadvantaged",
@@ -907,6 +911,7 @@ var budget = {
         {
             "id": "department-of-energy",
             "name": "Department of Energy",
+            "description": "The Department of the Interior is responsible for the management and conservation of federal lands and natural resources, as well as programs relating to Native Americans. It also runs the National Park Service and wildlife refuges.",
             "children": [
                 {
                     "id": "energy-programs",
@@ -1087,6 +1092,7 @@ var budget = {
         {
             "id": "executive-office-of-the-president",
             "name": "Executive Office of the President",
+            "description": "Contains departments and programs managed by the President.",
             "children": [
                 {
                     "id": "office-of-science-and-technology-policy",
@@ -1277,6 +1283,7 @@ var budget = {
         {
             "id": "department-of-health-and-human-services",
             "name": "Department of Health and Human Services",
+            "description": "The Department of Health and Human Services aims to improve the health, safety, and well-being of Americans. It manages Medicare and Medicaid, the National Institutes of Health, the Centers for Disease Control and Prevention, and the Food and Drug Administration.",
             "children": [
                 {
                     "id": "food-and-drug-administration",
@@ -1756,6 +1763,7 @@ var budget = {
         {
             "id": "department-of-homeland-security",
             "name": "Department of Homeland Security",
+            "description": "While the Department of Defense is charged with military actions abroad, the Department of Homeland Security works in the civilian sphere to protect the United States within, at, and outside its borders. Its stated goal is to prepare for, prevent, and respond to domestic emergencies, particularly terrorism. It is the youngest cabinet department, created in response to the September 11 attacks.",
             "children": [
                 {
                     "id": "cybersecurity-and-infrastructure-security-agency",
@@ -2069,6 +2077,7 @@ var budget = {
         {
             "id": "department-of-housing-and-urban-development",
             "name": "Department of Housing and Urban Development",
+            "description": "The Department of Housing and Urban Development promotes home ownership by providing, insuring, and regulating home mortgages. It also helps provide housing assistance for the elderly, disabled, and underserved populations.",
             "children": [
                 {
                     "id": "management-and-administration",
@@ -2287,6 +2296,7 @@ var budget = {
         {
             "id": "independent-agencies",
             "name": "Independent Agencies",
+            "description": "There are a tremendous number of other smaller agencies which aren't as well known as the major executive agencies listed here. Many of these are independent agencies, whose heads are not appointed by the President.",
             "children": [
                 {
                     "id": "farm-credit-administration",
@@ -3108,6 +3118,7 @@ var budget = {
         {
             "id": "department-of-the-interior",
             "name": "Department of the Interior",
+            "description": "The Department of the Interior is responsible for the management and conservation of federal lands and natural resources, as well as programs relating to Native Americans. It also runs the National Park Service and wildlife refuges.",
             "children": [
                 {
                     "id": "central-utah-project",
@@ -3393,6 +3404,7 @@ var budget = {
         {
             "id": "the-judiciary",
             "name": "The Judiciary",
+            "description": "The Judiciary branch includes the Supreme Court and other Federal courts.",
             "children": [
                 {
                     "id": "supreme-court-of-the-united-states",
@@ -3476,6 +3488,7 @@ var budget = {
         {
             "id": "department-of-justice",
             "name": "Department of Justice",
+            "description": "The Department of Justice is responsible for the enforcement of the law and administration of justice. It runs the Federal Bureau of Investigation (FBI), the Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF), and the Drug Enforcement Administration (DEA), and is headed by the Attorney General.",
             "children": [
                 {
                     "id": "general-administration",
@@ -3818,6 +3831,7 @@ var budget = {
         {
             "id": "department-of-state",
             "name": "Department of State",
+            "description": "The Department of State advises the President and conducts international relations. It was established in 1789 as the nation's first executive department. The State Department implements foreign policy, operates diplomatic missions abroad, negotiates treaties with foreign entities, and represents the United States at the United Nations.",
             "children": [
                 {
                     "id": "administration-of-foreign-affairs",
@@ -4041,6 +4055,7 @@ var budget = {
         {
             "id": "department-of-transportation",
             "name": "Department of Transportation",
+            "description": "The Department of Transportation manages transportation in the United States. This includes the the construction and operation of airports and air traffic control through the Federal Aviation Administration (FAA), construction and maintenance of interstate highways, and funds for transportation infrastructure, such as roads and rail.",
             "children": [
                 {
                     "id": "office-of-the-secretary-4",
@@ -4361,6 +4376,7 @@ var budget = {
         {
             "id": "department-of-the-treasury",
             "name": "Department of the Treasury",
+            "description": "The Department of the Treasury manages the US Treasury. It prints paper currency, mints coins, and collect federal taxes through the Internal Revenue Service (IRS). It also licenses and supervises banks.",
             "children": [
                 {
                     "id": "departmental-offices-2",
@@ -4459,6 +4475,7 @@ var budget = {
         {
             "id": "department-of-veterans-affairs",
             "name": "Department of Veterans Affairs",
+            "description": "The Department of Veterans Affairs provides benefits to military veterans, including healthcare services, disability compensation, education assistance, home loans, and life insurance. It also manages 135 national cemeteries.",
             "children": [
                 {
                     "id": "veterans-benefits-administration",
@@ -4607,37 +4624,43 @@ var budget = {
         {
             "id": "social-security",
             "name": "Social Security",
+            "description": "Social Security is a program that gives money to people who are retired, disabled, or living in poverty. In 2019, the average retiree will receive $1,461 per month from Social Security. The program is funded by a tax on your paycheck, with 6.2% paid by you and 6.2% paid by your employer. There's an ongoing debate about how we will continue to fund Social Security. Today's workers pay for today's retirees, and the number of people receiving benefits is increasing relative to the number of workers who contribute through taxes. For example, the average number of workers per retiree was 5.1 in 1960. This declined to 3.0 by 2010, and is projected to decline to 2.2 by 2030. If nothing changes, it's predicted that Social Security will start paying out more than it takes in by 2033. Congress might prevent this shortfall by increasing taxes, decreasing benefits, or a combination of both.",
             "amount": 1100000000000.0
         },
         {
             "id": "medicare",
             "name": "Medicare",
+            "description": "Medicare is a government health insurance program for people aged 65 and older and for some people with disabilities. Like Social Security, Medicare is funded through a tax on your paycheck, with you and your employer each paying 1.45%. Also like Social Security, spending on Medicare is expected to increase, as the number of eligible people over 65 increases and the cost of health care in the United States rises. Congress could avoid this shortfall by increasing payroll taxes, reducing benefits, or by finding ways to reduce health care and prescription drug costs in general.",
             "amount": 645000000000.0
         },
         {
             "id": "medicaid",
             "name": "Medicaid",
+            "description": "Medicaid is a government health insurance program for people of any age who are living near or below the poverty line. It is jointly funded by the federal government and the states; states don't have to participate, but if they do, the federal government matches a portion of the state funding. ",
             "amount": 419000000000.0
         },
         {
             "id": "exchange-subsidies",
             "name": "Exchange Subsidies",
+            "description": "The Affordable Care Act, also known as Obamacare, expanded health care coverage to 24 million people, reducing the number of uninsured people in the United States by almost half. One major way this was done was by subsidizing health insurance policies purchased through an online marketplace (\"exchange subsidies\"). These subsidies are mostly paid for through taxes on health insurance providers, prescription drug manufacturers, and investment income for high income individuals (mostly in the top 1% of earners).",
             "amount": 56000000000.0
         },
         {
             "id": "interest-on-the-national-debt",
             "name": "Interest on the National Debt",
+            "description": "Sometimes the federal government wants to spend more money than it takes in through taxes. Some of the extra money comes from people, companies, or other governments lending money to the federal government (e.g. through treasury bonds). The government has to pay back interest on that debt. As of December 31, 2018, the total national debt was $21.97 trillion.",
             "amount": 394000000000.0
         },
         {
             "id": "mandatory-financial-services-accounts",
             "name": "Mandatory Financial Services Accounts",
-            "description": "Includes compensation of the President (3 U.S.C. 102), payments to the Judicial Officers' Retirement Fund (28 U.S.C. 377(o)), payments to the Judicial Survivors' Annuities Fund (28 U.S.C. 376(c)), payments to the United States Court of Federal Claims Judges' Retirement Fund (28 U.S.C. 178(l)), contributions with respect to the health benefits of retired employees, as authorized by chapter 89 of title 5, United States Code, and the Retired Federal Employees Health Benefits Act (74 Stat. 849), contributions with respect to the life insurance benefits for employees retiring after December 31, 1989 (5 U.S.C. ch. 87), payment to finance the unfunded liability of new and increased annuity benefits under the Civil Service Retirement and Disability Fund (5 U.S.C. 8348), and payment of annuities authorized to be paid from the Civil Service Retirement and Disability Fund by statutory provisions other than subchapter III of chapter 83 or chapter 84 of title 5, United States Code.",
+            "description": "Civilians who work for the federal government as well as members of the armed forces qualify for retirement benefits after serving for a certain number of years, similar to a pension. Some veterans of the armed forces qualify for additional benefits, such as special health insurance programs.",
             "amount": 21818000000.0
         },
         {
             "id": "department-of-defense",
             "name": "Department of Defense",
+            "description": "The Department of Defense manages national security and the armed forces. The department is also the largest employer in the world, with nearly 1.3 million active duty servicemen and women, 826,000 National Guardsmen and Reservists, and over 732,000 civilians.",
             "children": [
                 {
                     "id": "military-personnel",
@@ -5235,6 +5258,7 @@ var budget = {
                 {
                     "id": "overseas-contingency-operations",
                     "name": "Overseas Contingency Operations",
+                    "description": "Overseas Contingency Operations are those operations related to the War on Terror, which began after the September 11, 2001 attacks. They primarily include US military operations in Afghanistan, Iraq, and Syria. This part of the budget is managed by the Department of Defense, separately from its base budget.",
                     "children": [
                         {
                             "id": "military-construction-2",
@@ -5523,6 +5547,7 @@ var budget = {
         {
             "id": "legislative-branch",
             "name": "Legislative Branch",
+            "description": "The Legislative Branch of the Federal government includes the House of Representatives and the Senate.",
             "children": [
                 {
                     "id": "joint-items",
