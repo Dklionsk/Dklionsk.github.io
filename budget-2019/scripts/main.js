@@ -21,7 +21,7 @@ function buildTree(container, node, depth) {
     var nameContainer = $("<span>", {"class": "item-name"});
     nameCol.append(nameContainer);
 
-    if (node.children) {
+    if (node.children && depth > 0) {
         var plusButton = $("<div>", {"class": "plus"});
         nameContainer.append(plusButton);
     }
@@ -51,10 +51,9 @@ function buildTree(container, node, depth) {
     }
     
     if (node.children) {
-        nameContainer.addClass('expandable-item')
-
-        // TODO: Decide how much we want to show by default. It's probably depth 2.
-        // var content = $("<div>", {"class": "content expandable"});
+        if (depth > 0) {
+            nameContainer.addClass('expandable-item')
+        }
         var content = $("<div>", {"class": "content"});
         if (depth >= 1) {
             content.addClass("expandable");
