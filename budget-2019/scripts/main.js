@@ -1,6 +1,6 @@
 "use strict";
 
-const defaultTaxBill = 0;//10000;
+const defaultTaxBill = 0;
 var taxBill = 0;
 
 var dollarFormatter = new Intl.NumberFormat('en-US', {
@@ -131,7 +131,7 @@ $(function() {
 
         // Format the new input string.
         // For some reason, toLocaleString preserves the cursor position, while Intl.NumberFormat does not.
-        var formattedInput = inputNumber === 0 ? "" : inputNumber.toLocaleString( "en-US" );
+        var formattedInput = inputNumber.toLocaleString("en-US");
         whatYouPaidInput.val(formattedInput);
 
         $("#paid-value").html('$' + formattedInput);
