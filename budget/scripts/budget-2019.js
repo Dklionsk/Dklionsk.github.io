@@ -4517,49 +4517,47 @@ var budget = {
                 {
                     "id": "science-2",
                     "name": "Science",
-                    "amount": 6905700000.0,
-                    "children": [
-                        {
-                            "id": "aeronautics",
-                            "name": "Aeronautics",
-                            "amount": 725000000.0
-                        },
-                        {
-                            "id": "space-technology",
-                            "name": "Space Technology",
-                            "amount": 926900000.0
-                        },
-                        {
-                            "id": "exploration",
-                            "name": "Exploration",
-                            "amount": 5050800000.0
-                        },
-                        {
-                            "id": "space-operations",
-                            "name": "Space Operations",
-                            "amount": 4639100000.0
-                        },
-                        {
-                            "id": "science%2C-technology%2C-engineering%2C-and-mathematics-engagement",
-                            "name": "Science, Technology, Engineering, and Mathematics Engagement",
-                            "amount": 110000000.0
-                        },
-                        {
-                            "id": "safety%2C-security-and-mission-services",
-                            "name": "Safety, Security and Mission Services",
-                            "amount": 2755000000.0
-                        },
-                        {
-                            "id": "construction-and-environmental-compliance-and-restoration",
-                            "name": "Construction and Environmental Compliance and Restoration",
-                            "amount": 348200000.0
-                        },
-                        {
-                            "id": "office-of-inspector-general-22",
-                            "name": "Office of Inspector General",
-                            "amount": 39300000.0
-                        }
-                    ]
+                    "amount": 6905700000.0
+                },
+                {
+                    "id": "aeronautics",
+                    "name": "Aeronautics",
+                    "amount": 725000000.0
+                },
+                {
+                    "id": "space-technology",
+                    "name": "Space Technology",
+                    "amount": 926900000.0
+                },
+                {
+                    "id": "exploration",
+                    "name": "Exploration",
+                    "amount": 5050800000.0
+                },
+                {
+                    "id": "space-operations",
+                    "name": "Space Operations",
+                    "amount": 4639100000.0
+                },
+                {
+                    "id": "science%2C-technology%2C-engineering%2C-and-mathematics-engagement",
+                    "name": "Science, Technology, Engineering, and Mathematics Engagement",
+                    "amount": 110000000.0
+                },
+                {
+                    "id": "safety%2C-security-and-mission-services",
+                    "name": "Safety, Security and Mission Services",
+                    "amount": 2755000000.0
+                },
+                {
+                    "id": "construction-and-environmental-compliance-and-restoration",
+                    "name": "Construction and Environmental Compliance and Restoration",
+                    "amount": 348200000.0
+                },
+                {
+                    "id": "office-of-inspector-general-22",
+                    "name": "Office of Inspector General",
+                    "amount": 39300000.0
                 }
             ]
         },
@@ -4571,59 +4569,57 @@ var budget = {
                 {
                     "id": "science-and-technology",
                     "name": "Science and Technology",
-                    "amount": 717723000.0,
-                    "children": [
-                        {
-                            "id": "environmental-programs-and-management",
-                            "name": "Environmental Programs and Management",
-                            "amount": 2658200000.0
-                        },
-                        {
-                            "id": "hazardous-waste-electronic-manifest-system-fund",
-                            "name": "Hazardous Waste Electronic Manifest System Fund",
-                            "amount": 8000000.0
-                        },
-                        {
-                            "id": "office-of-inspector-general-23",
-                            "name": "Office of Inspector General",
-                            "amount": 41489000.0
-                        },
-                        {
-                            "id": "buildings-and-facilities-6",
-                            "name": "Buildings and Facilities",
-                            "amount": 34467000.0
-                        },
-                        {
-                            "id": "hazardous-substance-superfund",
-                            "name": "Hazardous Substance Superfund",
-                            "amount": 1091947000.0
-                        },
-                        {
-                            "id": "leaking-underground-storage-tank-trust-fund-program",
-                            "name": "Leaking Underground Storage Tank Trust Fund Program",
-                            "amount": 91941000.0
-                        },
-                        {
-                            "id": "inland-oil-spill-programs",
-                            "name": "Inland Oil Spill Programs",
-                            "amount": 18209000.0
-                        },
-                        {
-                            "id": "state-and-tribal-assistance-grants",
-                            "name": "State and Tribal Assistance Grants",
-                            "amount": 3605041000.0
-                        },
-                        {
-                            "id": "water-infrastructure-finance-and-innovation-program-account",
-                            "name": "Water Infrastructure Finance and Innovation Program Account",
-                            "amount": 5000000.0
-                        },
-                        {
-                            "id": "water-infrastructure-and-superfund",
-                            "name": "Water Infrastructure and Superfund",
-                            "amount": 791000000.0
-                        }
-                    ]
+                    "amount": 717723000.0
+                },
+                {
+                    "id": "environmental-programs-and-management",
+                    "name": "Environmental Programs and Management",
+                    "amount": 2658200000.0
+                },
+                {
+                    "id": "hazardous-waste-electronic-manifest-system-fund",
+                    "name": "Hazardous Waste Electronic Manifest System Fund",
+                    "amount": 8000000.0
+                },
+                {
+                    "id": "office-of-inspector-general-23",
+                    "name": "Office of Inspector General",
+                    "amount": 41489000.0
+                },
+                {
+                    "id": "buildings-and-facilities-6",
+                    "name": "Buildings and Facilities",
+                    "amount": 34467000.0
+                },
+                {
+                    "id": "hazardous-substance-superfund",
+                    "name": "Hazardous Substance Superfund",
+                    "amount": 1091947000.0
+                },
+                {
+                    "id": "leaking-underground-storage-tank-trust-fund-program",
+                    "name": "Leaking Underground Storage Tank Trust Fund Program",
+                    "amount": 91941000.0
+                },
+                {
+                    "id": "inland-oil-spill-programs",
+                    "name": "Inland Oil Spill Programs",
+                    "amount": 18209000.0
+                },
+                {
+                    "id": "state-and-tribal-assistance-grants",
+                    "name": "State and Tribal Assistance Grants",
+                    "amount": 3605041000.0
+                },
+                {
+                    "id": "water-infrastructure-finance-and-innovation-program-account",
+                    "name": "Water Infrastructure Finance and Innovation Program Account",
+                    "amount": 5000000.0
+                },
+                {
+                    "id": "water-infrastructure-and-superfund",
+                    "name": "Water Infrastructure and Superfund",
+                    "amount": 791000000.0
                 }
             ]
         },
