@@ -7,6 +7,14 @@ body {
     font-size: 12pt;
 }
 
+h1 {
+    font-size: 36pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
 .caption {
     color: #666;
 }
@@ -99,41 +107,12 @@ body {
     display: none;
 }
 
-#currency-form {
-    width: 100%;
-    max-width: 170px;
-    margin: 0px 0px;
-}
-
 #currency-form input {
-    font-size: 24px;
+    font-size: 20px;
     padding: 0;
-    width: 100%;
     color: #2179ee;
-    border-width: 2px;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 0 0 0 0;
-    border-color: #000;
-}
-
-#currency-form input:focus {
-    outline: 0;
-}
-
-.currency-contents {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.currency-contents input {
-    max-width: 300px;
-    flex: 1 1 100px;
 }
 
 .currency-contents .currency {
-    font-size: 24px;
-    padding: 0 10px 0 0px;
-    color: #000;
+    font-size: 20px;
 }
