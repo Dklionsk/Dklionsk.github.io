@@ -16,6 +16,10 @@ var dollarFormatter = new Intl.NumberFormat('en-US', {
     minimumFractionDigits: 2,
 });
 
+var percentFormatter = new Intl.NumberFormat('en-US', {
+    maximumSignificantDigits: 3,
+});
+
 var divsToTotalsAndPercents = {};
 
 var allExpandableItems = [];
@@ -103,7 +107,7 @@ function buildTree(container, node, depth, indexInLevel) {
 
         for (var i = 0; i < node.children.length; i++) {
             var child = node.children[i];
-            buildTree(content, child, depth + 1, i);
+            buildTree(content, child, depth + 1, i + (indexInLevel % 2));
         }
     }
 }
@@ -152,7 +156,7 @@ $(function() {
         for (const [divID, tuple] of Object.entries(divsToTotalsAndPercents)) {
             var [amountCol, amount, percent] = tuple;
             if (showingPercents) {
-                amountCol.html((percent * 100).toFixed(2) + "%");
+                amountCol.html(percentFormatter.format(percent * 100) + "%");
             } else {
                 var valueToFormat = taxBill == 0 ? amount : taxBill * percent;
                 var formattedAmount = formatValue(valueToFormat);
