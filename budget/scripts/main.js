@@ -1,115 +1,169 @@
 "use strict";
 
-const defaultTaxBill = 10000;
+const defaultTaxBill = 0;
 var taxBill = 0;
 
+var bigDollarFormatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumSignificantDigits: 7,
+});
+
 var dollarFormatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  minimumFractionDigits: 2,
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 2,
+    minimumFractionDigits: 2,
 });
 
-var smallNumberFormatter = new Intl.NumberFormat('en-US', {
-  maximumFractionDigits: 1,
+var percentFormatter = new Intl.NumberFormat('en-US', {
+    maximumSignificantDigits: 3,
 });
 
-var tinyNumberFormatter = new Intl.NumberFormat('en-US', {
-  maximumFractionDigits: 6,
-});
+var divsToTotalsAndPercents = {};
 
-function updateValues(dataSource, valueCells) {
-    for (var i = 0; i < dataSource.length; i++) {
-        var percent = dataSource[i][1];
-        var value = taxBill * percent;
-        var valueCell = valueCells[i];
-        valueCell.html(dollarFormatter.format(value));
-    }
+var allExpandableItems = [];
+
+var allFilterableItems = [];
+
+var idsToFilterableItems = {};
+var idsToExpandableItems = {};
+
+var expanded = false;
+
+var showingPercents = false;
+
+var filterString = "";
+
+function formatValue(value) {
+    var formatter = value >= 1000000 ? bigDollarFormatter : dollarFormatter;
+    return formatter.format(value);
 }
 
-function buildTable(dataSource) {
-    var table = $("<div>");
-
-    var valueCells = [];
-    for (var category of dataSource) {
-        var row = $("<div>", {"class": "category-row"});
-        table.append(row);
-
-        var categoryName = category[0];
-        var col1 = $("<div>", {"class": "wiw-left-col"});
-        col1.html(categoryName);
-        row.append(col1);
-
-        var col2 = $("<div>", {"class": "wiw-right-col"});
-        row.append(col2);
-        valueCells.push(col2);
-
-        //var notes = category[2];
+function buildTree(container, node, depth, indexInLevel) {
+    var row = $("<div>", {"id": node.id, "class": "budget-row"});
+    container.append(row);
+    if (depth > 0) {
+        allFilterableItems.push(row);
+        idsToFilterableItems[node.id] = row;
     }
-    return [table, valueCells];
-}
 
-function updateWhatItBought(table, costByItem, references) {
-    table.empty();
-    references.empty();
+    row.addClass((indexInLevel + depth) % 2 == 0 ? "row-a" : "row-b");
 
-    var index = 1;
-    var reference = $("<div>", {"id": "ref" + index, "class": "reference"})
-    reference.html(index + '. The breakdown here is based on the executive branch\'s proposed budget for 2018. About 2/3 of the budget goes to "mandatory" spending, primarily Social Security and Medicare. Most congressional budget debate focuses on the 1/3 of the budget available for "discretionary" spending. In general, mandatory spending is expected to increase, since the number of people covered by Medicare and receiving Social Security is expected to increase over time. There\'s an ongoing debate over how the government will continue to fund these benefits, since the number of people paying for benefits through payroll taxes is decreasing relative to the number of people receiving benefits. <a href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/budget/fy2018/budget.pdf">(source)</a>');
-    references.append(reference);
-    index++;
+    var nameCol = $("<div>", {"class": "name-col"});
+    row.append(nameCol);
 
-    for (var itemInfo of costByItem) {
-        var name = itemInfo[0];
-        var cost = itemInfo[1];
-        var source = itemInfo[2];
-        var notes = itemInfo[3];
-        var numberPurchased = taxBill / cost;
+    if (node.amount) {
+        var formattedAmount = formatValue(node.amount);
+        var amountCol = $("<div>", {"id": node.id + "-amount", "class": "amount-col"});
+        amountCol.html(formattedAmount);
+        row.append(amountCol);
+        divsToTotalsAndPercents[node.id] = [amountCol, node.amount, node.percent];
+    }
 
-        var formattedNumber = '';
-        if (numberPurchased < 0.1) {
-            formattedNumber = tinyNumberFormatter.format(numberPurchased)
-        } else if (numberPurchased < 100) {
-            formattedNumber = smallNumberFormatter.format(numberPurchased)
-        } else {
-            formattedNumber += Math.round(numberPurchased);
+    if (node.description) {
+        var description = $("<div>", {"class": "description expandable"});
+        description.html(node.description);
+        row.append(description);
+    }
+
+    var nameColContents = $("<div>", {"class": "name-col-contents"});
+    nameCol.append(nameColContents);
+
+    var expandAndNameContainer = $("<div>", {"class": "expand-name-container"});
+    nameColContents.append(expandAndNameContainer);
+
+    var infoButtonContainer = $("<div>", {"class": "info-button-container"});
+    nameColContents.append(infoButtonContainer);
+
+    if (depth > 0) {
+        var expandButtonContainer = $("<div>", {"class": "expand-button-container"});
+        expandAndNameContainer.append(expandButtonContainer);
+
+        var expandButtonClasses = node.children && depth > 0 ? "icon expand" : "icon";
+        var expandButton = $("<div>", {"class": expandButtonClasses});
+        expandButtonContainer.append(expandButton);
+    }
+
+    var nameContainer = $("<div>", {"class": "name-container"});
+    expandAndNameContainer.append(nameContainer);
+    nameContainer.html(node.name);
+
+    var infoButtonClasses = node.description ? "icon info" : "icon";
+    var infoButton = $("<div>", {"class": infoButtonClasses});
+    infoButtonContainer.append(infoButton);
+
+    if (node.children) {
+        if (depth > 0) {
+            expandAndNameContainer.addClass('expandable-item')
+            allExpandableItems.push(expandAndNameContainer);
+            idsToExpandableItems[node.id] = expandAndNameContainer;
         }
-        var text = formattedNumber + " " + name + '<sup><a class="reference-link" href="#ref' + index + '">[' + index + ']</a></sup>';
+        var content = $("<div>", {"class": "content"});
+        if (depth >= 1) {
+            content.addClass("expandable");
+        }
+        container.append(content);
 
-        var row = $("<tr>");
-        table.append(row);
+        for (var i = 0; i < node.children.length; i++) {
+            var child = node.children[i];
+            buildTree(content, child, depth + 1, i + (indexInLevel % 2));
+        }
+    }
+}
 
-        var col1 = $("<td>");
-        col1.html(text);
-        row.append(col1);
+function addSumsToInnerNodes(node) {
+    var sumOfChildren = 0;
+    for (var child of node.children || []) {
+        sumOfChildren += addSumsToInnerNodes(child);
+    }
+    var total = (node.amount || 0) + sumOfChildren;
+    node.amount = total;
+    return total;
+}
 
-        var reference = $("<div>", {"id": "ref" + index, "class": "reference"})
-        reference.html(index + '. ' + notes + ' <a href="' + source +'">(source)</a>');
-        references.append(reference);
+function addPercentsToNodes(node, total) {
+    if (node.amount != null) {
+        node.percent = node.amount / total;   
+    }
+    for (var child of node.children || []) {
+        addPercentsToNodes(child, total)
+    }
+}
 
-        index++;
+function sortChildrenByAmount(node) {
+    if (node.children == null) {
+        return;
+    }
+    node.children.sort(function(a, b) {
+        return b.amount - a.amount;
+    });
+    for (var child of node.children) {
+        sortChildrenByAmount(child);
     }
 }
 
 $(function() {
-    var references = $("#references");
+    var total = addSumsToInnerNodes(budget);
+    addPercentsToNodes(budget, total);
 
-    var whereItWentTableContainer = $("#where-it-went-table");
-    var tableAndCells = buildTable(combinedPercents);
-    var whereItWentTable = tableAndCells[0];
-    var whereItWentValueCells = tableAndCells[1];
-    whereItWentTableContainer.append(whereItWentTable);
+    sortChildrenByAmount(budget);
 
-    var whatItBoughtTableContainer = $("#what-it-bought-table");
-    var whatItBoughtTable = $("<table>");
-    whatItBoughtTableContainer.append(whatItBoughtTable);
-    
-    function updateAllValues() {
-        updateValues(combinedPercents, whereItWentValueCells);
-        updateWhatItBought(whatItBoughtTable, costByItem, references);
-    }
-
-    var whatYouPaidInput = $("#what-you-paid-input")
+    var whatYouPaidInput = $("#tax-input")
     whatYouPaidInput.val(defaultTaxBill);
+
+    function updateAllValues() {
+        for (const [divID, tuple] of Object.entries(divsToTotalsAndPercents)) {
+            var [amountCol, amount, percent] = tuple;
+            if (showingPercents) {
+                amountCol.html(percentFormatter.format(percent * 100) + "%");
+            } else {
+                var valueToFormat = taxBill == 0 ? amount : taxBill * percent;
+                var formattedAmount = formatValue(valueToFormat);
+                amountCol.html(formattedAmount);
+            }
+        }
+    }
 
     function updateTaxBillAndValues() {
         var rawInput = whatYouPaidInput.val();
@@ -123,7 +177,7 @@ $(function() {
 
         // Format the new input string.
         // For some reason, toLocaleString preserves the cursor position, while Intl.NumberFormat does not.
-        var formattedInput = inputNumber === 0 ? "" : inputNumber.toLocaleString( "en-US" );
+        var formattedInput = inputNumber.toLocaleString("en-US");
         whatYouPaidInput.val(formattedInput);
 
         $("#paid-value").html('$' + formattedInput);
@@ -132,16 +186,99 @@ $(function() {
     }
 
     whatYouPaidInput.on("change paste keyup keypress", function() {
-
         if (event.keyCode == 13) {
           event.preventDefault();
           return false;
         }
-
         updateTaxBillAndValues();
     });
 
+    var budgetContainer = $("#budget-container");
+    buildTree(budgetContainer, budget, 0, 0);
+
     updateTaxBillAndValues();
 
-    whatYouPaidInput.focus();
+    function toggleExpandableItem(item, expand = null, animated = true) {
+        var plusButton = item.children().first().children().first();
+        if (expand != null) {
+            if (expand && plusButton.hasClass("collapse")) {
+                return;
+            } else if (!expand && plusButton.hasClass("expand")) {
+                return;
+            }
+        }
+
+        plusButton.toggleClass("expand");
+        plusButton.toggleClass("collapse");
+
+        var content = item.parent().parent().parent().next();
+        content.slideToggle(animated ? 500 : 0);
+    }
+
+    $(".expandable-item").click(function() {
+        var expandAndNameContainer = $(this);
+        toggleExpandableItem(expandAndNameContainer);
+    });
+
+    $(".info").click(function() {
+        var infoButton = $(this);
+        var description = infoButton.parent().parent().parent().next().next();
+        description.slideToggle(500);
+    });
+
+    $("#expand-button").click(function() {
+        expanded = !expanded;
+        $(this).html(expanded ? 'Collapse all' : 'Expand all');
+        for (var item of allExpandableItems) {
+            toggleExpandableItem(item, expanded);
+        }
+    });
+
+    $("#percent-button").click(function() {
+        showingPercents = !showingPercents;
+        $(this).html(showingPercents ? 'Show dollars' : 'Show percents');
+        updateAllValues();
+    });
+
+    function filterWithText(node, text) {
+        var found = false;
+        var foundInChild = false;
+        if (node.name.toLowerCase().includes(text)) {
+            found = true;
+        }
+        if (node.children) {
+            for (var child of node.children) {
+                if (filterWithText(child, text)) {
+                    found = true;
+                    foundInChild = true;
+                }
+            }
+        }
+        var filterItem = idsToFilterableItems[node.id];
+        if (filterItem !== undefined) {
+            if (found) {
+                filterItem.removeClass('search-filtered');
+            } else {
+                filterItem.addClass('search-filtered');
+            }
+        }
+
+        var expandableItem = idsToExpandableItems[node.id];
+        if (expandableItem !== undefined) {
+            toggleExpandableItem(expandableItem, foundInChild, false);
+        }
+
+        return found;
+    }
+
+    $("#search-box").on("change paste keyup keypress", function() {
+        var filterString = $(this).val().trim().toLowerCase();
+        if (filterString.length == 0) {
+            for (var item of allFilterableItems) {
+                item.removeClass('search-filtered');
+            }
+        } else {
+            filterWithText(budget, filterString);
+        }
+    });
 });
