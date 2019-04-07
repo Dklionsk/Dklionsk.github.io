@@ -373,12 +373,12 @@ var budget = {
                         },
                         {
                             "id": "special-supplemental-nutrition-program-for-women%2C-infants%2C-and-children-%28wic%29",
-                            "name": "Special Supplemental Nutrition Program for Women, Infants, and Children (Wic)",
+                            "name": "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)",
                             "amount": 6075000000.0
                         },
                         {
-                            "id": "supplemental-nutrition-assistance-program",
-                            "name": "Supplemental Nutrition Assistance Program",
+                            "id": "supplemental-nutrition-assistance-program-%28snap%29",
+                            "name": "Supplemental Nutrition Assistance Program (SNAP)",
                             "amount": 73476921000.0
                         },
                         {
@@ -419,12 +419,12 @@ var budget = {
                         },
                         {
                             "id": "food-for-peace-title-ii-grants",
-                            "name": "Food for Peace Title Ii Grants",
+                            "name": "Food for Peace Title II Grants",
                             "amount": 1500000000.0
                         },
                         {
                             "id": "food-for-peace-title-ii-grants%2C-additional",
-                            "name": "Food for Peace Title Ii Grants, Additional",
+                            "name": "Food for Peace Title II Grants, Additional",
                             "amount": 216000000.0
                         },
                         {
@@ -770,7 +770,7 @@ var budget = {
         {
             "id": "education",
             "name": "Education",
-            "description": "The Department of Education coordinates federal assistance to education, collects data on US schools, and enforces laws regarding privacy and civil rights in education. The department does not establish schools or define curricula, leaving this to the states.",
+            "description": "The Department of Education coordinates federal assistance to education, collects data on US schools, and enforces laws regarding privacy and civil rights in education. Unlike similar departments in other countries, it does not establish schools or define curricula, leaving this to the states.",
             "children": [
                 {
                     "id": "education-for-the-disadvantaged",
@@ -909,7 +909,7 @@ var budget = {
         {
             "id": "energy",
             "name": "Energy",
-            "description": "The Department of the Interior is responsible for the management and conservation of federal lands and natural resources, as well as programs relating to Native Americans. It also runs the National Park Service and wildlife refuges.",
+            "description": "The Department of Energy is responsible for the US nuclear weapons program, nuclear reactor production for the navy, energy conservation, energy-related research, radioactive waste disposal, and domestic energy production. It also sponsors research in the physical sciences.",
             "children": [
                 {
                     "id": "energy-programs",
@@ -1284,8 +1284,8 @@ var budget = {
             "description": "The Department of Health and Human Services aims to improve the health, safety, and well-being of Americans. It manages Medicare and Medicaid, the National Institutes of Health, the Centers for Disease Control and Prevention, and the Food and Drug Administration.",
             "children": [
                 {
-                    "id": "food-and-drug-administration",
-                    "name": "Food and Drug Administration",
+                    "id": "food-and-drug-administration-%28fda%29",
+                    "name": "Food and Drug Administration (FDA)",
                     "amount": 3119600000.0
                 },
                 {
@@ -1452,8 +1452,8 @@ var budget = {
                     ]
                 },
                 {
-                    "id": "national-institutes-of-health",
-                    "name": "National Institutes of Health",
+                    "id": "national-institutes-of-health-%28nih%29",
+                    "name": "National Institutes of Health (NIH)",
                     "children": [
                         {
                             "id": "national-cancer-institute",
@@ -2294,7 +2294,7 @@ var budget = {
         {
             "id": "independent-agencies",
             "name": "Independent Agencies",
-            "description": "There are a tremendous number of other smaller agencies which aren't as well known as the major executive agencies listed here. Many of these are independent agencies, whose heads are not appointed by the President.",
+            "description": "The government contains many smaller agencies which aren't as well known as the major agencies listed here. Many of these are independent agencies, whose heads are not appointed by the President.",
             "children": [
                 {
                     "id": "farm-credit-administration",
@@ -2302,59 +2302,9 @@ var budget = {
                     "amount": 74600000.0
                 },
                 {
-                    "id": "national-aeronautics-and-space-administration-%28nasa%29",
-                    "name": "National Aeronautics and Space Administration (NASA)",
-                    "children": [
-                        {
-                            "id": "science-2",
-                            "name": "Science",
-                            "amount": 6905700000.0
-                        },
-                        {
-                            "id": "aeronautics",
-                            "name": "Aeronautics",
-                            "amount": 725000000.0
-                        },
-                        {
-                            "id": "space-technology",
-                            "name": "Space Technology",
-                            "amount": 926900000.0
-                        },
-                        {
-                            "id": "exploration",
-                            "name": "Exploration",
-                            "amount": 5050800000.0
-                        },
-                        {
-                            "id": "space-operations",
-                            "name": "Space Operations",
-                            "amount": 4639100000.0
-                        },
-                        {
-                            "id": "science%2C-technology%2C-engineering%2C-and-mathematics-engagement",
-                            "name": "Science, Technology, Engineering, and Mathematics Engagement",
-                            "amount": 110000000.0
-                        },
-                        {
-                            "id": "safety%2C-security-and-mission-services",
-                            "name": "Safety, Security and Mission Services",
-                            "amount": 2755000000.0
-                        },
-                        {
-                            "id": "construction-and-environmental-compliance-and-restoration",
-                            "name": "Construction and Environmental Compliance and Restoration",
-                            "amount": 348200000.0
-                        },
-                        {
-                            "id": "office-of-inspector-general-8",
-                            "name": "Office of Inspector General",
-                            "amount": 39300000.0
-                        }
-                    ]
-                },
-                {
-                    "id": "national-science-foundation",
-                    "name": "National Science Foundation",
+                    "id": "national-science-foundation-%28nsf%29",
+                    "name": "National Science Foundation (NSF)",
+                    "description": "The NSF supports research and education in the non-medical fields of science and engineering. In some fields, such as mathematics, computer science, economics, and the social sciences, the NSF is the major source of federal backing.",
                     "children": [
                         {
                             "id": "research-and-related-activities",
@@ -2382,7 +2332,7 @@ var budget = {
                             "amount": 4370000.0
                         },
                         {
-                            "id": "office-of-inspector-general-9",
+                            "id": "office-of-inspector-general-8",
                             "name": "Office of Inspector General",
                             "amount": 15350000.0
                         }
@@ -2556,7 +2506,7 @@ var budget = {
                             "amount": 373000000.0
                         },
                         {
-                            "id": "office-of-inspector-general-10",
+                            "id": "office-of-inspector-general-9",
                             "name": "Office of Inspector General",
                             "amount": 4823000.0
                         },
@@ -2592,7 +2542,7 @@ var budget = {
                             "amount": 132172000.0
                         },
                         {
-                            "id": "office-of-inspector-general-11",
+                            "id": "office-of-inspector-general-10",
                             "name": "Office of Inspector General",
                             "amount": 30265000.0
                         }
@@ -2621,6 +2571,7 @@ var budget = {
                 {
                     "id": "small-business-administration",
                     "name": "Small Business Administration",
+                    "description": "The Small Business Administration provides support to entrepreneurs and small businesses through loans, contracts, and counseling services.",
                     "children": [
                         {
                             "id": "salaries-and-expenses-10",
@@ -2633,7 +2584,7 @@ var budget = {
                             "amount": 247700000.0
                         },
                         {
-                            "id": "office-of-inspector-general-12",
+                            "id": "office-of-inspector-general-11",
                             "name": "Office of Inspector General",
                             "amount": 21900000.0
                         },
@@ -2655,8 +2606,8 @@ var budget = {
                     ]
                 },
                 {
-                    "id": "united-states-postal-service",
-                    "name": "United States Postal Service",
+                    "id": "united-states-postal-service-%28usps%29",
+                    "name": "United States Postal Service (USPS)",
                     "children": [
                         {
                             "id": "payment-to-the-postal-service-fund",
@@ -2664,7 +2615,7 @@ var budget = {
                             "amount": 55235000.0
                         },
                         {
-                            "id": "office-of-inspector-general-13",
+                            "id": "office-of-inspector-general-12",
                             "name": "Office of Inspector General",
                             "amount": 250000000.0
                         }
@@ -2674,67 +2625,6 @@ var budget = {
                     "id": "united-states-tax-court",
                     "name": "United States Tax Court",
                     "amount": 51515000.0
-                },
-                {
-                    "id": "environmental-protection-agency",
-                    "name": "Environmental Protection Agency",
-                    "children": [
-                        {
-                            "id": "science-and-technology",
-                            "name": "Science and Technology",
-                            "amount": 717723000.0
-                        },
-                        {
-                            "id": "environmental-programs-and-management",
-                            "name": "Environmental Programs and Management",
-                            "amount": 2658200000.0
-                        },
-                        {
-                            "id": "hazardous-waste-electronic-manifest-system-fund",
-                            "name": "Hazardous Waste Electronic Manifest System Fund",
-                            "amount": 8000000.0
-                        },
-                        {
-                            "id": "office-of-inspector-general-14",
-                            "name": "Office of Inspector General",
-                            "amount": 41489000.0
-                        },
-                        {
-                            "id": "buildings-and-facilities-5",
-                            "name": "Buildings and Facilities",
-                            "amount": 34467000.0
-                        },
-                        {
-                            "id": "hazardous-substance-superfund",
-                            "name": "Hazardous Substance Superfund",
-                            "amount": 1091947000.0
-                        },
-                        {
-                            "id": "leaking-underground-storage-tank-trust-fund-program",
-                            "name": "Leaking Underground Storage Tank Trust Fund Program",
-                            "amount": 91941000.0
-                        },
-                        {
-                            "id": "inland-oil-spill-programs",
-                            "name": "Inland Oil Spill Programs",
-                            "amount": 18209000.0
-                        },
-                        {
-                            "id": "state-and-tribal-assistance-grants",
-                            "name": "State and Tribal Assistance Grants",
-                            "amount": 3605041000.0
-                        },
-                        {
-                            "id": "water-infrastructure-finance-and-innovation-program-account",
-                            "name": "Water Infrastructure Finance and Innovation Program Account",
-                            "amount": 5000000.0
-                        },
-                        {
-                            "id": "water-infrastructure-and-superfund",
-                            "name": "Water Infrastructure and Superfund",
-                            "amount": 791000000.0
-                        }
-                    ]
                 },
                 {
                     "id": "chemical-safety-and-hazard-investigation-board",
@@ -2891,7 +2781,7 @@ var budget = {
                             "amount": 83737000.0
                         },
                         {
-                            "id": "office-of-inspector-general-15",
+                            "id": "office-of-inspector-general-13",
                             "name": "Office of Inspector General",
                             "amount": 5750000.0
                         }
@@ -2983,7 +2873,7 @@ var budget = {
                             "amount": 12876945000.0
                         },
                         {
-                            "id": "office-of-inspector-general-16",
+                            "id": "office-of-inspector-general-14",
                             "name": "Office of Inspector General",
                             "amount": 105500000.0
                         }
@@ -3116,7 +3006,7 @@ var budget = {
         {
             "id": "interior",
             "name": "Interior",
-            "description": "The Department of the Interior is responsible for the management and conservation of federal lands and natural resources, as well as programs relating to Native Americans. It also runs the National Park Service and wildlife refuges.",
+            "description": "The Department of the Interior is responsible for the management and conservation of lands and natural resources, as well as programs relating to Native Americans. It also runs the National Park Service and wildlife refuges.",
             "children": [
                 {
                     "id": "central-utah-project",
@@ -3350,7 +3240,7 @@ var budget = {
                             "amount": 65674000.0
                         },
                         {
-                            "id": "office-of-inspector-general-17",
+                            "id": "office-of-inspector-general-15",
                             "name": "Office of Inspector General",
                             "amount": 52486000.0
                         },
@@ -3486,7 +3376,7 @@ var budget = {
         {
             "id": "justice",
             "name": "Justice",
-            "description": "The Department of Justice is responsible for the enforcement of the law and administration of justice. It runs the Federal Bureau of Investigation (FBI), the Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF), and the Drug Enforcement Administration (DEA), and is headed by the Attorney General.",
+            "description": "The Department of Justice is responsible for the enforcement of the law and administration of justice. It runs the FBI, ATF, and DEA, and is headed by the Attorney General.",
             "children": [
                 {
                     "id": "general-administration",
@@ -3508,7 +3398,7 @@ var budget = {
                             "amount": 563407000.0
                         },
                         {
-                            "id": "office-of-inspector-general-18",
+                            "id": "office-of-inspector-general-16",
                             "name": "Office of Inspector General",
                             "amount": 101000000.0
                         }
@@ -3637,7 +3527,7 @@ var budget = {
                             "amount": 7250000000.0
                         },
                         {
-                            "id": "buildings-and-facilities-6",
+                            "id": "buildings-and-facilities-5",
                             "name": "Buildings and Facilities",
                             "amount": 264000000.0
                         },
@@ -3818,7 +3708,7 @@ var budget = {
                             "amount": 23269000.0
                         },
                         {
-                            "id": "office-of-inspector-general-19",
+                            "id": "office-of-inspector-general-17",
                             "name": "Office of Inspector General",
                             "amount": 89147000.0
                         }
@@ -3829,7 +3719,7 @@ var budget = {
         {
             "id": "state",
             "name": "State",
-            "description": "The Department of State advises the President and conducts international relations. It was established in 1789 as the nation's first executive department. The State Department implements foreign policy, operates diplomatic missions abroad, negotiates treaties with foreign entities, and represents the United States at the United Nations.",
+            "description": "The Department of State implements foreign policy, operates diplomatic missions abroad, negotiates treaties with foreign entities, and represents the United States at the United Nations. It was established in 1789 as the nation's first executive department.",
             "children": [
                 {
                     "id": "administration-of-foreign-affairs",
@@ -3846,7 +3736,7 @@ var budget = {
                             "amount": 92770000.0
                         },
                         {
-                            "id": "office-of-inspector-general-20",
+                            "id": "office-of-inspector-general-18",
                             "name": "Office of Inspector General",
                             "amount": 90829000.0
                         },
@@ -4053,7 +3943,7 @@ var budget = {
         {
             "id": "transportation",
             "name": "Transportation",
-            "description": "The Department of Transportation manages transportation in the United States. This includes the the construction and operation of airports and air traffic control through the Federal Aviation Administration (FAA), construction and maintenance of interstate highways, and funds for transportation infrastructure, such as roads and rail.",
+            "description": "The Department of Transportation manages the construction and operation of airports and air traffic control through the Federal Aviation Administration (FAA), the construction and maintenance of interstate highways, and funds for transportation infrastructure, such as roads and rail.",
             "children": [
                 {
                     "id": "office-of-the-secretary-4",
@@ -4365,7 +4255,7 @@ var budget = {
                     ]
                 },
                 {
-                    "id": "office-of-inspector-general-21",
+                    "id": "office-of-inspector-general-19",
                     "name": "Office of Inspector General",
                     "amount": 92600000.0
                 }
@@ -4374,7 +4264,7 @@ var budget = {
         {
             "id": "treasury",
             "name": "Treasury",
-            "description": "The Department of the Treasury manages the US Treasury. It prints paper currency, mints coins, and collect federal taxes through the Internal Revenue Service (IRS). It also licenses and supervises banks.",
+            "description": "The Department of the Treasury prints paper currency, mints coins, and collect federal taxes through the IRS. It also licenses and supervises banks.",
             "children": [
                 {
                     "id": "departmental-offices-2",
@@ -4401,7 +4291,7 @@ var budget = {
                             "amount": 4000000.0
                         },
                         {
-                            "id": "office-of-inspector-general-22",
+                            "id": "office-of-inspector-general-20",
                             "name": "Office of Inspector General",
                             "amount": 37044000.0
                         },
@@ -4473,7 +4363,7 @@ var budget = {
         {
             "id": "veterans-affairs",
             "name": "Veterans Affairs",
-            "description": "The Department of Veterans Affairs provides benefits to military veterans, including healthcare services, disability compensation, education assistance, home loans, and life insurance. It also manages 135 national cemeteries.",
+            "description": "The Department of Veterans Affairs provides benefits to veterans, including healthcare services, disability compensation, education assistance, home loans, and life insurance. It also manages 135 national cemeteries.",
             "children": [
                 {
                     "id": "veterans-benefits-administration",
@@ -4579,7 +4469,7 @@ var budget = {
                             "amount": 1107000000.0
                         },
                         {
-                            "id": "office-of-inspector-general-23",
+                            "id": "office-of-inspector-general-21",
                             "name": "Office of Inspector General",
                             "amount": 192000000.0
                         },
@@ -4620,45 +4510,163 @@ var budget = {
             ]
         },
         {
+            "id": "national-aeronautics-and-space-administration-%28nasa%29",
+            "name": "National Aeronautics And Space Administration (NASA)",
+            "description": "NASA is responsible for the civilian space program, as well as aeronautics and aerospace research. Most US space exploration efforts have been led by NASA, including the Apollo moon landing missions, the Skylab space station, and later the Space Shuttle. NASA also supports the International Space Station.",
+            "children": [
+                {
+                    "id": "science-2",
+                    "name": "Science",
+                    "amount": 6905700000.0,
+                    "children": [
+                        {
+                            "id": "aeronautics",
+                            "name": "Aeronautics",
+                            "amount": 725000000.0
+                        },
+                        {
+                            "id": "space-technology",
+                            "name": "Space Technology",
+                            "amount": 926900000.0
+                        },
+                        {
+                            "id": "exploration",
+                            "name": "Exploration",
+                            "amount": 5050800000.0
+                        },
+                        {
+                            "id": "space-operations",
+                            "name": "Space Operations",
+                            "amount": 4639100000.0
+                        },
+                        {
+                            "id": "science%2C-technology%2C-engineering%2C-and-mathematics-engagement",
+                            "name": "Science, Technology, Engineering, and Mathematics Engagement",
+                            "amount": 110000000.0
+                        },
+                        {
+                            "id": "safety%2C-security-and-mission-services",
+                            "name": "Safety, Security and Mission Services",
+                            "amount": 2755000000.0
+                        },
+                        {
+                            "id": "construction-and-environmental-compliance-and-restoration",
+                            "name": "Construction and Environmental Compliance and Restoration",
+                            "amount": 348200000.0
+                        },
+                        {
+                            "id": "office-of-inspector-general-22",
+                            "name": "Office of Inspector General",
+                            "amount": 39300000.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "environmental-protection-agency-%28epa%29",
+            "name": "Environmental Protection Agency (EPA)",
+            "description": "The EPA is responsible for maintaining environmental laws, writing regulations, and enforcing them through fines and sanctions. Among its goals are reducing pollution and conserving energy.",
+            "children": [
+                {
+                    "id": "science-and-technology",
+                    "name": "Science and Technology",
+                    "amount": 717723000.0,
+                    "children": [
+                        {
+                            "id": "environmental-programs-and-management",
+                            "name": "Environmental Programs and Management",
+                            "amount": 2658200000.0
+                        },
+                        {
+                            "id": "hazardous-waste-electronic-manifest-system-fund",
+                            "name": "Hazardous Waste Electronic Manifest System Fund",
+                            "amount": 8000000.0
+                        },
+                        {
+                            "id": "office-of-inspector-general-23",
+                            "name": "Office of Inspector General",
+                            "amount": 41489000.0
+                        },
+                        {
+                            "id": "buildings-and-facilities-6",
+                            "name": "Buildings and Facilities",
+                            "amount": 34467000.0
+                        },
+                        {
+                            "id": "hazardous-substance-superfund",
+                            "name": "Hazardous Substance Superfund",
+                            "amount": 1091947000.0
+                        },
+                        {
+                            "id": "leaking-underground-storage-tank-trust-fund-program",
+                            "name": "Leaking Underground Storage Tank Trust Fund Program",
+                            "amount": 91941000.0
+                        },
+                        {
+                            "id": "inland-oil-spill-programs",
+                            "name": "Inland Oil Spill Programs",
+                            "amount": 18209000.0
+                        },
+                        {
+                            "id": "state-and-tribal-assistance-grants",
+                            "name": "State and Tribal Assistance Grants",
+                            "amount": 3605041000.0
+                        },
+                        {
+                            "id": "water-infrastructure-finance-and-innovation-program-account",
+                            "name": "Water Infrastructure Finance and Innovation Program Account",
+                            "amount": 5000000.0
+                        },
+                        {
+                            "id": "water-infrastructure-and-superfund",
+                            "name": "Water Infrastructure and Superfund",
+                            "amount": 791000000.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "id": "social-security",
             "name": "Social Security",
-            "description": "Social Security is a program that gives money to people who are retired, disabled, or living in poverty. In 2019, the average retiree will receive $1,461 per month from Social Security. The program is funded by a tax on your paycheck, with 6.2% paid by you and 6.2% paid by your employer. There's an ongoing debate about how we will continue to fund Social Security. Today's workers pay for today's retirees, and the number of people receiving benefits is increasing relative to the number of workers who contribute through taxes. For example, the average number of workers per retiree was 5.1 in 1960. This declined to 3.0 by 2010, and is projected to decline to 2.2 by 2030. If nothing changes, it's predicted that Social Security will start paying out more than it takes in by 2033. Congress might prevent this shortfall by increasing taxes, decreasing benefits, or a combination of both.",
+            "description": "Social Security is a program that gives money to people who are retired, disabled, or living in poverty. In 2019, the average retiree will receive $1,461 per month from Social Security. The program is funded by a tax on your paycheck, with 6.2% paid by you and 6.2% paid by your employer.",
             "amount": 1100000000000.0
         },
         {
             "id": "medicare",
             "name": "Medicare",
-            "description": "Medicare is a government health insurance program for people aged 65 and older and for some people with disabilities. Like Social Security, Medicare is funded through a tax on your paycheck, with you and your employer each paying 1.45%. Also like Social Security, spending on Medicare is expected to increase, as the number of eligible people over 65 increases and the cost of health care in the United States rises. Congress could avoid this shortfall by increasing payroll taxes, reducing benefits, or by finding ways to reduce health care and prescription drug costs in general.",
+            "description": "Medicare is a health insurance program for people aged 65 and older and for some people with disabilities. Like Social Security, Medicare is funded through a tax on your paycheck, with you and your employer each paying 1.45%.",
             "amount": 645000000000.0
         },
         {
             "id": "medicaid",
             "name": "Medicaid",
-            "description": "Medicaid is a government health insurance program for people of any age who are living near or below the poverty line. It is jointly funded by the federal government and the states; states don't have to participate, but if they do, the federal government matches a portion of the state funding. ",
+            "description": "Medicaid is a government health insurance program for anyone living near or below the poverty line. It is jointly funded by the federal government and the states. States don't have to participate, but if they do, the federal government matches a portion of the state funding. ",
             "amount": 419000000000.0
         },
         {
             "id": "exchange-subsidies",
             "name": "Exchange Subsidies",
-            "description": "The Affordable Care Act, also known as Obamacare, expanded health care coverage to 24 million people, reducing the number of uninsured people in the United States by almost half. One major way this was done was by subsidizing health insurance policies purchased through an online marketplace (\"exchange subsidies\"). These subsidies are mostly paid for through taxes on health insurance providers, prescription drug manufacturers, and investment income for high income individuals (mostly in the top 1% of earners).",
+            "description": "The Affordable Care Act, or Obamacare, expanded health care coverage to 24 million people, reducing the number of uninsured people in the United States by almost half. It did this partly by subsidizing health insurance policies purchased through an online marketplace. Subsidies are mostly paid for through taxes on insurance providers, drug manufacturers, and high income individuals.",
             "amount": 56000000000.0
         },
         {
             "id": "interest-on-the-national-debt",
             "name": "Interest on the National Debt",
-            "description": "Sometimes the federal government wants to spend more money than it takes in through taxes. Some of the extra money comes from people, companies, or other governments lending money to the federal government (e.g. through treasury bonds). The government has to pay back interest on that debt. As of December 31, 2018, the total national debt was $21.97 trillion.",
+            "description": "In some years the government spends more than it makes in taxes. Some of that extra money comes from people, companies, or other governments lending money through treasury bonds. The government has to pay back interest on that debt. As of December 31, 2018, the total national debt was $21.97 trillion.",
             "amount": 394000000000.0
         },
         {
             "id": "mandatory-financial-services-accounts",
             "name": "Mandatory Financial Services Accounts",
-            "description": "Civilians who work for the federal government as well as members of the armed forces qualify for retirement benefits after serving for a certain number of years, similar to a pension. Some veterans of the armed forces qualify for additional benefits, such as special health insurance programs.",
+            "description": "Civilians who work for the federal government as well as members of the armed forces qualify for retirement benefits after serving for a certain number of years, similar to a pension. Some veterans of the armed forces also qualify for additional benefits, such as special health insurance programs.",
             "amount": 21818000000.0
         },
         {
             "id": "defense",
             "name": "Defense",
-            "description": "The Department of Defense manages national security and the armed forces. The department is also the largest employer in the world, with nearly 1.3 million active duty servicemen and women, 826,000 National Guardsmen and Reservists, and over 732,000 civilians.",
+            "description": "The Department of Defense manages national security and the armed forces. It is also the largest employer in the world, with nearly 1.3 million active duty servicepeople, 826,000 National Guard soldiers and Reservists, and over 732,000 civilians.",
             "children": [
                 {
                     "id": "military-personnel",
@@ -5256,7 +5264,7 @@ var budget = {
                 {
                     "id": "overseas-contingency-operations",
                     "name": "Overseas Contingency Operations",
-                    "description": "Overseas Contingency Operations are those operations related to the War on Terror, which began after the September 11, 2001 attacks. They primarily include US military operations in Afghanistan, Iraq, and Syria. This part of the budget is managed by the Department of Defense, separately from its base budget.",
+                    "description": "Overseas Contingency Operations are operations related to the War on Terror, which began after the September 11, 2001 attacks. They primarily include US military operations in Afghanistan, Iraq, and Syria. This part of the budget is managed by the Department of Defense, separately from its base budget.",
                     "children": [
                         {
                             "id": "military-construction-2",
@@ -5682,8 +5690,8 @@ var budget = {
                     ]
                 },
                 {
-                    "id": "government-publishing-office",
-                    "name": "Government Publishing Office",
+                    "id": "government-publishing-office-%28gpo%29",
+                    "name": "Government Publishing Office (GPO)",
                     "children": [
                         {
                             "id": "congressional-publishing",
@@ -5724,7 +5732,7 @@ var budget = {
                         {
                             "id": "payment-to-widows-and-heirs-of-deceased-members-of-congress",
                             "name": "Payment to Widows and Heirs of Deceased Members of Congress",
-                            "description": "For a payment to Joe Anne Jones, widow of Walter B. Jones Jr., late a Representative from North Carolina.",
+                            "description": "For a payment to Joe Anne Jones, widow of Walter B. Jones Jr., a Representative from North Carolina.",
                             "amount": 174000.0
                         },
                         {
@@ -5862,7 +5870,7 @@ var budget = {
                         {
                             "id": "payment-to-widows-and-heirs-of-deceased-members-of-congress-2",
                             "name": "Payment to Widows and Heirs of Deceased Members of Congress",
-                            "description": "For payment to Cindy H. McCain, widow of John Sidney McCain III, late a Senator from the State of Arizona.",
+                            "description": "For payment to Cindy H. McCain, widow of John Sidney McCain III, a Senator from the State of Arizona.",
                             "amount": 174000.0
                         },
                         {
