@@ -1,5 +1,4 @@
 body {
-    /* background-color: burlywood; */
     font-family: Arial, Helvetica, sans-serif;
     max-width: 600px;
     margin: 0px auto;
@@ -40,13 +39,11 @@ a {
 }
 
 .name-col {
-    /* background-color: aqua; */
     display: inline-block;
     width: 50%;
 }
 
 .amount-col {
-    /* background-color: darkolivegreen; */
     display: inline-block;
     text-align: right;
     vertical-align: top;
@@ -54,7 +51,6 @@ a {
 }
 
 .description {
-    /* background-color: coral; */
     font-size: 10pt;
     padding: 0px 0px 0px 17px;
 }
