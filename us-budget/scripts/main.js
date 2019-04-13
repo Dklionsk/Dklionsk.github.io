@@ -31,7 +31,7 @@ var idsToExpandableItems = {};
 
 var expanded = false;
 
-var showingPercents = false;
+var showingPercents = true;
 
 var filterString = "";
 
