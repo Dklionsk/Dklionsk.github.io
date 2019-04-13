@@ -23,8 +23,11 @@ a {
     color: #666;
 }
 
+#percent-button {
+    float: right;
+}
+
 .budget-row {
-    /* background-color: blanchedalmond; */
     padding: 2.5px 0px 2.5px 0px;
 }
 
