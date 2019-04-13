@@ -185,10 +185,19 @@ $(function() {
         updateAllValues();
     }
 
+    function updatePercentButton() {
+        $("#percent-button").html(showingPercents ? 'Show dollars' : 'Show percents');
+        updateAllValues();
+    }
+
     whatYouPaidInput.on("change paste keyup keypress", function() {
         if (event.keyCode == 13) {
           event.preventDefault();
           return false;
+        }
+        if (showingPercents) {
+            showingPercents = !showingPercents;
+            updatePercentButton();
         }
         updateTaxBillAndValues();
     });
@@ -236,8 +245,7 @@ $(function() {
 
     $("#percent-button").click(function() {
         showingPercents = !showingPercents;
-        $(this).html(showingPercents ? 'Show dollars' : 'Show percents');
-        updateAllValues();
+        updatePercentButton();
     });
 
     function filterWithText(node, text) {
