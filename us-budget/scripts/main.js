@@ -155,7 +155,7 @@ $(function() {
     function updateAllValues() {
         for (const [divID, tuple] of Object.entries(divsToTotalsAndPercents)) {
             var [amountCol, amount, percent] = tuple;
-            if (showingPercents) {
+            if (showingPercents && percent != 1.0) {
                 amountCol.html(percentFormatter.format(percent * 100) + "%");
             } else {
                 var valueToFormat = taxBill == 0 ? amount : taxBill * percent;
