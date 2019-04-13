@@ -3,20 +3,20 @@
 const defaultTaxBill = 0;
 var taxBill = 0;
 
-var bigDollarFormatter = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
+var bigDollarFormatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
     maximumSignificantDigits: 7,
 });
 
-var dollarFormatter = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
+var dollarFormatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
     maximumFractionDigits: 2,
     minimumFractionDigits: 2,
 });
 
-var percentFormatter = new Intl.NumberFormat('en-US', {
+var percentFormatter = new Intl.NumberFormat("en-US", {
     maximumSignificantDigits: 3,
 });
 
@@ -95,7 +95,7 @@ function buildTree(container, node, depth, indexInLevel) {
 
     if (node.children) {
         if (depth > 0) {
-            expandAndNameContainer.addClass('expandable-item')
+            expandAndNameContainer.addClass("expandable-item")
             allExpandableItems.push(expandAndNameContainer);
             idsToExpandableItems[node.id] = expandAndNameContainer;
         }
@@ -180,13 +180,13 @@ $(function() {
         var formattedInput = inputNumber.toLocaleString("en-US");
         whatYouPaidInput.val(formattedInput);
 
-        $("#paid-value").html('$' + formattedInput);
+        $("#paid-value").html("$" + formattedInput);
         
         updateAllValues();
     }
 
     function updatePercentButton() {
-        $("#percent-button").html(showingPercents ? 'Show dollars' : 'Show percents');
+        $("#percent-button").html(showingPercents ? "Show dollars" : "Show percents");
         updateAllValues();
     }
 
@@ -237,7 +237,7 @@ $(function() {
 
     $("#expand-button").click(function() {
         expanded = !expanded;
-        $(this).html(expanded ? 'Collapse all' : 'Expand all');
+        $(this).html(expanded ? "Collapse all" : "Expand all");
         for (var item of allExpandableItems) {
             toggleExpandableItem(item, expanded);
         }
@@ -265,9 +265,9 @@ $(function() {
         var filterItem = idsToFilterableItems[node.id];
         if (filterItem !== undefined) {
             if (found) {
-                filterItem.removeClass('search-filtered');
+                filterItem.removeClass("search-filtered");
             } else {
-                filterItem.addClass('search-filtered');
+                filterItem.addClass("search-filtered");
             }
         }
 
@@ -283,7 +283,7 @@ $(function() {
         var filterString = $(this).val().trim().toLowerCase();
         if (filterString.length == 0) {
             for (var item of allFilterableItems) {
-                item.removeClass('search-filtered');
+                item.removeClass("search-filtered");
             }
         } else {
             filterWithText(budget, filterString);
