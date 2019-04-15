@@ -11,7 +11,8 @@ h1 {
 }
 
 h2 {
-    font-size: 24pt;
+    font-size: 18pt;
+    /* margin-block-end: 0.415em; */
 }
 
 a {
@@ -20,6 +21,8 @@ a {
 
 .caption {
     color: #666;
+    /* margin-top: -10px;
+    margin-bottom: 10px; */
 }
 
 #percent-button {

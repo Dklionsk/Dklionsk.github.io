@@ -8,7 +8,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-137891144-1');
     </script>
-    <title>Where Do Your Tax Dollars Actually Go?</title>
+    <title>U.S. Budget Breakdown</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/budget-2019.js"></script>
@@ -16,11 +16,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <h1>Where Do Your Tax Dollars Actually Go?</h1>
-    <p class="caption">See how your tax dollars might have been spent, based on the actual 2019 federal budget.</p>
+    <h1>U.S. Budget Breakdown</h1>
+    <!-- <p class="caption">Where do your tax dollars actually go?</p> -->
 
     <h2>Your tax bill</h2>
-    <p class="caption">Enter how much you paid in taxes for 2018, or leave it blank to see the actual budget. This number doesn't get stored or sent anywhere.</p>
+    <p class="caption">Enter your tax bill, or $0 to see the full budget.</p>
     <form id="currency-form">
       <div class="currency-contents">
         <span class="currency">$</span>
@@ -29,16 +29,17 @@
     </form>
 
     <h2>Where it went</h2>
-    <p>
-      <button id="expand-button">Expand all</button>
-    </p>
+    <p class="caption">Values are from the 2019 U.S. budget.</p>
+    <!-- <button id="expand-button">Expand all</button> -->
     <p>
       <input id="search-box" type="text" placeholder="Search">
       <button id="percent-button">Show dollars</button>
     </p>
     <div id="budget-container">
     </div>
-
+    <h4>Download the 2019 U.S. Budget Data</h4>
+    <p>Download the raw data as an Excel file <a href="US-Federal-Budget-2019.xlsx">here</a>.</p>
+    
     <h4>Sources</h4>
     <p>For fiscal year 2019, the complete US federal budget was passed in three separate bills: <a href="https://www.congress.gov/bill/115th-congress/house-bill/5895">H.R. 5895</a>, <a href="https://www.congress.gov/bill/115th-congress/house-bill/6157">H.R. 6157</a>, and <a href="https://www.congress.gov/bill/116th-congress/house-joint-resolution/31">H.J.Res 31</a>.</p>
     <p>While those bills describe all discretionary spending in detail, they don't always show exact amounts for mandatory spending. To fill in the gaps for mandatory items, I referred to reports from the Congressional Research Service:
