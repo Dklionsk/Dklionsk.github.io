@@ -41,7 +41,8 @@ function formatValue(value) {
 }
 
 function buildTree(container, node, depth, indexInLevel) {
-    var row = $("<div>", {"id": node.id, "class": "budget-row"});
+    var rowClass = depth == 0 ? "top-row" : "budget-row";
+    var row = $("<div>", {"id": node.id, "class": rowClass});
     container.append(row);
     if (depth > 0) {
         allFilterableItems.push(row);

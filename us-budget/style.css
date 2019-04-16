@@ -26,8 +26,12 @@ a {
     float: right;
 }
 
+.top-row {
+    padding: 6.5px 0px 6.5px 2px;
+}
+
 .budget-row {
-    padding: 2.5px 0px 2.5px 0px;
+    padding: 6.5px 0px 2.5px 0px;
 }
 
 .row-a {
@@ -112,7 +116,7 @@ a {
 
 #currency-form input {
     font-size: 20px;
-    padding: 0;
+    padding: 0px 0px 0px 2px;
     color: #2179ee;
 }
 
