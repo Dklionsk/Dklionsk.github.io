@@ -1,22 +1,11 @@
 import { Frame } from "./primitives.js";
 import { CircleView, View } from "./drawing.js";
 import { Animation } from "./animation.js";
-import { ParticleSystem } from "./particles.js";
+import { WaveSim } from "./waves.js";
 import { Canvas } from "./canvas.js";
 function colorFromXPosition(x, minHue = 0, maxHue = 360) {
     let hue = minHue + x * (maxHue - minHue);
     return `hsl(${hue}, 100%, 50%)`;
-}
-class ParticleView extends CircleView {
-    constructor(centerX, centerY, radius) {
-        super(centerX, centerY, radius);
-        this.fillColor = "red";
-    }
-}
-class WallView extends View {
-    constructor(frame, backgroundColor = "black") {
-        super(frame, backgroundColor);
-    }
 }
 document.addEventListener("DOMContentLoaded", () => {
     let canvasElement = document.getElementById("canvas");
@@ -24,38 +13,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const widthString = bodyStyle.getPropertyValue("width");
     const width = Number(widthString.slice(0, -2));
     canvasElement.width = width;
-    canvasElement.height = width * 0.2;
-    let numParticles = 500;
-    let radius = 0.006 * canvasElement.width;
-    let wallMaxX = 0.1 * canvasElement.width;
-    let maxParticleSpeed = 0.05 * canvasElement.width;
-    let particleSystem = new ParticleSystem(canvasElement.width, canvasElement.height, wallMaxX, maxParticleSpeed, numParticles, radius);
+    canvasElement.height = Math.round(width * 0.2);
+    let numParticles = 5000;
+    let radius = 0.003 * canvasElement.width;
+    let amplitude = 0.01 * canvasElement.width;
+    let frequency = 10.0;
+    let wavelength = 0.3;
+    let waveSim = new WaveSim(canvasElement.width, canvasElement.height, numParticles, amplitude, frequency, wavelength);
     let canvas = new Canvas(canvasElement);
     let rect = canvasElement.getBoundingClientRect();
     let view = new View(new Frame(0, 0, rect.width, rect.height));
     canvas.rootView = view;
     let particleViews = [];
-    for (let particle of particleSystem.particles) {
-        let particleView = new ParticleView(particle.position.x, particle.position.y, particle.radius);
-        particleView.fillColor = colorFromXPosition(particle.position.x / canvasElement.width, 120, 360);
+    for (let position of waveSim.positions) {
+        let particleView = new CircleView(position.x, position.y, radius);
+        particleView.fillColor = colorFromXPosition(position.x / canvasElement.width, 120, 360);
         particleViews.push(particleView);
         view.addSubview(particleView);
     }
-    let wall = particleSystem.leftWall;
-    let wallView = new WallView(new Frame(wall.frame.x, wall.frame.y, wall.frame.width, wall.frame.height));
-    view.addSubview(wallView);
     canvas.draw();
-    // Increase or decrease this to speed up or slow down the animation.
-    let speedFactor = 0.75;
     let animation = new Animation(-1, (elapsed, delta) => {
-        particleSystem.update(delta / 1000 * speedFactor);
+        waveSim.update(elapsed / 1000, delta / 1000);
         for (let i = 0; i < particleViews.length; i++) {
-            let particle = particleSystem.particles[i];
+            let position = waveSim.positions[i];
             let circleView = particleViews[i];
-            circleView.frame.x = particle.position.x - particle.radius;
-            circleView.frame.y = particle.position.y - particle.radius;
+            circleView.frame.x = position.x - radius;
+            circleView.frame.y = position.y - radius;
         }
-        wallView.frame.x = wall.frame.x;
     });
     canvas.addAnimation(animation);
 });
